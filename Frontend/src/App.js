@@ -7,7 +7,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <h1>Kompweb</h1>
+        <h1>KOMPWEB</h1>
         <p> Online Solutions</p>
         {/* <p>
           Edit <code>src/App.js</code> and save to reload.
