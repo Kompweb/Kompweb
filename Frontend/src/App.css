@@ -26,9 +26,15 @@
 
 h1 { font-size: 3em;}
 
-.App-link {
+.App-form {
+  height: 10vmin;
+  color: #cc0d0d;
+  font-size: calc(20px + 2vmin);
+}
+.App-link-client {
   color: #61dafb;
   font-size: calc(10px + 1vmin);
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {
