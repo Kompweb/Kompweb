@@ -7,8 +7,8 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <h1>KOMPWEB</h1>
-        <p> Online Solutions</p>
+        <h1>kompWeb</h1>
+        <p> online IT solutions</p>
         {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p> */}
@@ -24,7 +24,7 @@ function App() {
           href='/login'
           target='_blank'
           rel='noopener noreferrer'>
-          Client Log-in
+          Client Login
         </a>
       </header>
     </div>
