@@ -24,8 +24,13 @@
   color: white;
 }
 
-h1 {
+.App-header h1 {
   font-size: 2em;
+  color: #4fd3ff;
+}
+.App-header h5 {
+  font-size: 16px;
+  color: #4fd3ff;
 }
 
 .App-form {
