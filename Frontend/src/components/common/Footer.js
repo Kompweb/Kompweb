@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from "react-router-dom";
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 import '../../styles/Footer.less';
 
@@ -9,45 +9,47 @@ export default function Footer(props) {
 
   return (
     <footer className={layoutContainerCheck}>
-      <div className="inner-container">
-        <form className="App-form">
-          <label>
-            {/* Say 6! */}
-            <input type="text" name="name" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-        <a
-          className="App-link-client"
-          href="/login"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
-        <div className="copyright">©{curYear} Kompweb HQ</div>
+      <Router>
+        <div className="inner-container">
+          <form className="App-form">
+            <label>
+              {/* Say 6! */}
+              <input type="text" name="name" />
+            </label>
+            <input type="submit" value="Submit" />
+          </form>
 
-        {/* <nav className='footer-nav-container'>
-          <div className='footer-nav-div-link'>
-            <Link className='footer-nav-link' to='/contact'>
-              Contact
-            </Link>
-          </div>
-          <div className='footer-nav-div-link'>
-            <Link className='footer-nav-link' to='/faq'>
-              FAQs
-            </Link>
-          </div>
-          <div className='footer-nav-div-link'>
-            <Link className='footer-nav-link' to='#'>
-              Privacy
-            </Link>
-          </div>
-          <div className='footer-nav-div-link'>
-            <Link className='footer-nav-link' to='#'>
-              Terms
-            </Link>
-          </div>
-        </nav> */}
-      </div>
+          <a
+            className="App-link-client"
+            href="/login"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          <div className="copyright">©{curYear} Kompweb HQ</div>
+          <nav className="footer-nav-container">
+            <div className="footer-nav-div-link">
+              <Link className="footer-nav-link" to="#">
+                Contact
+              </Link>
+            </div>
+            <div className="footer-nav-div-link">
+              <Link className="footer-nav-link" to="#">
+                FAQs
+              </Link>
+            </div>
+            <div className="footer-nav-div-link">
+              <Link className="footer-nav-link" to="#">
+                Privacy
+              </Link>
+            </div>
+            <div className="footer-nav-div-link">
+              <Link className="footer-nav-link" to="#">
+                Terms
+              </Link>
+            </div>
+          </nav>
+        </div>
+      </Router>
     </footer>
   );
 }
