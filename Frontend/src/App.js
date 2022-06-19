@@ -1,7 +1,7 @@
 import logo from './assets/logo.svg';
 import './App.css';
 import React from 'react';
-import 'antd/dist/antd.less';
+// import 'antd/dist/antd.less';
 // import Header from "./components/common/Header";
 import LoginContainer from './components/pages/Admin/loginContainer';
 import Footer from './components/common/Footer';

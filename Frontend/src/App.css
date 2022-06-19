@@ -36,6 +36,11 @@
   color: #070404;
   font-size: calc(10px + 1vmin);
 }
+.App footer {
+  color: #ffffff;
+  font-size: calc(10px + 0.5vmin);
+  background-color: #282c34;
+}
 /* .App-link-client {
   color: #61dafb;
   font-size: calc(10px + 1vmin);
