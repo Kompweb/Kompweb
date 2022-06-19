@@ -1,8 +1,10 @@
 import logo from './assets/logo.svg';
-import './App.css';
+import './styles/App.less';
 import React from 'react';
-// import 'antd/dist/antd.less';
-// import Header from "./components/common/Header";
+import 'antd/dist/antd.less';
+import './styles/index.less';
+
+import Header from './components/common/Header';
 import LoginContainer from './components/pages/Admin/loginContainer';
 import Footer from './components/common/Footer';
 
@@ -11,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <Header /> */}
+        <Header />
         <h1>Kompweb</h1>
         <p> online IT solutions</p>
         {/* <h5> Client login</h5> */}
