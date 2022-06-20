@@ -1,6 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import '../../../styles/LoginContainer.less';
+// import '../../../styles/LoginContainer.less';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
 
@@ -61,8 +61,8 @@ const Login = () => {
         <Button type="primary" htmlType="submit" className="login-form-button">
           Log in
         </Button>
-        Or <a href="/">register now!</a>
- master
+        Or <a href="#">register now!</a>
+        master
       </Form.Item>
     </Form>
   );

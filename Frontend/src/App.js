@@ -1,5 +1,5 @@
 import logo from './assets/logo.svg';
-import './styles/App.less';
+import './App.css';
 import React from 'react';
 import 'antd/dist/antd.less';
 import './styles/index.less';
