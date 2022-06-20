@@ -2,7 +2,7 @@
   text-align: center;
 }
 .App-logo {
-  height: 20vW;
+  height: 20vw;
   pointer-events: none;
 }
 .App h1 {
@@ -30,7 +30,7 @@
 } */
 
 .App-form {
-  margin:  20px;
+  margin: 20px;
   padding: 10px;
   height: 10vmin;
   color: #070404;
