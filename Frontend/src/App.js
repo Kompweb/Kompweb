@@ -11,14 +11,14 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>KOMPWEB</h1>
         <p> Online Solutions</p>
-        <a
+        {/* <a
           className="App-link-client"
           href="/login"
           target="_blank"
           rel="noopener noreferrer"
         >
           Client Log-in
-        </a>
+        </a> */}
         < Login />
       </header>
       <Footer />
