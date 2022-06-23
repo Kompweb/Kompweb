@@ -2,7 +2,7 @@ import logo from './assets/logo.svg';
 import './App.css';
 import React from 'react';
 import Login from './components/common/Login';
-
+import Footer from './components/common/Footer'
 
 function App() {
   return (
@@ -11,17 +11,6 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>KOMPWEB</h1>
         <p> Online Solutions</p>
-        < Login />
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        <form className="App-form">
-          <label>
-            {/* Say 9! */}
-            <input type="text" name="name" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
         <a
           className="App-link-client"
           href="/login"
@@ -30,7 +19,9 @@ function App() {
         >
           Client Log-in
         </a>
+        < Login />
       </header>
+      <Footer />
     </div>
   );
 }
