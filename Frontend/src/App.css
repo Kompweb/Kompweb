@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 20vW;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -24,9 +24,7 @@
   color: white;
 }
 
-h1 {
-  font-size: 2em;
-}
+h1 { font-size: 3em;}
 
 .App-form {
   height: 10vmin;
