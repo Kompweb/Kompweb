@@ -1,6 +1,8 @@
 import logo from './assets/logo.svg';
 import './App.css';
 import React from 'react';
+import Login from './components/common/Login';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>KOMPWEB</h1>
         <p> Online Solutions</p>
+        < Login />
         {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p> */}

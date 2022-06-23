@@ -1,19 +1,15 @@
 import React from 'react';
 // import { useHistory } from 'react-router-dom';
-
-import {
-  AppstoreOutlined,
-  MailOutlined,
-  // SettingOutlined,
-} from '@ant-design/icons';
+import 'antd/dist/antd.css';
+import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
 
-const Header = () => (
+const App = () => (
   <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
     <Menu.Item key="mail" icon={<MailOutlined />}>
       Navigation One
     </Menu.Item>
-    
+    <Menu.SubMenu key="SubMenu" title="Navigation Two - Submenu" icon={<SettingOutlined />}>
       <Menu.Item key="two" icon={<AppstoreOutlined />}>
         Navigation Two
       </Menu.Item>
@@ -28,7 +24,8 @@ const Header = () => (
           Navigation Five
         </Menu.Item>
       </Menu.ItemGroup>
+    </Menu.SubMenu>
   </Menu>
 );
 
-export default Header;
+export default App;
