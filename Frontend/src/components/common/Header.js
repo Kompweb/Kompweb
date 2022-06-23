@@ -1,38 +1,34 @@
 import React from 'react';
 // import { useHistory } from 'react-router-dom';
-// import { Typography } from 'antd';
-import { Button, Menu } from 'antd';
-// import {
-//   HomeOutlined,
-//   MenuOutlined,
-//   TrophyOutlined,
-//   LogoutOutlined,
-//   QuestionCircleOutlined,
-//   TableOutlined,
-// } from '@ant-design/icons';
 
-export default function Header() {
-  return (
-    <Button>
-      {/* <Dropdown> */}
-      {/*Inside the IconButton, we 
-             can render various icons*/}
-      <Menu
-        size="large"
-        edge="start"
-        color="inherit"
-        aria-label="menu"
-        sx={{ mr: 2 }}
-      >
-        {/*This is a simple Menu 
-               Icon wrapped in Icon */}
-        {/* <MenuIcon /> */}
-      </Menu>
-      {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}> */}
-      Im a header
-      {/* </Typography> */}
-      {/* <Button color="inherit">Login</Button> */}
-      {/* </Dropdown> */}
-    </Button>
-  );
-}
+import {
+  AppstoreOutlined,
+  MailOutlined,
+  // SettingOutlined,
+} from '@ant-design/icons';
+import { Menu } from 'antd';
+
+const Header = () => (
+  <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
+    <Menu.Item key="mail" icon={<MailOutlined />}>
+      Navigation One
+    </Menu.Item>
+    
+      <Menu.Item key="two" icon={<AppstoreOutlined />}>
+        Navigation Two
+      </Menu.Item>
+      <Menu.Item key="three" icon={<AppstoreOutlined />}>
+        Navigation Three
+      </Menu.Item>
+      <Menu.ItemGroup title="Item Group">
+        <Menu.Item key="four" icon={<AppstoreOutlined />}>
+          Navigation Four
+        </Menu.Item>
+        <Menu.Item key="five" icon={<AppstoreOutlined />}>
+          Navigation Five
+        </Menu.Item>
+      </Menu.ItemGroup>
+  </Menu>
+);
+
+export default Header;
