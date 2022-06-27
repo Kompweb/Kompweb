@@ -2,7 +2,7 @@ import logo from './assets/logo.svg';
 import './App.css';
 import React from 'react';
 import Login from './components/common/Login';
-import Footer from './components/common/Footer'
+import Footer from './components/common/Footer';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         >
           Client Log-in
         </a> */}
-        < Login />
+        <Login />
       </header>
       <Footer />
     </div>

@@ -9,8 +9,8 @@ export default function Footer() {
 
   return (
     <footer>
-          <div className="copyright">©{curYear} Kompweb HQ</div>
-          {/* <form className="App-form">
+      <div className="copyright">©{curYear} Kompweb HQ</div>
+      {/* <form className="App-form">
           <label>
             <input type="text" name="name" />
           </label>
