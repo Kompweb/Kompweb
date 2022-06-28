@@ -1,6 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-// import '../../../styles/LoginContainer.less';
+import '../../Login.css';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
 
@@ -47,7 +47,7 @@ const Login = () => {
           placeholder="Password"
         />
       </Form.Item>
-      <Form.Item>
+      <Form.Item className="remembeP">
         <Form.Item name="remember" valuePropName="checked" noStyle>
           <Checkbox>Remember me</Checkbox>
         </Form.Item>

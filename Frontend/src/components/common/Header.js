@@ -8,7 +8,7 @@ import {
 } from '@ant-design/icons';
 import { Menu } from 'antd';
 
-const App = () => (
+const Header = () => (
   <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
     <Menu.Item key="mail" icon={<MailOutlined />}>
       Navigation One
@@ -36,4 +36,4 @@ const App = () => (
   </Menu>
 );
 
-export default App;
+export default Header;

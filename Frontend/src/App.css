@@ -1,15 +1,27 @@
+body div {
+  background-color: #282c34;
+  color: white;
+}
+
 .App {
   text-align: center;
   max-width: 1120px;
+  margin: auto;
   display: column;
   justify-content: center;
-  /* align-content: center; */
+  align-content: center;
   align-items: center;
-  background-color: #cc0d0d;
+}
+
+.ant-menu .ant-menu-item-group-title {
+  background-color: #ffffff;
+  color: black;
+  /* margin: 5%; */
+  font-size: 18px;
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -20,30 +32,28 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 93vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);
-  color: white;
 }
 
-h1 {
-  font-size: 3em;
-  color: blue;
+.App .ant-menu-overflow {
+  background-color: #282c34;
+  color: #fff;
+  font-size: calc(10px + 0.5vmin);
+  border-bottom: #cc0d0d;
 }
 
-.App-form {
-  height: 10vmin;
-  color: #cc0d0d;
-  font-size: calc(20px + 2vmin);
-}
-.App-link-client {
+.App h1 {
+  font-size: calc(24px + 6vmin);
   color: #61dafb;
-  font-size: calc(10px + 1vmin);
-  margin-top: 20px;
+}
+
+.App p {
+  font-size: calc(10px + 2vmin);
 }
 
 @keyframes App-logo-spin {
