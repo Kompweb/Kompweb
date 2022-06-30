@@ -1,8 +1,11 @@
 body div {
   background-color: #282c34;
-  color: white;
+  color: rgb(232, 177, 227);
 }
-.App {
+/* .Home-body .ant-menu {
+  background-color: #4b7ee4;
+} */
+/* .Home-body {
   text-align: center;
   max-width: 960px;
   height: 100vh;
@@ -10,11 +13,14 @@ body div {
   display: column;
   justify-content: center;
   align-content: center;
-}
-.ant-menu .ant-menu-item-group-title {
+} */
+/* .Home-body .ant-menu-submenu-title {
+  background-color: #4b7ee4;
+} */
+/* .ant-menu .ant-menu-item-group-title {
   min-width: 220px;
   color: rgb(255, 255, 255);
-}
+} */
 .App-logo {
   height: 20vmin;
   /* pointer-events: none; */
@@ -24,41 +30,58 @@ body div {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.App-header {
+.Home-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);
 }
-.App .ant-menu-overflow {
+/* .Navbar-top {
   background-color: #282c34;
   color: #fff;
-}
-.App h1 {
+} */
+
+/* .Navbar-top
+  .ant-menu-overflow
+  .ant-menu
+  .ant-menu-root
+  .ant-menu-horizontal
+  .ant-menu-light {
+  background-color: #282c34;
+  color: #fff;
+} */
+
+.Home-body h1 {
   font-size: calc(18px + 5vmin);
   color: #61dafb;
   font-weight: 500;
   letter-spacing: 0.2em;
 }
-.App h4 {
+.Home-body h4 {
   color: #ffffff;
   font-size: calc(14px + 1.5vmin);
 }
-.App p {
+.Home-body p {
   font-size: calc(10px + 0.5vmin);
 }
-.App .ant-btn {
+.Home-body a {
+  font-size: calc(10px + 0.5vmin);
+  color: #fff;
+}
+.Home-body .ant-btn {
   margin-bottom: 10px;
 }
-img {
+.Home-body img {
   display: inline-block;
   margin: 15px 10px;
 }
-.App footer {
-  padding-top: 40px;
+footer {
+  color: #fff;
+  padding: 40px;
   letter-spacing: 0.3em;
-  font-size: calc(8px + 0.3vmin);
+  font-size: calc(8px + 0.2vmin);
+  text-align: center;
 }
 
 @keyframes App-logo-spin {

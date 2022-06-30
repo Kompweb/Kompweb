@@ -1,7 +1,7 @@
 module.exports = {
   '@primary-color': '#007aff', // Turquoise
-  '@primary-3': '#6ceae6', // Turquoise
-  '@primary-4': ' #429cb5', // Boston Blue
+  // '@primary-3': '#6ceae6', // Turquoise
+  // '@primary-4': ' #429cb5', // Boston Blue
   // '@success-color': '#00d93d', // Border around story submitted modal
   // '@warning-color': '#ff313a', // from 'remove child' button
   // '@error-color': '#f5222d', // Un-changed
@@ -22,7 +22,7 @@ module.exports = {
   // '@checkbox-color': '#429cb5', // Block Background-White
   // '@checkbox-check-color': '#ffffff', // Block Background-White
   // Card Styles
-  '@card-radius': '14px',
+  // '@card-radius': '14px',
 
   '@layout-body-background': '#fff',
   // Buttons
