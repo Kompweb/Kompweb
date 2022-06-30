@@ -2,69 +2,65 @@ body div {
   background-color: #282c34;
   color: white;
 }
-
 .App {
   text-align: center;
-  max-width: 1120px;
+  max-width: 960px;
+  height: 100vh;
   margin: auto;
   display: column;
   justify-content: center;
   align-content: center;
-  align-items: center;
 }
-
 .ant-menu .ant-menu-item-group-title {
-  /* background-color: #ffffff; */
-  /* min-width: 140px; */
+  min-width: 220px;
   color: rgb(255, 255, 255);
-  padding: 5%;
-  font-size: 18px;
 }
-
 .App-logo {
-  height: 15vmin;
-  pointer-events: none;
+  height: 20vmin;
+  /* pointer-events: none; */
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  min-height: 93vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 2vmin);
 }
-
 .App .ant-menu-overflow {
   background-color: #282c34;
   color: #fff;
-  font-size: calc(10px + 0.5vmin);
-  /* border-bottom: #cc0d0d; border line is overlapping */
 }
 .App h1 {
-  font-size: calc(18px + 4vmin);
+  font-size: calc(18px + 5vmin);
   color: #61dafb;
   font-weight: 500;
   letter-spacing: 0.2em;
 }
-
 .App h4 {
   color: #ffffff;
   font-size: calc(14px + 1.5vmin);
 }
-
 .App p {
-  font-size: calc(8px + 1vmin);
+  font-size: calc(10px + 0.5vmin);
 }
-/* .App span {
-  color: #61dafb;
-} */
+.App .ant-btn {
+  margin-bottom: 10px;
+}
+img {
+  display: inline-block;
+  margin: 15px 10px;
+}
+.App footer {
+  padding-top: 40px;
+  letter-spacing: 0.3em;
+  font-size: calc(8px + 0.3vmin);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
