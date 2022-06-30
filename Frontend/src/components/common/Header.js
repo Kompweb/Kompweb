@@ -2,35 +2,44 @@ import React from 'react';
 // import { useHistory } from 'react-router-dom';
 import 'antd/dist/antd.css';
 import {
-  AppstoreOutlined,
-  MailOutlined,
-  SettingOutlined,
+  // AppstoreOutlined,
+  HomeOutlined,
+  // SettingOutlined,
+  ProjectOutlined,
+  // FundProjectionScreenOutlined,
+  GithubOutlined,
 } from '@ant-design/icons';
 import { Menu } from 'antd';
 
 const Header = () => (
   <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
-    <Menu.Item key="mail" icon={<MailOutlined />}>
-      Navigation One
+    <Menu.Item key="home" icon={<HomeOutlined style={{ fontSize: '150%' }} />}>
+      Home
     </Menu.Item>
     <Menu.SubMenu
-      key="SubMenu"
-      title="Navigation Two - Submenu"
-      icon={<SettingOutlined />}
+      key="Projects"
+      title="Projects"
+      icon={<ProjectOutlined style={{ fontSize: '150%' }} />}
     >
-      <Menu.Item key="two" icon={<AppstoreOutlined />}>
-        Navigation Two
+      <Menu.Item
+        key="one"
+        icon={<GithubOutlined style={{ fontSize: '150%' }} />}
+      >
+        Full-Stack One
       </Menu.Item>
-      <Menu.Item key="three" icon={<AppstoreOutlined />}>
-        Navigation Three
+      <Menu.Item
+        key="two"
+        icon={<GithubOutlined style={{ fontSize: '150%' }} />}
+      >
+        Full-Stack Two
       </Menu.Item>
-      <Menu.ItemGroup title="Item Group">
-        <Menu.Item key="four" icon={<AppstoreOutlined />}>
-          Navigation Four
-        </Menu.Item>
-        <Menu.Item key="five" icon={<AppstoreOutlined />}>
-          Navigation Five
-        </Menu.Item>
+      <Menu.ItemGroup title="Back-end">
+        <Menu.Item key="three">Project Three</Menu.Item>
+        <Menu.Item key="four">Project Four</Menu.Item>
+      </Menu.ItemGroup>
+      <Menu.ItemGroup title="Front-end">
+        <Menu.Item key="five">Project Three</Menu.Item>
+        <Menu.Item key="six">Project Four</Menu.Item>
       </Menu.ItemGroup>
     </Menu.SubMenu>
   </Menu>

@@ -9,11 +9,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>KOMPWEB</h1>
-        <p> Online Solutions</p>
+        <h4> Online Solutions</h4>
         {/* <a
           className="App-link-client"
           href="/login"
@@ -22,6 +21,7 @@ function App() {
         >
           Client Log-in
         </a> */}
+        <p>client login</p>
         <Login />
       </header>
       <Footer />

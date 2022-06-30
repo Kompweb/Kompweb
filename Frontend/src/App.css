@@ -14,9 +14,10 @@ body div {
 }
 
 .ant-menu .ant-menu-item-group-title {
-  background-color: #ffffff;
-  color: black;
-  /* margin: 5%; */
+  /* background-color: #ffffff; */
+  /* min-width: 140px; */
+  color: rgb(255, 255, 255);
+  padding: 5%;
   font-size: 18px;
 }
 
@@ -44,18 +45,26 @@ body div {
   background-color: #282c34;
   color: #fff;
   font-size: calc(10px + 0.5vmin);
-  border-bottom: #cc0d0d;
+  /* border-bottom: #cc0d0d; border line is overlapping */
+}
+.App h1 {
+  font-size: calc(18px + 4vmin);
+  color: #61dafb;
+  font-weight: 500;
+  letter-spacing: 0.2em;
 }
 
-.App h1 {
-  font-size: calc(24px + 6vmin);
-  color: #61dafb;
+.App h4 {
+  color: #ffffff;
+  font-size: calc(14px + 1.5vmin);
 }
 
 .App p {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 1vmin);
 }
-
+/* .App span {
+  color: #61dafb;
+} */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
