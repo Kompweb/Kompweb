@@ -1,7 +1,7 @@
 import logo from './assets/logo.svg';
 import './App.css';
 import React from 'react';
-import Header from './components/common/Header';
+import Navbar from './components/common/Navbar';
 import Login from './components/common/Login';
 import Languages from './components/common/Languages';
 import Footer from './components/common/Footer';
@@ -9,7 +9,7 @@ import Footer from './components/common/Footer';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>KOMPWEB</h1>

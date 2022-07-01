@@ -11,7 +11,7 @@ import {
 } from '@ant-design/icons';
 import { Menu } from 'antd';
 
-const Header = () => (
+const Navbar = () => (
   <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
     <Menu.Item key="home" icon={<HomeOutlined style={{ fontSize: '150%' }} />}>
       Home
@@ -45,4 +45,4 @@ const Header = () => (
   </Menu>
 );
 
-export default Header;
+export default Navbar;
