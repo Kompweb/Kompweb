@@ -2,8 +2,8 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import '../../Login.css';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input } from 'antd';
-
+import { Checkbox, Form, Input, Button } from 'antd';
+// import LoginButton from './LoginButton';
 const Login = () => {
   const onFinish = values => {
     console.log('Received values of form: ', values);
@@ -57,12 +57,22 @@ const Login = () => {
         </a>
       </Form.Item>
 
+      {/* // Auth0 component at import  */}
+      {/* <Form.Item>
+        <LoginButton
+          type="primary"
+          htmlType="submit"
+          className="login-button"
+        />{' '}
+        Or <a href="/">register now!</a>
+      </Form.Item> */}
+
       <Form.Item>
         <Button type="primary" htmlType="submit" className="login-form-button">
           Log in
         </Button>
         {''} Or{' '}
-        <a className="Register" href="/">
+        <a className="Register" href="/projects">
           register now!
         </a>
       </Form.Item>
