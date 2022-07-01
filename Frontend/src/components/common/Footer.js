@@ -1,7 +1,3 @@
-// import React from 'react';
-// import { Link, BrowserRouter as Router } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
-
 // import '../../styles/Footer.less';
 
 export default function Footer() {
@@ -10,12 +6,20 @@ export default function Footer() {
   return (
     <footer>
       <div className="copyright">©{curYear} KOMPWEB HQ</div>
+
+      {/* Subscribe form bellow */}
+
       {/* <form className="App-form">
-          <label>
-            <input type="text" name="name" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form> */}
+        <label>
+          <input type="text" name="name" />
+        </label>
+        <input type="submit" value="Submit" />
+      </form> */}
+
+      <br></br>
+      <a className="Contact-us" href="/">
+        Contact
+      </a>
     </footer>
   );
 }
