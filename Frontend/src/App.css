@@ -48,8 +48,8 @@ body div {
 .App p {
   font-size: calc(10px + 0.5vmin);
 }
-.App .ant-btn {
-  margin-bottom: 10px;
+.buton {
+  border: 1px solid red;
 }
 img {
   display: inline-block;
