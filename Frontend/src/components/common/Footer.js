@@ -1,5 +1,5 @@
 // import '../../styles/Footer.less';
-
+// import ContactForm from '../pages/Contact';
 export default function Footer() {
   const curYear = new Date().getFullYear();
 
@@ -17,7 +17,7 @@ export default function Footer() {
       </form> */}
 
       <br></br>
-      <a className="Contact-us" href="/">
+      <a className="Contact-us" href="/contact">
         Contact
       </a>
     </footer>

@@ -1,48 +1,31 @@
 import React from 'react';
-// import { useHistory } from 'react-router-dom';
-import 'antd/dist/antd.css';
-import {
-  // AppstoreOutlined,
-  HomeOutlined,
-  // SettingOutlined,
-  ProjectOutlined,
-  // FundProjectionScreenOutlined,
-  GithubOutlined,
-} from '@ant-design/icons';
-import { Menu } from 'antd';
 
-const Navbar = () => (
-  <Menu mode="horizontal" defaultSelectedKeys={['mail']}>
-    <Menu.Item key="home" icon={<HomeOutlined style={{ fontSize: '150%' }} />}>
-      Home
-    </Menu.Item>
-    <Menu.SubMenu
-      key="Projects"
-      title="Projects"
-      icon={<ProjectOutlined style={{ fontSize: '150%' }} />}
-    >
-      <Menu.Item
-        key="one"
-        icon={<GithubOutlined style={{ fontSize: '150%' }} />}
-      >
-        Full-Stack One
-      </Menu.Item>
-      <Menu.Item
-        key="two"
-        icon={<GithubOutlined style={{ fontSize: '150%' }} />}
-      >
-        Full-Stack Two
-      </Menu.Item>
-      <Menu.ItemGroup title="Back-end">
-        <Menu.Item key="three">Project Three</Menu.Item>
-        <Menu.Item key="four">Project Four</Menu.Item>
-      </Menu.ItemGroup>
-      <Menu.ItemGroup title="Front-end">
-        <Menu.Item key="five">Project Three</Menu.Item>
-        <Menu.Item key="six">Project Four</Menu.Item>
-      </Menu.ItemGroup>
-    </Menu.SubMenu>
-  </Menu>
-);
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
-export default Navbar;
+export default function Navbar() {
+  return (
+    <nav className="nav">
+      <Link to="/" className="site-title">
+        Kompweb
+      </Link>
+      <ul>
+        <li>
+          <CustomLink to="/projects"> Projects </CustomLink>
+          <CustomLink to="/about"> About </CustomLink>
+          <CustomLink to="/contact"> Contact </CustomLink>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to);
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
+  return (
+    <li className={isActive ? 'active' : ''}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  );
+}
