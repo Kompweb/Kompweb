@@ -1,5 +1,5 @@
 // import logo from './assets/logo.svg';
-import './App.css';
+import './Style.css';
 import React from 'react';
 import Navbar from './components/common/Navbar';
 import NavRoutes from '../src/utils/routes';
@@ -7,7 +7,7 @@ import Footer from './components/common/Footer';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <NavRoutes />
       <Footer />
