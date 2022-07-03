@@ -1,11 +1,11 @@
 import React from 'react';
+import SearchForm from './SearchForm';
 
-function AboutUs() {
+export default function AboutUs() {
   return (
     <div className="aboutUs">
       <p>About US Coming soon...</p>
+      <SearchForm />
     </div>
   );
 }
-
-export default AboutUs;

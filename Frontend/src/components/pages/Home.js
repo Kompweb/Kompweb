@@ -1,30 +1,24 @@
 import logo from '../../../src/assets/logo.svg';
-import '../../App.css';
 import React from 'react';
 import Login from '../../components/common/Login';
 import Languages from '../../components/common/Languages';
-// import SearchForm from '../../components/pages/SearchForm';
 
 function Home() {
   return (
-    <div className="home">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>KOMPWEB</h1>
-        <h2>Online Solutions</h2>
-        <a
-          className="App-link-client"
-          href="/projects"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Client Log-in
-        </a>
-        <Login />
-      </header>
+    <div className="home-header">
+      <img src={logo} className="react-logo" alt="logo" />
+      {/* <h1>Kompweb</h1> */}
+      <h3>React Solutions</h3>
+      <a
+        className="link-client"
+        href="/contact"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Client Log-in
+      </a>
+      <Login />
       <Languages />
-      {/* <br></br>
-      <SearchForm /> */}
     </div>
   );
 }
