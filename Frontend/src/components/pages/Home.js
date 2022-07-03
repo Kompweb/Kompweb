@@ -1,7 +1,7 @@
 import logo from '../../../src/assets/logo.svg';
 import React from 'react';
 import Login from '../../components/common/Login';
-import Languages from '../../components/common/Languages';
+// import Languages from '../../components/common/Languages';
 
 function Home() {
   return (
@@ -18,7 +18,7 @@ function Home() {
         Client Log-in
       </a>
       <Login />
-      <Languages />
+      {/* <Languages /> */}
     </div>
   );
 }
