@@ -6,9 +6,10 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
-      <a href="/" className="kompweb">
-        {'Kompweb'}
-      </a>
+      <div className="kompweb">
+        <a href="/">{'Kompweb'}</a>
+        <p>React Solutions </p>
+      </div>
       <button
         className="hamburger"
         onClick={() => {
@@ -43,9 +44,6 @@ export default function Navbar() {
           </li>
           <li>
             <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
           </li>
         </ul>
       </div>

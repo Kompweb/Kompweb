@@ -6,21 +6,57 @@
 
 .App {
   text-align: center;
-  /* display: flex; */
-  /* flex-direction: column; */
+  /* background-color: red; */
+  /* display: flex;
+  flex-direction: column; */
   /* align-items: center; */
 }
-.container {
-  height: 100vh;
-  /* margin: auto; */
+p {
+  color: rgb(255, 255, 255);
+  /* font-size: calc(14px + 0.5vmin); */
 }
+a {
+  font-size: 16px;
+}
+span {
+  /* color: rgb(205, 26, 26); */
+  color: white;
+  /* font-size: calc(14px + 0.5vmin); */
+  font-size: 16px;
+  margin: 0;
+  /* height: 40px; */
+}
+.ant-btn span {
+  font-size: 18px;
+}
+.App .ant-input-affix-wrapper {
+  height: 40px;
+  /* border: 1px solid red; */
+  /* padding: 0; */
+  /* font-size: 18px; */
+  color: black;
+}
+.App .anticon {
+  color: rgb(159, 156, 156);
+}
+/* .App span { */
+/* display: flex;
+  flex-direction: row; */
+/* color: rgb(78, 28, 246); */
+/* font-size: calc(10px + 0.5vmin); */
+/* } */
+
+/* .container { */
+/* height: 100vh; */
+/* margin: auto; */
+/* } */
 .react-logo {
   height: calc(3vmin + 10vmin);
   pointer-events: none;
 }
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
-    margin-bottom: 5%;
+    margin: 15% 0 5% 0;
     animation: App-logo-spin infinite 20s linear;
   }
   .react-logo:hover {
@@ -33,13 +69,9 @@
   /* justify-content: center; */
   /* align-items: center; */
 }
-.home-header h3 {
-  /* text-transform: uppercase; */
-  color: rgb(255, 255, 255);
-  font-size: calc(10px + 1vmin);
-}
-.ant-btn {
+.App .ant-btn {
   margin-bottom: 10px;
+  height: 40px;
 }
 .Register {
   margin-left: 6px;
@@ -52,20 +84,9 @@
   margin-bottom: -8px;
   text-transform: uppercase;
 } */
-/* h3 {
-  text-transform: uppercase;
-  color: rgb(167, 13, 13);
-  font-size: calc(10px + 0.5vmin);
-} */
-span {
-  color: #fff;
-}
-p {
-  font-size: calc(14px + 0.5vmin);
-  color: #fff;
-}
+
 .link-client {
-  font-size: 14px;
+  font-size: calc(16px + 0.5vmin);
   color: #ffffff;
   margin-bottom: 10px;
 }
@@ -78,30 +99,37 @@ p {
 .languages img:hover {
   animation: App-logo-spin infinite 2s linear;
 }
-/* .Contact-us:hover {
-  border-bottom: 1px solid rgb(255, 255, 255);
+.Contact-us {
+  color: #ffffff;
+  margin-top: 20px;
   padding-bottom: 5px;
-} */
+  font-size: calc(16px + 0.5vmin);
+  border-bottom: 1px dashed #1890ff;
+}
+.Contact-us:hover {
+  color: #1890ff;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 5px;
+}
 .Projects {
   /* color: red; */
   width: 60%;
-  /* font-size: calc(8px + 0.3vmin); */
-  color: #fff;
+  /* color: #fff; */
 }
 footer {
   /* position: absolute; */
-  /* margin: 10% 0 10% 0; */
-  bottom: 0;
-  width: 100%;
+  margin: 10% 0 10% 0;
+  padding-bottom: 20px;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  bottom: 0;
-  letter-spacing: 0.3em;
-  font-size: calc(8px + 0.3vmin);
-  font-weight: 600;
-  /* align-items: center; */
   justify-content: center;
+}
+.last-item {
+  font-size: 14px;
   color: #fff;
+  letter-spacing: 0.1em;
+  /* font-weight: 200; */
 }
 
 .search-form button {
@@ -124,7 +152,7 @@ footer {
 .contact-form button {
   margin: 20px;
   color: rgb(0, 0, 0);
-  background-color: #61dafb;
+  background-color: #1890ff;
   width: 100px;
 }
 @keyframes App-logo-spin {
@@ -133,5 +161,15 @@ footer {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .react-logo {
+    /* display: none; */
+    margin-top: 25%;
+  }
+  .App {
+    display: block;
   }
 }

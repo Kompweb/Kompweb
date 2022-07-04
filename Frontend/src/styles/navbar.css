@@ -3,20 +3,25 @@
   display: flex;
   /* justify-content: space-between; */
   /* align-items: left; */
-  /* height: 60px; */
+  height: 60px;
   width: 100%;
   padding: 1rem 0;
   /* box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.23); */
 }
-.kompweb {
+.kompweb a {
   /* text-decoration: none; */
-  font-size: calc(18px + 2vmin);
+  font-size: calc(16px + 1.5vmin);
   color: #61dafb;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   /* text-transform: uppercase; */
-  margin-left: 2rem 0;
+  /* margin-left: 2rem 0; */
   /* align-items: left; */
+}
+.kompweb p {
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  font-size: calc(14px + 0.3vmin);
 }
 
 .navigation-menu {
@@ -43,7 +48,8 @@
   /* display: block; */
   right: 5;
   color: #fff;
-  width: 100%;
+  font-size: calc(14px + 0.5vmin);
+  /* width: 100%; */
 }
 .navigation-menu li:hover {
   /* width: 100%; */
@@ -58,11 +64,11 @@
   width: 45px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #1890ff;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
-  top: 50%;
+  top: 75%;
   right: 25px;
   transform: translateY(-50%);
   display: none;
@@ -74,25 +80,22 @@
   .hamburger {
     display: block;
   }
-  .kompweb {
-    margin-left: 20px;
-  }
   .navigation-menu ul {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: 0;
     /* width: 10%; */
     /* height: calc(100vh - 60px); */
-    /* background-color: rgba(0, 0, 0, 0.068); */
+    /* background-color: rgba(255, 255, 255, 0.068); */
     /* border: 1px solid rgb(0, 0, 0); */
     display: none;
   }
   .navigation-menu li {
     color: rgb(255, 255, 255);
     text-align: right;
-    margin: 0;
+    /* margin: 0; */
   }
   .navigation-menu li a {
     color: rgb(255, 255, 255);
@@ -105,6 +108,8 @@
   }
   .navigation-menu.expanded ul {
     display: block;
-    margin-right: 20px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 0;
+    /* color: #1890ff; */
   }
 }

@@ -8,7 +8,7 @@ function Home() {
     <div className="home-header">
       <img src={logo} className="react-logo" alt="logo" />
       {/* <h1>Kompweb</h1> */}
-      <h3>React Solutions</h3>
+      {/* <h3>React Solutions</h3> */}
       <a
         className="link-client"
         href="/contact"
