@@ -118,7 +118,7 @@ span {
 }
 footer {
   /* position: absolute; */
-  margin: 10% 0 10% 0;
+  margin: 5% 0 10% 0;
   padding-bottom: 20px;
   /* width: 100%; */
   display: flex;
@@ -167,7 +167,7 @@ footer {
 @media screen and (max-width: 500px) {
   .react-logo {
     /* display: none; */
-    margin-top: 25%;
+    margin-top: 20%;
   }
   .App {
     display: block;
