@@ -142,7 +142,7 @@ span {
   /* border: 1px solid red; */
 }
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   margin: 5% 0 5% 0;
   width: 100%;
