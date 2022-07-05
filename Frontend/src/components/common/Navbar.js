@@ -49,19 +49,13 @@ export default function Navbar() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a aria-current="page" href="/projects/">
-              Projects
-            </a>
+            <a href="/projects">Projects</a>
           </li>
           <li>
-            <a aria-current="page" href="/about/">
-              About
-            </a>
+            <a href="/about">About</a>
           </li>
           <li>
-            <a aria-current="page" href="/contact/">
-              Contact
-            </a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </div>
