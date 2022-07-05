@@ -88,6 +88,9 @@ span {
 .languages img:hover {
   animation: App-logo-spin infinite 2s linear;
 }
+.App .login-form a {
+  color: #61dafb;
+}
 /* .Contact-us {
   color: #ffffff;
   margin-top: 20px;

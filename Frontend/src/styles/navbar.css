@@ -11,17 +11,17 @@
   color: #61dafb;
   font-weight: 600;
   letter-spacing: 0.1em;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 .kompweb a:hover {
   font-style: italic;
-  color: #fff;
+  color: #61dafb;
 }
 .kompweb p {
   color: #ffffff;
   letter-spacing: 0.1em;
-  font-size: calc(14px + 0.5vmin);
-  letter-spacing: 0.1em;
+  font-size: calc(14px + 0.2vmin);
+  letter-spacing: 0.2em;
   /* font-weight: 200; */
 }
 .react {
@@ -56,7 +56,6 @@
 
   /* width: 100%; */
 }
-
 .hamburger {
   border: 0;
   height: 75px;
