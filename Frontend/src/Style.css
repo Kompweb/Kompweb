@@ -6,10 +6,6 @@
 .App {
   text-align: center;
   margin-top: 120px;
-  /* background-color: red; */
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: center; */
 }
 p {
   color: rgb(255, 255, 255);
@@ -23,8 +19,9 @@ span {
   font-size: calc(14px + 0.5vmin);
   margin: 0;
 }
-.ant-btn span {
-  height: calc(14px + 0.5vmin);
+.ant-btn-primary span {
+  font-size: calc(16px + 0.5vmin);
+  color: rgb(0, 0, 0);
 }
 .App .anticon {
   color: rgb(159, 156, 156);
@@ -54,9 +51,12 @@ span {
   /* justify-content: center; */
   /* align-items: center; */
 }
-.App .ant-btn {
-  margin-bottom: 10px;
+.App .ant-btn-primary {
   height: 40px;
+  margin-bottom: 10px;
+  background-color: #61dafb;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
 }
 .Register {
   margin-left: 6px;
@@ -75,6 +75,9 @@ span {
   color: #ffffff;
   margin: 10px 0 20px 0;
   letter-spacing: 0.1em;
+}
+.link-client:hover {
+  color: #61dafb;
 }
 .languages img {
   /* display: inline-block; */
