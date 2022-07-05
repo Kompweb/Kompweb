@@ -21,7 +21,7 @@
   color: #ffffff;
   letter-spacing: 0.1em;
   font-size: calc(14px + 0.5vmin);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   /* font-weight: 200; */
 }
 .react {
@@ -41,7 +41,7 @@
 .navigation-menu li {
   list-style-type: none;
   margin-right: 30px;
-  padding: 3px;
+  padding: 5px;
   align-items: right;
   border-bottom: 1px dashed #4f4f4f;
   color: rgb(255, 255, 255);
