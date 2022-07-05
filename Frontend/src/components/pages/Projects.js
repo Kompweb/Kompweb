@@ -1,4 +1,5 @@
 import React from 'react';
+import Languages from '../common/Languages';
 import SearchForm from './SearchForm';
 function Projects() {
   return (
@@ -15,6 +16,7 @@ function Projects() {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
+      <Languages />
       <SearchForm />
     </div>
   );

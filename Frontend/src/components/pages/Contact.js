@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import './styles.css';
+import '../../Style.css';
 
 function ContactUs() {
   const [firstName, setFirstName] = useState('');
@@ -9,40 +9,41 @@ function ContactUs() {
 
   //   const [password, setPassword] = useState('');
   return (
-    <form className="contact-form">
-      <input
-        value={firstName}
-        onChange={e => setFirstName(e.target.value)}
-        placeholder="First name"
-        type="text"
-        name="firstName"
-        required
-      />
-      <input
-        value={lastName}
-        onChange={e => setLastName(e.target.value)}
-        placeholder="Last name"
-        type="text"
-        name="lastName"
-        required
-      />
-      <input
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-        placeholder="Email address"
-        type="email"
-        name="email"
-        required
-      />
-      <input
-        value={text}
-        onChange={e => setText(e.target.value)}
-        placeholder="Message:"
-        type="text"
-        name="text"
-        required
-      />
-      {/* <input
+    <div className="form-container">
+      <form className="contact-form">
+        <input
+          value={firstName}
+          onChange={e => setFirstName(e.target.value)}
+          placeholder="First name"
+          type="text"
+          name="firstName"
+          required
+        />
+        <input
+          value={lastName}
+          onChange={e => setLastName(e.target.value)}
+          placeholder="Last name"
+          type="text"
+          name="lastName"
+          required
+        />
+        <input
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          placeholder="Email address"
+          type="email"
+          name="email"
+          required
+        />
+        <input
+          value={text}
+          onChange={e => setText(e.target.value)}
+          placeholder="Message:"
+          type="text"
+          name="text"
+          required
+        />
+        {/* <input
         value={password}
         onChange={e => setPassword(e.target.value)}
         placeholder="Password"
@@ -50,8 +51,9 @@ function ContactUs() {
         name="password"
         required
       /> */}
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 }
 export default ContactUs;
