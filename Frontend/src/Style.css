@@ -6,7 +6,7 @@
 
 .App {
   text-align: center;
-  margin-top: 120px;
+  margin-top: 140px;
   /* background-color: red; */
   /* display: flex;
   flex-direction: column; */
@@ -45,13 +45,19 @@ span {
   pointer-events: none;
 }
 @media (prefers-reduced-motion: no-preference) {
+  .react {
+    /* margin: 5% 0 5% 0; */
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .react:hover {
+    animation: App-logo-spin infinite 5s linear;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
   .react-logo {
     /* margin: 5% 0 5% 0; */
     animation: App-logo-spin infinite 20s linear;
   }
-  /* .react-logo:hover {
-    animation: stop;
-  } */
 }
 .home-header {
   display: flex;
@@ -89,7 +95,7 @@ span {
 .languages img:hover {
   animation: App-logo-spin infinite 2s linear;
 }
-.Contact-us {
+/* .Contact-us {
   color: #ffffff;
   margin-top: 20px;
   padding-bottom: 5px;
@@ -100,7 +106,7 @@ span {
   color: #1890ff;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
-}
+} */
 .Projects {
   /* color: red; */
   width: 100%;
@@ -124,7 +130,6 @@ span {
 .contact-for button {
   color: red;
   border: 1px solid red;
-
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -140,10 +145,9 @@ footer {
   justify-content: center;
 }
 .last-item {
-  font-size: 14px;
+  font-size: calc(12px + 0.5vmin);
   color: #fff;
-  letter-spacing: 0.1em;
-  /* font-weight: 200; */
+  font-weight: 200;
 }
 
 .search-form button {
@@ -179,10 +183,10 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  /* .react-logo { */
-  /* display: none; */
-  /* margin-top: 30%; */
-  /* } */
+  .react-logo {
+    display: none;
+    margin-top: 30%;
+  }
   .link-client {
     font-size: calc(16px + 0.5vmin);
     /* margin-top: 10px; */
@@ -199,15 +203,5 @@ footer {
     /* position: absolute; */
     margin: 1% 0 0 0;
     /* padding-bottom: 10px; */
-  }
-  /* .App {
-    display: block;
-  } */
-
-  h-5 {
-    width: calc(16px + 0.5vmin);
-  }
-  w-5 {
-    width: calc(16px + 0.5vmin);
   }
 }
