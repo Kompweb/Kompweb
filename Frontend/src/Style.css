@@ -5,7 +5,8 @@
 }
 .App {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 120px;
+  /* border: 1px solid red; */
 }
 p {
   color: rgb(255, 255, 255);
@@ -33,7 +34,6 @@ span {
   }
   .react-logo:hover {
     animation: App-logo-spin infinite 5s linear;
-    background-color: red;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -54,9 +54,8 @@ span {
 .home-header {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
+
 .App .ant-btn-primary {
   height: 35px;
   width: 70%;
@@ -185,8 +184,10 @@ footer {
 }
 @media screen and (max-width: 500px) {
   .App {
-    margin-top: 160px;
+    margin-top: 80px;
+    /* border: 1px solid green; */
   }
+
   .react-logo {
     display: none;
   }
