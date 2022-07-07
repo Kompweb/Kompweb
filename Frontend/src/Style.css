@@ -5,15 +5,16 @@
 }
 .App {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 120px;
+  /* border: 1px solid red; */
 }
+/* .container {
+  border: 3px solid #818181;
+} */
 p {
   color: rgb(255, 255, 255);
   /* font-size: calc(14px + 0.5vmin); */
 }
-/* a {
-  font-size: calc(14px + 0.5vmin);
-} */
 span {
   color: white;
   /* font-size: calc(14px + 0.5vmin); */
@@ -33,7 +34,6 @@ span {
   }
   .react-logo:hover {
     animation: App-logo-spin infinite 5s linear;
-    background-color: red;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -54,9 +54,8 @@ span {
 .home-header {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
+
 .App .ant-btn-primary {
   height: 35px;
   width: 70%;
@@ -73,10 +72,6 @@ span {
 .App .ant-input-affix-wrapper {
   height: 35px;
 }
-/* .App .ant-form {
-  display: flex;
-  flex-direction: column;
-} */
 .Register {
   margin-left: 6px;
 }
@@ -183,9 +178,10 @@ footer {
     transform: rotate(360deg);
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
   .App {
-    margin-top: 160px;
+    margin-top: 40px;
+    /* border: 1px solid red; */
   }
   .react-logo {
     display: none;
