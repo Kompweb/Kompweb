@@ -6,27 +6,28 @@ export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <nav className="navigation">
-      <div className="kompweb">
-        <a href="/">{'Kompweb'}</a>
-        <p>React Solutions </p>
-      </div>
-      <button
-        className="hamburger"
-        onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-        }}
-      >
-        <img
-          className="react"
-          // viewBox="0 0 20 20"
-          // fill="white"
-          src={logo}
-          alt="logo"
-        />
+    <div className="navbar">
+      <nav className="navigation">
+        <div className="kompweb">
+          <a href="/">{'Kompweb'}</a>
+          <p>React Solutions </p>
+        </div>
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          <img
+            className="react"
+            // viewBox="0 0 20 20"
+            // fill="white"
+            src={logo}
+            alt="logo"
+          />
 
-        {/* icon from Heroicons.com */}
-        {/* <svg
+          {/* icon from Heroicons.com */}
+          {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
           viewBox="0 0 20 20"
@@ -38,27 +39,28 @@ export default function Navbar() {
             clipRule="evenodd"
           />
         </svg> */}
-      </button>
-      <div
-        className={
-          isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'
-        }
-      >
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/projects">Projects</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        </button>
+        <div
+          className={
+            isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'
+          }
+        >
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/projects">Projects</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   );
 }

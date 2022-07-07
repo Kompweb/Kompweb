@@ -1,110 +1,82 @@
+.navbar {
+  /* border: 1px solid red; */
+  height: auto;
+}
 .navigation {
-  /* position: relative; */
-  /* display: flex; */
-  width: 100%;
-  padding: 20px 0 0 20px;
+  text-decoration: none;
+}
+.kompweb {
+  padding: 3% 0 0 10%;
 }
 .kompweb a {
-  text-decoration: none;
-  font-size: calc(18px + 1.6vmin);
+  font-size: calc(16px + 1.3vmin);
   color: #61dafb;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding-left: 10px;
 }
 .kompweb a:hover {
   /* font-style: italic; */
-  border-bottom: 5px solid #03b7e9;
+  border-bottom: 4px solid #03b7e9;
   color: #ffffff;
 }
 .kompweb p {
-  color: #ffffff;
   letter-spacing: 0.2em;
-  font-size: calc(10px + 1vmin);
-  padding-left: 10px;
+  font-size: calc(10px + 0.5vmin);
   /* font-weight: 200; */
 }
+.navigation-menu li {
+  list-style-type: none;
+  text-align: right;
+  padding-bottom: 5px;
+  padding-right: 100px;
+  /* border: 1px solid red; */
+}
+.navigation-menu a {
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #4f4f4f;
+  color: #fff;
+  font-size: calc(14px + 0.2vmin);
+  /* font-weight: 200; */
+  letter-spacing: 0.3em;
+}
+
+.navigation-menu a:hover {
+  color: #61dafb;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #a1a1a1;
+  /* font-weight: 500; */
+  /* letter-spacing: 0.3em; */
+}
+.hamburger {
+  display: none;
+}
 .react {
-  height: 75px;
-  width: 75px;
+  height: 65px;
+  width: 65px;
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0;
   transform: translateY(-50%);
 }
-.navigation-menu {
-  margin-left: auto;
-}
-.navigation-menu ul {
-  font-size: calc(10px + 1vmin);
-}
-.navigation-menu ul li {
-  /* top: 0; */
-  /* left: 0; */
-  display: flex;
-  /* justify-content: left; */
-  /* text-align: right; */
-  font-size: calc(10px + 1vmin);
-  /* border: 2px solid #61dafb; */
-  margin-right: 0;
-  /* padding: 0; */
-}
-.navigation-menu li {
-  list-style-type: none;
-  padding: 5px;
-  width: 25%;
-  border-bottom: 1px dashed #4f4f4f;
-  color: rgb(255, 255, 255);
-  text-align: right;
-}
-.navigation-menu li:hover {
-  padding-bottom: 5px;
-  border-bottom: 1px dashed #a1a1a1;
-}
-.navigation-menu a {
-  /* right: 0; */
-  justify-content: right;
-  color: #fff;
-  /* font-size: calc(18px + 0.5vmin); */
-  /* font-weight: 200; */
-  letter-spacing: 0.3em;
-  /* right: 0; */
-  /* border: 1px solid red; */
-}
-.navigation-menu a:hover {
-  color: #61dafb;
-  /* font-weight: 500; */
-  /* letter-spacing: 0.4em; */
-}
-.hamburger {
-  display: none;
-}
-
 /* * * * * MEDIA * * * * * */
 
-@media screen and (max-width: 500px) {
-  .navigation {
-    height: auto;
-    max-height: 300px;
-    /* border: 1px solid red; */
-  }
+@media screen and (max-width: 760px) {
   .hamburger {
     position: absolute;
     display: block;
-    top: 5%;
-    right: 20px;
+    top: 4%;
+    right: 4%;
     border: 0;
-    height: 75px;
-    width: 75px;
-    padding: 0;
+    height: 65px;
+    width: 65px;
     border-radius: 50%;
     background-color: #282c34;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     transform: translateY(-50%);
-    /* display: none; */
+    /* border: 1px solid red; */
   }
   .hamburger:hover {
     background-color: rgb(29, 29, 29);
@@ -112,36 +84,23 @@
   .navigation-menu ul {
     display: none;
   }
-  .navigation-menu li a {
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+  .navigation-menu li {
     color: rgb(255, 255, 255);
-    font-size: calc(14px + 0.5vmin);
+    padding-right: 10px;
+    /* border: 1px solid red; */
+  }
+  .navigation-menu a {
+    margin-right: 20px;
+    /* font-size: calc(14px + 0.5vmin); */
     letter-spacing: 0.2em;
-    justify-content: right;
-    align-items: right;
-    text-align: right;
-    right: 0;
-    left: 0;
   }
   .navigation-menu li a:hover {
-    /* background-color: rgb(117, 117, 117); */
+    /* background-color: rgb(0, 0, 0); */
     color: #61dafb;
-    font-weight: 300;
-
-    /* border-bottom: 1px solid rgb(11, 122, 233); */
-  }
-  .navigation-menu.expanded ul {
-    justify-content: right;
-    /* text-align: right; */
-    /* right: 0; */
-    display: block;
-    margin: 0;
-    padding: 2px;
-    /* height: auto; */
-    /* max-height: 300px; */
-    /* overflow: hidden; */
-    /* border: 1px solid rgb(91, 24, 215); */
-    /* position: relative; */
-    /* top: -30%;
-    transform: translateY(30%); */
+    /* padding: 6px; */
+    /* font-weight: 300; */
   }
 }
