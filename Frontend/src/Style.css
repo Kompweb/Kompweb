@@ -180,7 +180,7 @@ footer {
 }
 @media screen and (max-width: 760px) {
   .App {
-    margin-top: 100px;
+    margin-top: 80px;
     /* border: 1px solid red; */
   }
   .react-logo {
