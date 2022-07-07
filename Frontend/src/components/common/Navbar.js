@@ -6,8 +6,8 @@ export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <div className="navbar">
-      <nav className="navigation">
+    <nav className="navigation">
+      <div className="navbar">
         <div className="kompweb">
           <a href="/">{'Kompweb'}</a>
           <p>React Solutions </p>
@@ -40,6 +40,7 @@ export default function Navbar() {
           />
         </svg> */}
         </button>
+
         <div
           className={
             isNavExpanded ? 'navigation-menu expanded' : 'navigation-menu'
@@ -60,7 +61,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }

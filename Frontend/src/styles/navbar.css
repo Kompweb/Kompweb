@@ -1,13 +1,11 @@
-.navbar {
-  /* border: 1px solid red; */
-  /* height: auto; */
-  margin: 25px;
-}
 .navigation {
   text-decoration: none;
+  /* border: 1px solid rgb(0, 255, 98); */
 }
 .kompweb {
-  padding: 5% 0 0 10%;
+  margin: 15px 20px;
+  padding: 0 20px;
+  /* border: 1px solid rgb(0, 255, 98); */
 }
 .kompweb a {
   font-size: calc(16px + 1.3vmin);
@@ -31,49 +29,43 @@
   font-size: calc(12px + 0.5vmin);
   /* font-weight: 200; */
 }
+.navigation-menu ul {
+  /* border: 1px solid red; */
+  margin: 0.5rem 1rem 0 0;
+}
 .navigation-menu li {
   list-style-type: none;
   text-align: right;
-  padding-bottom: 10px;
-  padding-right: 100px;
+  padding: 0 1rem 0.5rem 0;
   /* border: 1px solid red; */
 }
 .navigation-menu a {
   padding-bottom: 5px;
   border-bottom: 1px dashed #4f4f4f;
   color: #fff;
-  font-size: calc(14px + 0.2vmin);
+  font-size: calc(14px + 0.4vmin);
   /* font-weight: 200; */
   letter-spacing: 0.3em;
 }
-
 .navigation-menu a:hover {
   color: #61dafb;
   padding-bottom: 5px;
   border-bottom: 1px dashed #a1a1a1;
-  /* font-weight: 500; */
-  /* letter-spacing: 0.3em; */
+  font-weight: 900;
+  letter-spacing: 0.4em;
 }
 .hamburger {
   display: none;
 }
-.react {
-  height: 65px;
-  width: 65px;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-50%);
-}
+
 /* * * * * MEDIA * * * * * */
 
 @media screen and (max-width: 760px) {
   .hamburger {
     position: absolute;
     display: block;
-    top: 10%;
-    right: 6%;
+    top: 50px;
+    right: 30px;
     border: 0;
     height: 65px;
     width: 65px;
@@ -87,27 +79,35 @@
   .hamburger:hover {
     background-color: rgb(29, 29, 29);
   }
+  .react {
+    height: 100%;
+    /* margin: 0; */
+    /* padding: 0; */
+    width: 65px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .navigation-menu ul {
     display: none;
+    /* border: 1px solid red; */
   }
   .navigation-menu.expanded ul {
     display: block;
-    padding-top: 1px;
+    /* padding-top: 5px; */
+    /* margin-top: 100px; */
+    /* margin-right: 0; */
   }
   .navigation-menu li {
     color: rgb(255, 255, 255);
-    padding-right: 20px;
-    /* border: 1px solid red; */
   }
   .navigation-menu a {
-    /* margin-right: 16px; */
     /* font-size: calc(14px + 0.5vmin); */
     letter-spacing: 0.2em;
   }
   .navigation-menu li a:hover {
     /* background-color: rgb(0, 0, 0); */
     color: #61dafb;
-    /* padding: 6px; */
-    /* font-weight: 300; */
+    font-weight: 300;
   }
 }
