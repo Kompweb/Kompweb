@@ -1,5 +1,28 @@
 .shop-container {
-  display: flex;
-  flex-direction: column;
+  /* background-color: #fff; */
+  padding: 10px;
   /* border: 3px solid rgb(255, 0, 0); */
+}
+.shop-container img {
+  padding: 60px;
+  /* background-color: #333; */
+}
+/* .shop-container a {
+  color: #61dafb;
+} */
+/* .shop-container p {
+  padding-top: 10px;
+} */
+.shop-container div {
+  /* border: 1px solid red; */
+  padding: 2px 0 2px 0;
+  /* background-color: #000000; */
+  color: #fff;
+}
+.shop-container .ant-card-meta {
+  background-color: #121212;
+}
+.shop-container .ant-card {
+  border: 1px solid rgb(0, 0, 0);
+  /* background-color: #31353b; */
 }

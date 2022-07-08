@@ -23,9 +23,7 @@ const Shop = () => (
         >
           <Meta title="eCommerce" description="www.GitHub.com" />
         </Card>
-        <DemoBox value={280}>
-          <a style={{ color: 'aqua' }}>more info</a>
-        </DemoBox>
+        <DemoBox value={280}>{/* <a style={{}}>more info</a> */}</DemoBox>
         {/* </Col> */}
       </Row>
       <Row justify="center" align="top">
@@ -36,15 +34,13 @@ const Shop = () => (
           cover={
             <img
               alt="example"
-              src={require('../../assets/scribble-stadium.png')}
+              src={require('../../assets/scribble-stadium_987365.png')}
             />
           }
         >
           <Meta title="Game App" description="www.GitHub.com" />
         </Card>
-        <DemoBox value={280}>
-          <a style={{ color: 'aqua' }}>more info</a>
-        </DemoBox>
+        <DemoBox value={280}>{/* <a style={{}}>more info</a> */}</DemoBox>
         {/* <p>Description</p> */}
         {/* </Col> */}
       </Row>
@@ -54,14 +50,15 @@ const Shop = () => (
           hoverable
           style={{ width: 300 }}
           cover={
-            <img alt="example" src={require('../../assets/crypto-sign.png')} />
+            <img
+              alt="example"
+              src={require('../../assets/crypto-wallet.png')}
+            />
           }
         >
           <Meta title="Crypto App" description="www.GitHub.com" />
         </Card>
-        <DemoBox value={280}>
-          <a style={{ color: 'aqua' }}>more info</a>
-        </DemoBox>
+        <DemoBox value={280}>{/* <a style={{}}>more info</a> */}</DemoBox>
         {/* <p>Description</p> */}
         {/* </Col> */}
       </Row>
