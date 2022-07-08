@@ -16,12 +16,12 @@ const Shop = () => (
         {/* <Col span={4}> */}
         <Card
           hoverable
-          style={{ width: 300 }}
+          style={{ width: 280 }}
           cover={
             <img alt="example" src={require('../../assets/ghiveci-1.png')} />
           }
         >
-          <Meta title="eCommerce" description="www.GitHub.com" />
+          <Meta title="e-Commerce" description="" onClick={module} />
         </Card>
         <DemoBox value={280}>{/* <a style={{}}>more info</a> */}</DemoBox>
         {/* </Col> */}
@@ -30,7 +30,7 @@ const Shop = () => (
         {/* <Col span={4}> */}
         <Card
           hoverable
-          style={{ width: 300 }}
+          style={{ width: 280 }}
           cover={
             <img
               alt="example"
@@ -38,7 +38,7 @@ const Shop = () => (
             />
           }
         >
-          <Meta title="Game App" description="www.GitHub.com" />
+          <Meta title="Game App" description="" />
         </Card>
         <DemoBox value={280}>{/* <a style={{}}>more info</a> */}</DemoBox>
         {/* <p>Description</p> */}
@@ -48,7 +48,7 @@ const Shop = () => (
         {/* <Col span={4}> */}
         <Card
           hoverable
-          style={{ width: 300 }}
+          style={{ width: 280 }}
           cover={
             <img
               alt="example"
@@ -56,7 +56,7 @@ const Shop = () => (
             />
           }
         >
-          <Meta title="Crypto App" description="www.GitHub.com" />
+          <Meta title="Crypto App" description="" />
         </Card>
         <DemoBox value={280}>{/* <a style={{}}>more info</a> */}</DemoBox>
         {/* <p>Description</p> */}

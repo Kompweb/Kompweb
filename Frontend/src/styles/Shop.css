@@ -4,25 +4,42 @@
   /* border: 3px solid rgb(255, 0, 0); */
 }
 .shop-container img {
-  padding: 60px;
+  padding: 30px;
   /* background-color: #333; */
 }
-/* .shop-container a {
+.shop-container h1 {
   color: #61dafb;
-} */
+}
 /* .shop-container p {
   padding-top: 10px;
 } */
 .shop-container div {
   /* border: 1px solid red; */
-  padding: 2px 0 2px 0;
+  /* padding: 0; */
   /* background-color: #000000; */
   color: #fff;
 }
-.shop-container .ant-card-meta {
-  background-color: #121212;
+.ant-card-meta {
+  background-color: #2a2828;
+  padding: 4px 0;
+  border-radius: 25px;
+}
+.ant-card-meta:hover {
+  background-color: #1681e5;
+}
+.ant-card-meta-title {
+  padding: 4px;
 }
 .shop-container .ant-card {
-  border: 1px solid rgb(0, 0, 0);
-  /* background-color: #31353b; */
+  padding: 30px;
+  border: 0;
+  border: 2px solid #ffffff;
+  border-radius: 3%;
+  background-color: #aeb0b5;
+}
+.shop-container .ant-card-meta-detail {
+  padding: 0;
+}
+.ant-row {
+  margin: 20px;
 }

@@ -5,7 +5,7 @@ import Shop from './Shop';
 function Projects() {
   return (
     <div className="Projects">
-      <h1>Projects</h1>
+      <h1 style={{ color: '#61dafb' }}>Projects</h1>
       <Shop />
       {/* <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
