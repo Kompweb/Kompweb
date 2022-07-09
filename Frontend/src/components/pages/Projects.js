@@ -1,12 +1,17 @@
 import React from 'react';
+import '../../styles/Shop.css';
 import Languages from '../common/Languages';
-import SearchForm from './SearchForm';
-import Shop from './Shop';
+import SearchForm from '../common/SearchForm';
+import PotShop from './AllProjects/PotShop';
+import ScribleStadium from './AllProjects/ScribleStadium';
+import CryptoApp from './AllProjects/CryptoApp';
 function Projects() {
   return (
-    <div className="Projects">
+    <div className="projects">
       <h1 style={{ color: '#fff' }}>Projects</h1>
-      <Shop />
+      <PotShop />
+      <ScribleStadium />
+      <CryptoApp />
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industrys standard dummy text ever
