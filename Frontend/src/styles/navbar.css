@@ -1,11 +1,11 @@
 .navigation {
   text-decoration: none;
   /* border: 1px solid rgb(0, 255, 98); */
+  /* font-size: calc(14px + 0.5vmin); */
 }
 .kompweb {
   margin: 20px 20px;
   padding: 0 20px;
-  /* border: 1px solid rgb(0, 255, 98); */
 }
 .kompweb a {
   font-size: calc(16px + 1.3vmin);
@@ -15,7 +15,6 @@
   text-transform: uppercase;
 }
 .kompweb a:hover {
-  /* font-style: italic; */
   border-bottom: 4px solid #03b7e9;
   color: #ffffff;
   -webkit-transition: all 200ms ease;
@@ -27,38 +26,31 @@
 .kompweb p {
   letter-spacing: 0.2em;
   font-size: calc(12px + 0.5vmin);
-  /* font-weight: 200; */
 }
 .navigation-menu ul {
-  /* border: 1px solid red; */
-  margin: 0.5rem 0.7rem 0 0;
+  margin: 0.5rem 1rem 0 0;
 }
 .navigation-menu li {
   list-style-type: none;
   text-align: right;
   padding: 0 1rem 0.7rem 0;
-  /* border: 1px solid red; */
 }
 .navigation-menu a {
   padding-bottom: 5px;
-  border-bottom: 1px dashed #4f4f4f;
+  border-bottom: 1px dashed #757575;
   color: #fff;
   font-size: calc(14px + 0.4vmin);
-  /* font-weight: 200; */
   letter-spacing: 0.3em;
 }
 .navigation-menu a:hover {
   color: #61dafb;
   padding-bottom: 5px;
-  border-bottom: 1px dashed #a1a1a1;
-  font-weight: 900;
-  letter-spacing: 0.4em;
+  border-bottom: 1px dashed #ffffff;
+  font-weight: 600;
 }
 .hamburger {
   display: none;
 }
-
-/* * * * * MEDIA * * * * * */
 
 @media screen and (max-width: 760px) {
   .hamburger {
@@ -74,15 +66,12 @@
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     transform: translateY(-50%);
-    /* border: 1px solid red; */
   }
   .hamburger:hover {
-    background-color: rgb(29, 29, 29);
+    background-color: #333;
   }
   .react {
     height: 100%;
-    /* margin: 0; */
-    /* padding: 0; */
     width: 65px;
     position: absolute;
     top: 0;
@@ -90,24 +79,17 @@
   }
   .navigation-menu ul {
     display: none;
-    /* border: 1px solid red; */
   }
   .navigation-menu.expanded ul {
     display: block;
-    /* padding-top: 5px; */
-    /* margin-top: 100px; */
-    /* margin-right: 0; */
   }
   .navigation-menu li {
     color: rgb(255, 255, 255);
   }
   .navigation-menu a {
-    /* font-size: calc(14px + 0.5vmin); */
     letter-spacing: 0.2em;
   }
   .navigation-menu li a:hover {
-    /* background-color: rgb(0, 0, 0); */
     color: #61dafb;
-    font-weight: 300;
   }
 }
