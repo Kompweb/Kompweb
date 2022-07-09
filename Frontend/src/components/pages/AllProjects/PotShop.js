@@ -14,7 +14,7 @@ const PotShop = () => (
         {/* <Col span={4}> */}
         <Card
           hoverable
-          style={{ width: 260 }}
+          style={{ width: 240 }}
           cover={
             <img alt="example" src={require('../../../assets/ghiveci-1.png')} />
           }

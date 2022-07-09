@@ -21,7 +21,7 @@ const CryptoApp = () => (
         {/* <Col span={4}> */}
         <Card
           hoverable
-          style={{ width: 260 }}
+          style={{ width: 240 }}
           cover={
             <img
               alt="example"
