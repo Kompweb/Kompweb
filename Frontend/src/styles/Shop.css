@@ -1,43 +1,36 @@
+.projects p {
+  padding: 40px 60px;
+}
 .shop-container {
-  /* background-color: #fff; */
-  padding: 10px;
-  /* border: 3px solid rgb(255, 0, 0); */
+  /* background-color: #b4b4b4; */
+  padding-bottom: 20px;
+  /* border: 3px solid rgb(0, 0, 0); */
 }
-.shop-container img {
+.ant-card-cover img {
   padding: 50px;
-  background-color: #333;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 25px;
+  height: 300px;
 }
-/* .shop-container h1 { */
-/* color: #ffffff; */
-/* color: #61dafb; */
-/* } */
-.shop-container .card {
-  border-radius: 25px;
-}
-.shop-container div {
+.ant-card-meta-detail div {
   color: #fff;
 }
 .ant-card-meta {
-  background-color: #2a2828;
-  padding: 4px 0;
+  background-color: #282c34;
+  padding: 4px;
+  margin: 0 20px;
   border-radius: 25px;
 }
 .ant-card-meta:hover {
-  background-color: #1681e5;
+  background-color: #61dafb;
 }
 .ant-card-meta-title {
   padding: 4px;
 }
-.shop-container .ant-card {
-  /* padding: 20px; */
-  /* border: 2px solid #ffffff; */
-  border-radius: 25px;
+.ant-card-meta-title:hover {
+  color: #333;
 }
-.shop-container .ant-card-meta-detail {
-  padding: 0;
-  /* border: 1px solid red; */
+.shop-container .ant-card {
+  /* border: 2px solid #000000; */
+  border-radius: 25px;
 }
 .ant-row {
   margin: 10px;
