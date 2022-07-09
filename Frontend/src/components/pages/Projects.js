@@ -8,7 +8,7 @@ import CryptoApp from './AllProjects/CryptoApp';
 function Projects() {
   return (
     <div className="projects">
-      <h1 style={{ color: '#fff' }}>Projects</h1>
+      {/* <h1 style={{ color: '#fff' }}>Projects</h1> */}
       <PotShop />
       <ScribleStadium />
       <CryptoApp />

@@ -4,20 +4,19 @@
   /* border: 3px solid rgb(255, 0, 0); */
 }
 .shop-container img {
-  padding: 30px;
-  /* background-color: #333; */
+  padding: 50px;
+  background-color: #333;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 25px;
 }
 /* .shop-container h1 { */
 /* color: #ffffff; */
 /* color: #61dafb; */
 /* } */
-/* .shop-container p {
-  padding-top: 10px;
-} */
+.shop-container .card {
+  border-radius: 25px;
+}
 .shop-container div {
-  /* border: 1px solid red; */
-  /* padding: 0; */
-  /* background-color: #000000; */
   color: #fff;
 }
 .ant-card-meta {
@@ -32,15 +31,14 @@
   padding: 4px;
 }
 .shop-container .ant-card {
-  padding: 30px;
-  border: 0;
-  border: 2px solid #ffffff;
-  border-radius: 3%;
-  background-color: #dcdcdc;
+  /* padding: 20px; */
+  /* border: 2px solid #ffffff; */
+  border-radius: 25px;
 }
 .shop-container .ant-card-meta-detail {
   padding: 0;
+  /* border: 1px solid red; */
 }
 .ant-row {
-  margin: 20px;
+  margin: 10px;
 }

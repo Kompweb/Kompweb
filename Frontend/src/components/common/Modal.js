@@ -1,7 +1,7 @@
 import { Button, Modal } from 'antd';
 import { useState } from 'react';
 
-const Modalpop = () => {
+const ModalPop = () => {
   const [loading, setLoading] = useState(false);
   const [visible, setVisible] = useState(false);
 
@@ -24,9 +24,9 @@ const Modalpop = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal with customized footer
+        Open Modal
       </Button>
-      <Modalpop
+      <Modal
         visible={visible}
         title="Title"
         onOk={handleOk}
@@ -59,9 +59,9 @@ const Modalpop = () => {
         <p>Some contents...</p>
         <p>Some contents...</p>
         <p>Some contents...</p>
-      </Modalpop>
+      </Modal>
     </>
   );
 };
 
-export default Modal;
+export default ModalPop;
