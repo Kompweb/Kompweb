@@ -1,6 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import '../../Login.css';
+import '../../styles/Login.css';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Checkbox, Form, Input, Button } from 'antd';
 // import LoginButton from './LoginButton';

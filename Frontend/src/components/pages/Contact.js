@@ -1,81 +1,77 @@
-import React, { useState } from 'react';
-import '../../Style.css';
+import '../../styles/contact.css';
+import { Button, Form, Input } from 'antd';
+import React from 'react';
+const layout = {
+  labelCol: {
+    span: 8,
+  },
+  wrapperCol: {
+    span: 16,
+  },
+};
+/* eslint-disable no-template-curly-in-string */
 
-function ContactUs() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [text, setText] = useState('');
+const validateMessages = {
+  required: '${label} is required!',
+  types: {
+    email: '${label} is not a valid email!',
+    number: '${label} is not a valid number!',
+  },
+  number: {
+    range: '${label} must be between ${min} and ${max}',
+  },
+};
+/* eslint-enable no-template-curly-in-string */
 
-  //   const [password, setPassword] = useState('');
+const Contact = () => {
+  const onFinish = values => {
+    console.log(values);
+  };
+
   return (
     <div className="form-container">
-      <form className="contact-form">
-        <input
-          value={firstName}
-          onChange={e => setFirstName(e.target.value)}
-          placeholder="First name"
-          type="text"
-          name="firstName"
-          required
-        />
-        <input
-          value={lastName}
-          onChange={e => setLastName(e.target.value)}
-          placeholder="Last name"
-          type="text"
-          name="lastName"
-          required
-        />
-        <input
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          placeholder="Email address"
-          type="email"
-          name="email"
-          required
-        />
-        <input
-          value={text}
-          onChange={e => setText(e.target.value)}
-          placeholder="Message:"
-          type="text"
-          name="text"
-          required
-        />
-        {/* <input
-        value={password}
-        onChange={e => setPassword(e.target.value)}
-        placeholder="Password"
-        type="password"
-        name="password"
-        required
-      /> */}
-        <button type="submit">Submit</button>
-      </form>
+      <Form
+        {...layout}
+        name="nest-messages"
+        onFinish={onFinish}
+        validateMessages={validateMessages}
+      >
+        <Form.Item
+          name={['user', 'name']}
+          label="Name"
+          rules={[
+            {
+              required: true,
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item
+          name={['user', 'email']}
+          label="Email"
+          rules={[
+            {
+              type: 'email',
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
+        <Form.Item name={['user', 'website']} label="Website">
+          <Input />
+        </Form.Item>
+        <Form.Item name={['user', 'introduction']} label="Introduction">
+          <Input.TextArea />
+        </Form.Item>
+        <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
+          <Button type="primary" htmlType="submit">
+            Submit
+          </Button>
+        </Form.Item>
+      </Form>
     </div>
   );
-}
-export default ContactUs;
-// function ContactUs() {
-//   return (
-//     <div className="contact-us">
-//       <p>Coming soon...</p>
-//       <Form>Form here</Form>
-//       <SubmitForm />
-//       <p>
-//         Lorem Ipsum is simply dummy text of the printing and typesetting
-//         industry. Lorem Ipsum has been the industrys standard dummy text ever
-//         since the 1500s, when an unknown printer took a galley of type and
-//         scrambled it to make a type specimen book. It has survived not only five
-//         centuries, but also the leap into electronic typesetting, remaining
-//         essentially unchanged. It was popularised in the 1960s with the release
-//         of Letraset sheets containing Lorem Ipsum passages, and more recently
-//         with desktop publishing software like Aldus PageMaker including versions
-//         of Lorem Ipsum.
-//       </p>
-//     </div>
-//   );
-// }
+};
 
-// export default ContactUs;
+export default Contact;

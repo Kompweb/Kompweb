@@ -8,19 +8,16 @@
   margin-top: 120px;
   /* border: 1px solid red; */
 }
-/* .container {
-  border: 3px solid #818181;
-} */
-p {
+.kompweb p {
   color: rgb(255, 255, 255);
   /* font-size: calc(14px + 0.5vmin); */
 }
-span {
+.home-header span {
   color: white;
   /* font-size: calc(14px + 0.5vmin); */
   margin: 0;
 }
-.ant-btn-primary span {
+.App .ant-btn-primary span {
   /* font-size: calc(16px + 0.5vmin); */
   color: rgb(0, 0, 0);
 }
@@ -38,7 +35,6 @@ span {
 }
 @media (prefers-reduced-motion: no-preference) {
   .react {
-    /* margin: 5% 0 5% 0; */
     animation: App-logo-spin infinite 20s linear;
   }
   .react:hover {
@@ -47,7 +43,6 @@ span {
 }
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
-    /* margin: 5% 0 5% 0; */
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -75,14 +70,6 @@ span {
 .Register {
   margin-left: 6px;
 }
-/* h1 {
-  font-size: calc(10px + 1.5vmin);
-  color: #61dafb;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-  margin-bottom: -8px;
-  text-transform: uppercase;
-} */
 
 .link-client {
   /* font-size: calc(10px + 0.5vmin); */
@@ -94,8 +81,6 @@ span {
   color: #61dafb;
 }
 .languages img {
-  /* display: inline-block; */
-  /* padding-top: 20px; */
   margin: 30px 1vmin;
   width: calc(30px + 1.5vmin);
 }
@@ -105,71 +90,23 @@ span {
 .App .login-form a {
   color: #61dafb;
 }
-/* .Contact-us {
-  color: #ffffff;
-  margin-top: 20px;
-  padding-bottom: 5px;
-  font-size: calc(16px + 0.5vmin);
-  border-bottom: 1px dashed #1890ff;
-}
-.Contact-us:hover {
-  color: #1890ff;
-  border-bottom: 1px solid #ffffff;
-  padding-bottom: 5px;
-} */
-.Projects {
-  /* color: red; */
-  width: 100%;
-  /* color: #fff; */
-}
-.Projects h1 {
-  color: white;
-}
-.Projects p {
-  width: 78%;
-}
-.contact-form input {
-  padding: 5px;
-  margin: 10px 40px;
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  /* border: 1px solid red; */
-}
+
 footer {
-  /* position: fixed; */
   bottom: 0;
-  margin: 5% 0 5% 0;
-  width: 100%;
-  display: flex;
-  /* flex-direction: column; */
-  /* font-size: calc(14px + 0.5vmin); */
+  /* display: fixed; */
+  /* margin: 5%; */
+  /* width: 100%; */
+  padding: 20px 0;
+  text-align: center;
   color: #fff;
-  /* letter-spacing: 0.1em; */
+  letter-spacing: 0.1em;
 }
 .search-form button {
   font-size: calc(12px + 0.5vmin);
-  margin: 0;
-  /* width: calc(21px + 1vmin); */
+  /* margin: 0; */
+  width: calc(58px + 1vmin);
 }
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 0.3em;
-  font-size: calc(12px + 0.4vmin);
-  /* font-weight: 600; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* padding-top: 30px; */
-  /* border: 1px solid red; */
-  width: 400px;
-}
-.contact-form button {
-  margin: 20px;
-  color: rgb(0, 0, 0);
-  background-color: #1890ff;
-  width: 100px;
-}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

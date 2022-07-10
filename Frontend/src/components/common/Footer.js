@@ -1,4 +1,3 @@
-// import '../../styles/Footer.less';
 // import ContactForm from '../pages/Contact';
 // import Languages from './Languages';
 export default function Footer() {
