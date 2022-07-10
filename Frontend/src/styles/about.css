@@ -1,0 +1,12 @@
+.about-us {
+  color: #fff;
+  margin: 10px;
+  padding: 20px;
+}
+.about-us h1 {
+  color: white;
+}
+.about-us p {
+  border: 2px solid rgb(71, 71, 71);
+  padding: 20px;
+}
