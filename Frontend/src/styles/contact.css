@@ -1,0 +1,44 @@
+.form-container .ant-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  /* border: 2px solid gray; */
+  /* background-color: red; */
+}
+.form-container label {
+  color: #fff;
+}
+.form-container .ant-row {
+  padding: 6px 0;
+}
+.form-container .ant-form-item-control-input {
+  width: 300px;
+  margin: 0;
+}
+.form-container .ant-input {
+  border: 2px solid rgb(0, 0, 0);
+  padding-top: 10px;
+}
+@media screen and (max-width: 760px) {
+  .form-container .ant-row {
+    padding: 0;
+  }
+}
+@media (max-width: 575px) {
+  .form-container .ant-form-item-control-input {
+    width: 100%;
+  }
+  .form-container .ant-form-item-label {
+    padding: 0;
+  }
+  .form-container .ant-row {
+    text-align: center;
+    padding: 0 40px;
+  }
+  .form-container div {
+    margin: 0;
+  }
+  .form-container button {
+    margin-top: 20px;
+  }
+}

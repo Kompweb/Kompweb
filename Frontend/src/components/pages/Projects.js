@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Shop.css';
+import '../../styles/Projects.css';
 import Languages from '../common/Languages';
 import SearchForm from '../common/SearchForm';
 import PotShop from './AllProjects/PotShop';
