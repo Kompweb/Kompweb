@@ -1,5 +1,6 @@
 // import logo from './assets/logo.svg';
-import './Style.css';
+import './styles/style.css';
+import './styles/global.css';
 import React from 'react';
 import Navbar from './components/common/Navbar';
 import NavRoutes from '../src/utils/routes';

@@ -1,12 +1,9 @@
-* {
-  box-sizing: border-box;
-  max-width: 960px;
-  margin: auto;
-}
 .App {
   text-align: center;
   margin-top: 120px;
   /* border: 1px solid red; */
+  /* position: relative; */
+  /* min-height: 100vh; */
 }
 .kompweb p {
   color: rgb(255, 255, 255);
@@ -21,9 +18,9 @@
   /* font-size: calc(16px + 0.5vmin); */
   color: rgb(0, 0, 0);
 }
-.App .anticon {
+/* .App .anticon {
   color: rgb(159, 156, 156);
-}
+} */
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
     height: calc(3vmin + 12vmin);
@@ -50,27 +47,9 @@
   display: flex;
   flex-direction: column;
 }
-
-.App .ant-btn-primary {
-  height: 35px;
-  width: 70%;
-  margin-bottom: 10px;
-  background-color: #61dafb;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5%;
-}
-.App .ant-btn-primary:hover {
-  background-color: #ffffff;
-  border: 2px solid #61dafb;
-}
-.App .ant-input-affix-wrapper {
-  height: 35px;
-}
 .Register {
   margin-left: 6px;
 }
-
 .link-client {
   /* font-size: calc(10px + 0.5vmin); */
   color: #ffffff;
@@ -90,21 +69,13 @@
 .App .login-form a {
   color: #61dafb;
 }
-
 footer {
-  bottom: 0;
-  /* display: fixed; */
-  /* margin: 5%; */
-  /* width: 100%; */
   padding: 20px 0;
   text-align: center;
   color: #fff;
-  letter-spacing: 0.1em;
-}
-.search-form button {
-  font-size: calc(12px + 0.5vmin);
-  /* margin: 0; */
-  width: calc(58px + 1vmin);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 @keyframes App-logo-spin {

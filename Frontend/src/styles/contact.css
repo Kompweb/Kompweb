@@ -1,23 +1,48 @@
-.form-container .ant-form {
+.ant-form {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  align-items: center;
+  /* justify-content: center; */
+  /* padding-top: 40px; */
   /* border: 2px solid gray; */
   /* background-color: red; */
 }
 .form-container label {
   color: #fff;
+  /* align-items: right; */
+  /* border: 2px solid gray; */
 }
-.form-container .ant-row {
-  padding: 6px 0;
+.ant-row {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* border: 2px solid gray; */
+  width: 320px;
 }
 .form-container .ant-form-item-control-input {
   width: 300px;
-  margin: 0;
+  /* margin: 0; */
 }
 .form-container .ant-input {
   border: 2px solid rgb(0, 0, 0);
-  padding-top: 10px;
+  /* padding-top: 20px; */
+}
+.App .ant-btn-primary {
+  font-size: calc(16px + 0.2vmin);
+  background-color: #61dafb;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  margin-top: 40px;
+  padding: 10px 0;
+  height: auto;
+  width: 200px;
+}
+.App .ant-btn-primary:hover {
+  background-color: #ffffff;
+  border: 2px solid #61dafb;
+}
+.App .ant-input-affix-wrapper {
+  height: 35px;
 }
 @media screen and (max-width: 760px) {
   .form-container .ant-row {
@@ -37,8 +62,5 @@
   }
   .form-container div {
     margin: 0;
-  }
-  .form-container button {
-    margin-top: 20px;
   }
 }

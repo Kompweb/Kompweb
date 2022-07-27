@@ -9,7 +9,6 @@ const layout = {
     span: 16,
   },
 };
-/* eslint-disable no-template-curly-in-string */
 
 const validateMessages = {
   required: '${label} is required!',
@@ -21,7 +20,6 @@ const validateMessages = {
     range: '${label} must be between ${min} and ${max}',
   },
 };
-/* eslint-enable no-template-curly-in-string */
 
 const Contact = () => {
   const onFinish = values => {

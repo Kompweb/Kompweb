@@ -17,7 +17,7 @@ function AdminDashboard() {
         >
           Client Log-in
         </a>
-        <Login />
+        {/* <Login /> */}
       </header>
       <Languages />
       <Footer />

@@ -1,3 +1,9 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .projects p {
   padding: 40px 60px;
   color: #fff;

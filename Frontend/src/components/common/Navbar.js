@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../../styles/navbar.css';
 import logo from '../../../src/assets/logo.svg';
+import SearchForm from './SearchForm';
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -9,9 +10,13 @@ export default function Navbar() {
     <nav className="navigation">
       <div className="navbar">
         <div className="kompweb">
-          <a href="/">{'Kompweb'}</a>
-          <p>React Solutions </p>
+          <div>
+            <a href="/">{'Kompweb'}</a>
+            <p>React Solutions </p>
+          </div>
+          <SearchForm />
         </div>
+
         <button
           className="hamburger"
           onClick={() => {

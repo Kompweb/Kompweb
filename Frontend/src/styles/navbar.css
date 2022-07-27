@@ -1,11 +1,15 @@
 .navigation {
   text-decoration: none;
+  /* display: block; */
+  /* flex-direction: row; */
   /* border: 1px solid rgb(0, 255, 98); */
   /* font-size: calc(14px + 0.5vmin); */
 }
 .kompweb {
-  margin: 20px 20px;
-  padding: 0 20px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; */
+  padding: 40px 0 0 40px;
 }
 .kompweb a {
   font-size: calc(16px + 1.3vmin);
@@ -15,7 +19,7 @@
   text-transform: uppercase;
 }
 .kompweb a:hover {
-  border-bottom: 4px solid #03b7e9;
+  border-bottom: 4px solid #61dafb;
   color: #ffffff;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -27,9 +31,10 @@
   letter-spacing: 0.2em;
   font-size: calc(12px + 0.5vmin);
 }
-.navigation-menu ul {
-  margin: 0.5rem 1rem 0 0;
-}
+/* .navigation-menu ul { */
+/* display: flex; */
+/* margin: 2rem 20rem 0 0; */
+/* } */
 .navigation-menu li {
   list-style-type: none;
   text-align: right;
@@ -56,23 +61,23 @@
   .hamburger {
     position: absolute;
     display: block;
-    top: 50px;
+    top: 30px;
     right: 30px;
     border: 0;
-    height: 65px;
-    width: 65px;
+    height: 75px;
+    width: auto;
     border-radius: 50%;
     background-color: #282c34;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-    transform: translateY(-50%);
+    /* transform: translateY(-25%); */
   }
   .hamburger:hover {
     background-color: #333;
   }
   .react {
     height: 100%;
-    width: 65px;
+    width: 75px;
     position: absolute;
     top: 0;
     right: 0;
@@ -82,6 +87,7 @@
   }
   .navigation-menu.expanded ul {
     display: block;
+    margin-right: 1rem;
   }
   .navigation-menu li {
     color: rgb(255, 255, 255);
@@ -91,5 +97,9 @@
   }
   .navigation-menu li a:hover {
     color: #61dafb;
+  }
+  .hamburger button {
+    margin: 0;
+    padding: 0;
   }
 }

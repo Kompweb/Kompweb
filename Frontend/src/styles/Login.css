@@ -1,3 +1,29 @@
 .login-form {
   width: auto;
+  /* border: 2px solid red; */
+}
+.ant-input-affix-wrapper {
+  font-size: 21px;
+  padding: 10px 10px;
+}
+.ant-form input {
+  /* font-size: 18px; */
+  padding: 10px 10px;
+}
+.login-form svg {
+  color: black;
+  margin-right: 10px;
+}
+
+.ant-form-item {
+  padding: 6px 0;
+}
+
+.login-form .ant-btn {
+  padding: 0 50px;
+  height: 2.5rem;
+  /* width: 100px; */
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  font-size: 16px;
 }

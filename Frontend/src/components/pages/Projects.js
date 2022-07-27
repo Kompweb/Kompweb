@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/Projects.css';
 import Languages from '../common/Languages';
-import SearchForm from '../common/SearchForm';
+// import SearchForm from '../common/SearchForm';
 import PotShop from './AllProjects/PotShop';
 import ScribleStadium from './AllProjects/ScribleStadium';
 import CryptoApp from './AllProjects/CryptoApp';
@@ -19,7 +19,7 @@ function Projects() {
         scrambled it to make a type specimen book.
       </p>
       <Languages />
-      <SearchForm />
+      {/* <SearchForm /> */}
     </div>
   );
 }

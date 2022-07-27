@@ -1,18 +1,23 @@
 import React from 'react';
 import '../../styles/about.css';
-import SearchForm from '../common/SearchForm';
+import Framer from '../common/FrameMotion';
+// import SearchForm from '../common/SearchForm';
 
 export default function AboutUs() {
   return (
     <div className="about-us">
-      <h1>About US Coming soon...</h1>
+      <h1>About US</h1>
       <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industrys standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
+        Kompweb US-based React developers have the expertise required to help
+        organizations consistently deliver mission-critical applications at the
+        speed required.
       </p>
-      <SearchForm />
+      <Framer />
+      <div className="b-content">
+        <a>Partner with Kompweb</a>
+        <h4>We guarantee the success of your React project</h4>
+      </div>
+      {/* <SearchForm className="search-form" /> */}
     </div>
   );
 }
