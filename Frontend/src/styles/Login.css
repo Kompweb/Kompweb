@@ -1,29 +1,24 @@
 .login-form {
   width: auto;
   /* border: 2px solid red; */
-}
-.ant-input-affix-wrapper {
-  font-size: 21px;
-  padding: 10px 10px;
-}
-.ant-form input {
-  /* font-size: 18px; */
-  padding: 10px 10px;
+  /* font-size: calc(16px + 0.5vmin); */
 }
 .login-form svg {
   color: black;
   margin-right: 10px;
+  font-size: 18px;
 }
-
-.ant-form-item {
-  padding: 6px 0;
+.ant-input-affix-wrapper > input.ant-input {
+  padding: 8px 20px;
 }
-
-.login-form .ant-btn {
-  padding: 0 50px;
-  height: 2.5rem;
-  /* width: 100px; */
+.ant-btn-primary {
+  font-size: calc(16px + 0.2vmin);
   border: 2px solid rgb(0, 0, 0);
   border-radius: 25px;
-  font-size: 16px;
+  width: 10rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+.ant-btn-primary span {
+  color: rgb(0, 0, 0);
 }

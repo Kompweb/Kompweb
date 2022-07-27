@@ -38,7 +38,9 @@
 .navigation-menu li {
   list-style-type: none;
   text-align: right;
-  padding: 0 1rem 0.7rem 0;
+  margin-top: -75px;
+  padding: 0 5rem 5rem 0;
+  color: rgb(255, 255, 255);
 }
 .navigation-menu a {
   padding-bottom: 5px;
@@ -90,7 +92,10 @@
     margin-right: 1rem;
   }
   .navigation-menu li {
-    color: rgb(255, 255, 255);
+    /* list-style-type: none; */
+    text-align: right;
+    padding: 0 1rem 0.7rem 0;
+    margin: 0;
   }
   .navigation-menu a {
     letter-spacing: 0.2em;
