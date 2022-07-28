@@ -1,13 +1,10 @@
 import '../../styles/contact.css';
 import { Button, Form, Input } from 'antd';
 import React from 'react';
+
 const layout = {
-  labelCol: {
-    span: 8,
-  },
-  wrapperCol: {
-    span: 16,
-  },
+  labelCol: { span: 8 },
+  wrapperCol: { span: 16 },
 };
 
 const validateMessages = {
@@ -28,6 +25,7 @@ const Contact = () => {
 
   return (
     <div className="form-container">
+      <h1>Contact Us</h1>
       <Form
         {...layout}
         name="nest-messages"
