@@ -5,18 +5,15 @@
 }
 .login-form svg {
   color: black;
-  margin-right: 10px;
-  font-size: 18px;
 }
 .ant-input-affix-wrapper > input.ant-input {
-  padding: 8px 20px;
+  padding: 4px 16px;
 }
 .ant-btn-primary {
   font-size: calc(16px + 0.2vmin);
   border: 2px solid rgb(0, 0, 0);
   border-radius: 25px;
-  width: 10rem;
-  height: 2.5rem;
+  height: 2rem;
   margin-bottom: 1rem;
 }
 .ant-btn-primary span {
