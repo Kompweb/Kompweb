@@ -12,11 +12,15 @@ export default function AboutUs() {
         organizations consistently deliver mission-critical applications at the
         speed required.
       </p>
+      <a>Explore Projects</a>
+
       <Framer />
       <div className="b-content">
         <a>Partner with Kompweb</a>
         <h4>We guarantee the success of your React project</h4>
       </div>
+      <Framer />
+
       {/* <SearchForm className="search-form" /> */}
     </div>
   );
