@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/about.css';
-import Framer from '../common/FrameMotion';
+// import Framer from '../common/FrameMotion';
 // import SearchForm from '../common/SearchForm';
 
 export default function AboutUs() {
@@ -12,14 +12,16 @@ export default function AboutUs() {
         organizations consistently deliver mission-critical applications at the
         speed required.
       </p>
-      <a>Explore Projects</a>
+      <a href="/projects/"> Explore Projects</a>
 
-      <Framer />
+      {/* <Link to="/projects">Explore Projects</Link> */}
+
+      {/* <Framer /> */}
       <div className="b-content">
-        <a>Partner with Kompweb</a>
+        <h3>Partner with Kompweb</h3>
         <h4>We guarantee the success of your React project</h4>
       </div>
-      <Framer />
+      {/* <Framer /> */}
 
       {/* <SearchForm className="search-form" /> */}
     </div>

@@ -16,20 +16,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: rgb(255, 255, 255);
+}
 h1 {
   font-size: calc(18px + 1.5vmin);
-  color: rgb(255, 255, 255);
 }
 h2 {
   font-size: calc(16px + 1.2vmin);
-  color: rgb(255, 255, 255);
+}
+h3 {
+  font-size: calc(16px + 1vmin);
 }
 h4 {
   font-size: calc(16px + 0.1vmin);
-  color: rgb(255, 255, 255);
 }
 p {
-  color: rgb(255, 255, 255);
   font-size: calc(16px + 0.1vmin);
 }
 
