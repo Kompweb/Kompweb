@@ -1,0 +1,27 @@
+.framer {
+  margin-top: 60px;
+}
+.card {
+  /* background: rgb(202, 214, 220); */
+  margin: 1rem 2rem;
+  /* padding: 20px; */
+  /* padding: 2rem 5rem 2rem 5rem; */
+  /* border: 2px solid rgb(0, 0, 0); */
+  /* border-radius: 25px; */
+}
+.card p {
+  padding: 2rem 3rem;
+  /* margin: 10px 0; */
+  background: rgb(235, 237, 238);
+  border-radius: 25px;
+  color: black;
+  /* border: 1px solid rgb(0, 0, 0); */
+  box-shadow: 0 0 4px 4px #61dafb;
+  /* transition-delay: 3s;
+  transition-property: margin-right; */
+}
+.icons {
+  font-size: 86px;
+  color: #61dafb;
+  padding: 20px;
+}

@@ -6,21 +6,6 @@
   /* border: 2px solid rgb(71, 71, 71); */
   padding: 10px 50px;
 }
-.card {
-  /* background: rgb(202, 214, 220); */
-  margin: 1rem 2rem;
-  padding: 2rem 5rem 2rem 5rem;
-  border: 2px solid rgb(88, 87, 87);
-  /* border-radius: 25px; */
-}
-.card p {
-  padding: 2rem 3rem;
-  margin: 10px 0;
-  background: rgb(213, 241, 255);
-  border-radius: 25px;
-  color: black;
-  border: 2px solid rgb(0, 0, 0);
-}
 .about-us a {
   font-size: 24px;
   /* border: 1px solid rgb(115, 115, 115); */
