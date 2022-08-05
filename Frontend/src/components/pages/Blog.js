@@ -5,6 +5,7 @@ function Blog() {
   return (
     <div>
       <h1>soon...</h1>
+      <p>contact us</p>
       <BugOutlined
         style={{
           //   color: 'white',
