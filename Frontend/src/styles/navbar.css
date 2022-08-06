@@ -9,7 +9,7 @@
   /* display: flex;
   flex-direction: row;
   justify-content: space-evenly; */
-  padding: 40px 0 0 40px;
+  padding: 30px 0 0 40px;
 }
 .kompweb a {
   font-size: calc(16px + 1.3vmin);
@@ -31,15 +31,15 @@
   letter-spacing: 0.2em;
   font-size: calc(12px + 0.5vmin);
 }
-/* .navigation-menu ul { */
-/* display: flex; */
-/* margin: 2rem 20rem 0 0; */
-/* } */
+.navigation-menu ul {
+  margin-top: -140px;
+  /* display: flex; */
+  /* margin: 2rem 20rem 0 0; */
+}
 .navigation-menu li {
   list-style-type: none;
   text-align: right;
-  margin-top: -75px;
-  padding: 0 5rem 5rem 0;
+  padding: 0 2rem 1rem 0;
   color: rgb(255, 255, 255);
 }
 .navigation-menu a {
@@ -63,7 +63,7 @@
   .hamburger {
     position: absolute;
     display: block;
-    top: 30px;
+    top: 20px;
     right: 30px;
     border: 0;
     height: 75px;
@@ -89,13 +89,15 @@
   }
   .navigation-menu.expanded ul {
     display: block;
-    margin-right: 1rem;
+    margin: 0;
+
+    /* margin-right: 1rem; */
   }
   .navigation-menu li {
     /* list-style-type: none; */
-    text-align: right;
-    padding: 0 1rem 0.7rem 0;
-    margin: 0;
+    /* text-align: right; */
+    padding: 0 2rem 0.7rem 0;
+    /* margin: 0; */
   }
   .navigation-menu a {
     letter-spacing: 0.2em;

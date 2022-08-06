@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../styles/about.css';
+import { DownCircleOutlined } from '@ant-design/icons';
+
 // import Framer from '../common/FrameMotion';
 // import SearchForm from '../common/SearchForm';
 
@@ -12,6 +14,10 @@ export default function AboutUs() {
         organizations consistently deliver mission-critical applications at the
         speed required.
       </p>
+      <a href="/projects/">
+        <DownCircleOutlined className="icons" />
+      </a>
+      <br />
       <a href="/projects/"> Explore Projects</a>
 
       {/* <Link to="/projects">Explore Projects</Link> */}

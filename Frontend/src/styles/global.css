@@ -4,6 +4,7 @@
   margin: auto;
   padding: 0;
   letter-spacing: 0.1em;
+  max-height: 100vh;
 }
 .body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -52,4 +53,16 @@ button {
   border-radius: 25px;
   width: 200px;
   height: 2.5rem;
+}
+.icons {
+  font-size: 46px;
+  color: #61dafb;
+  /* padding: 10px; */
+}
+.icons:hover {
+  /* color: #ffffff; */
+  /* font-size: 96px; */
+  border-radius: 25px;
+  box-shadow: 0 0 50px 0 #61dafb;
+  cursor: pointer;
 }

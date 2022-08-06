@@ -29,7 +29,7 @@ const CryptoApp = () => (
             />
           }
         >
-          <Meta title="Crypto App" description="" />
+          <Meta title="Blockchain" description="" />
         </Card>
         {/* <DemoBox value={280}> */}
         {/* <a style={{}}>more info</a> */}

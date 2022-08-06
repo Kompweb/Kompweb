@@ -17,15 +17,16 @@ function Projects() {
         <ScribleStadium />
         <CryptoApp />
       </div>
-      <Framer />
-      <div className="bottom-container">
-        <h2>Online Dashboards</h2>
-        <p>
-          Anytime and anywhere, our customers can track their progress to see
-          when theyll reach their next milestone.
-        </p>
-        <DashboardOutlined className="icons" />
-
+      <div className="projects-l">
+        <Framer />
+        <div className="bottom-container">
+          <h2>Online Dashboards</h2>
+          <p>
+            Anytime and anywhere, our customers can track their progress to see
+            when theyll reach their next milestone.
+          </p>
+          <DashboardOutlined className="icons" />
+        </div>
         {/* <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industrys standard dummy text ever

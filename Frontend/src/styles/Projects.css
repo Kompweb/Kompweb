@@ -1,31 +1,32 @@
 .projects {
   justify-content: center;
   align-items: center;
-  padding: 10px 60px;
+  /* border: 2px solid rgb(0, 0, 0); */
+  /* background-color: #b4b4b4; */
 }
 .projects-list {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  /* border: 2px solid rgb(0, 0, 0); */
+}
+.projects-l {
+  border-bottom: 1px solid rgb(200, 200, 200);
 }
 .bottom-container {
-  margin: 1rem 2rem;
   padding: 20px;
 }
-.projects p {
-  color: #fff;
-}
 .shop-container {
-  /* background-color: #b4b4b4; */
   padding-bottom: 20px;
-  /* border: 3px solid rgb(0, 0, 0); */
 }
 .ant-card-cover img {
-  padding: 40px;
-  height: 280px;
+  padding: 35px;
+  height: 260px;
 }
 .ant-card-meta-detail div {
   color: #fff;
+}
+.ant-card-meta-detail div:hover {
+  color: rgb(0, 0, 0);
 }
 .ant-card-meta {
   background-color: #282c34;
@@ -37,13 +38,13 @@
   background-color: #61dafb;
 }
 .ant-card-meta-title {
-  padding: 4px;
-}
-.ant-card-meta-title:hover {
-  color: #333;
+  padding: 6px 0;
 }
 .shop-container .ant-card {
   border-radius: 25px;
+}
+.shop-container .ant-card:hover {
+  box-shadow: 0 0 0 6px #61dafb;
 }
 .ant-row {
   margin: 10px;

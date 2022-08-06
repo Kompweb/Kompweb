@@ -16,12 +16,10 @@
   border-radius: 25px;
   color: black;
   /* border: 1px solid rgb(0, 0, 0); */
-  box-shadow: 0 0 4px 4px #61dafb;
+  box-shadow: 0 0 100px 4px #61dafb;
   /* transition-delay: 3s;
   transition-property: margin-right; */
 }
-.icons {
-  font-size: 86px;
-  color: #61dafb;
-  padding: 20px;
+.anticon {
+  margin-bottom: 20px;
 }

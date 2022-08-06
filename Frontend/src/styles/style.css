@@ -1,13 +1,9 @@
 .App {
   text-align: center;
-  /* margin-top: 10px; */
+  margin-top: 100px;
   /* border: 1px solid red; */
   /* position: relative; */
-  /* min-height: 100vh; */
-}
-.kompweb p {
-  /* color: rgb(255, 255, 255); */
-  /* font-size: calc(14px + 0.5vmin); */
+  max-height: 100vh;
 }
 .home-header span {
   color: white;
@@ -66,10 +62,10 @@
   color: #61dafb;
 }
 footer {
-  padding: 20px 0;
+  padding: 60px 0 20px 0;
   text-align: center;
   color: #fff;
-  /* position: absolute; */
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
