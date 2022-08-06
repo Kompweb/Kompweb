@@ -7,13 +7,13 @@
   color: black;
 }
 .ant-input-affix-wrapper > input.ant-input {
-  padding: 4px 16px;
+  padding: 6px 16px;
 }
 .ant-btn-primary {
   font-size: calc(16px + 0.2vmin);
   border: 2px solid rgb(0, 0, 0);
   border-radius: 25px;
-  height: 2rem;
+  height: 2.5rem;
   margin-bottom: 1rem;
 }
 .ant-btn-primary span {
