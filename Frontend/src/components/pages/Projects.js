@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Projects.css';
+
 import Languages from '../common/Languages';
 // import SearchForm from '../common/SearchForm';
 import PotShop from './AllProjects/PotShop';
@@ -7,6 +8,7 @@ import ScribleStadium from './AllProjects/ScribleStadium';
 import CryptoApp from './AllProjects/CryptoApp';
 import Framer from '../common/FrameMotion';
 import { DashboardOutlined } from '@ant-design/icons';
+import { Counter } from '../../features/counter/Counter';
 
 function Projects() {
   return (
@@ -27,6 +29,7 @@ function Projects() {
           </p>
           <DashboardOutlined className="icons" />
         </div>
+        <Counter />
         {/* <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industrys standard dummy text ever
