@@ -8,14 +8,14 @@ export function Counter() {
 
   return (
     <div>
-      <h2>Redux Toolkit with React-Redux</h2>
+      <h3>Redux Toolkit with React-Redux</h3>
       <div className={styles.row}>
         <button
           className={styles.button}
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
-          Increment
+          +
         </button>
         <span className={styles.value}>{count}</span>
         <button
@@ -23,7 +23,7 @@ export function Counter() {
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
-          Decrement
+          -
         </button>
       </div>
     </div>
