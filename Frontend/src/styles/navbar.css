@@ -9,7 +9,7 @@
   /* display: flex;
   flex-direction: row;
   justify-content: space-evenly; */
-  padding: 30px 0 0 40px;
+  padding: 30px 0 0 30px;
 }
 .kompweb a {
   font-size: calc(16px + 1.3vmin);
@@ -68,7 +68,7 @@
     border: 0;
     height: 75px;
     width: 75px;
-    border-radius: 25%;
+    border-radius: 50%;
     background-color: #282c34;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
@@ -90,23 +90,15 @@
   .navigation-menu.expanded ul {
     display: block;
     margin: 0;
-
-    /* margin-right: 1rem; */
+    padding-top: 6px;
   }
   .navigation-menu li {
-    /* list-style-type: none; */
-    /* text-align: right; */
-    padding: 0 1.8rem 0.7rem 0;
-    /* margin: 0; */
+    padding: 0 1.5rem 0.5rem 0;
   }
   .navigation-menu a {
     letter-spacing: 0.2em;
   }
   .navigation-menu li a:hover {
     color: #61dafb;
-  }
-  .hamburger button {
-    margin: 0;
-    padding: 0;
   }
 }

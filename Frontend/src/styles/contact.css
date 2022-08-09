@@ -21,15 +21,6 @@
   border: 2px solid rgb(0, 0, 0);
   padding-top: 10px;
 }
-/* .App .ant-btn-primary { */
-.ant-form-item-control-input-content button {
-  font-size: calc(16px + 0.2vmin);
-  background-color: #61dafb;
-}
-.App .ant-btn-primary:hover {
-  background-color: #ffffff;
-  border: 2px solid #61dafb;
-}
 
 @media screen and (max-width: 760px) {
   .form-container .ant-row {

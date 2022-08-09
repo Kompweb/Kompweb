@@ -60,6 +60,7 @@
 .App .login-form a {
   color: #61dafb;
 }
+
 /* // footer needs a height of min 250px and links - stick it in the bottom */
 footer {
   padding: 0 0 20px 0;
@@ -86,7 +87,7 @@ footer {
 }
 @media screen and (max-width: 760px) {
   .App {
-    margin-top: 80px;
+    margin-top: 60px;
     /* border: 1px solid red; */
   }
   .react-logo {
