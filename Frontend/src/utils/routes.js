@@ -6,6 +6,7 @@ import Home from '../components/pages/Home';
 import AboutUs from '../components/pages/About';
 import Contact from '../components/pages/Contact';
 import Blog from '../components/pages/Blog';
+import Blockchain from '../components/pages/Blockchain';
 function NavRoutes() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function NavRoutes() {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blockchain" element={<Blockchain />} />
       </Routes>
     </div>
   );

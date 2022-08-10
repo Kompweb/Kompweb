@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../styles/about.css';
 import { DownCircleOutlined } from '@ant-design/icons';
-// import Framer from '../common/FrameMotion';
 
 export default function AboutUs() {
   return (
@@ -17,7 +16,6 @@ export default function AboutUs() {
       </a>
       <br />
       <a href="/projects/"> Explore Projects</a>
-      {/* <Framer /> */}
       <div className="b-content">
         <h3>Partner with Kompweb</h3>
         <p>We guarantee the success of your React project</p>
