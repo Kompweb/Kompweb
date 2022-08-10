@@ -1,14 +1,14 @@
 import React from 'react';
-import '../../styles/Projects.css';
+import '../../styles/projects.css';
 
 import Languages from '../common/Languages';
-// import SearchForm from '../common/SearchForm';
 import PotShop from './AllProjects/PotShop';
 import ScribleStadium from './AllProjects/ScribleStadium';
 import CryptoApp from './AllProjects/CryptoApp';
 import Framer from '../common/FrameMotion';
 import { DashboardOutlined } from '@ant-design/icons';
 import { Counter } from '../../features/counter/Counter';
+import Crypto from './AllProjects/Crypto';
 
 function Projects() {
   return (
@@ -38,6 +38,8 @@ function Projects() {
       </p> */}
       </div>
       <Languages />
+      {/* <Coin /> */}
+      <Crypto />
       {/* <SearchForm /> */}
     </div>
   );
