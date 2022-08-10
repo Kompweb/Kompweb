@@ -10,7 +10,7 @@ const CryptoApp = () => (
     <div className="shop-container">
       <Row justify="center" align="top">
         {/* <Col span={4}> */}
-        <Link to={'/'}>
+        <Link to={'/blockchain'}>
           <Card
             hoverable
             // style={{ width: 240 }}
