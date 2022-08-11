@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function AdminDashboard() {
   return (
-    <div className="projects">
+    <div className="admin-dashboards">
       <h4>Online Dashboards</h4>
       <p>
         Anytime and anywhere, our customers can track their progress to see when

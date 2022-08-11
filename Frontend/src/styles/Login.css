@@ -1,8 +1,7 @@
-.login-form {
-  width: auto;
-  /* border: 2px solid red; */
-  /* font-size: calc(16px + 0.5vmin); */
-}
+/* .login-form { */
+/* border: 2px solid red; */
+/* font-size: calc(16px + 0.5vmin); */
+/* } */
 .login-form svg {
   color: black;
 }
@@ -10,8 +9,8 @@
   padding: 6px 16px;
 }
 
-/* @media screen and (max-width: 760px) {
+@media screen and (max-width: 760px) {
   .ant-form-item-control:first-child:not([class^='ant-col-']):not([class*=' ant-col-']) {
     padding: 10px;
   }
-} */
+}
