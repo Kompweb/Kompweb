@@ -1,6 +1,6 @@
-.framer {
-  margin-top: 60px;
-}
+/* .framer { */
+/* margin: 60px 30px 0; */
+/* } */
 .card {
   /* background: rgb(202, 214, 220); */
   margin: 1rem 2rem;
@@ -10,7 +10,7 @@
   /* border-radius: 25px; */
 }
 .card p {
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   /* margin: 10px 0; */
   background: rgb(235, 237, 238);
   border-radius: 25px;
@@ -22,4 +22,9 @@
 }
 .anticon {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 760px) {
+  .framer {
+    margin: 20px 20px;
+  }
 }

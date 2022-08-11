@@ -26,8 +26,14 @@
   .form-container .ant-row {
     padding: 0;
   }
+  .ant-form-item {
+    margin: 0;
+  }
+  .ant-form-item .ant-form-item-label {
+    padding: 0;
+  }
 }
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .form-container .ant-form-item-control-input {
     width: 100%;
   }

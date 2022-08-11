@@ -8,7 +8,7 @@ export function Counter() {
 
   return (
     <div>
-      <h3>Redux Toolkit with React-Redux</h3>
+      <h4>Redux Toolkit with React-Redux</h4>
       <div className={styles.row}>
         <button
           className={styles.button}

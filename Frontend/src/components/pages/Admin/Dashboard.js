@@ -1,14 +1,11 @@
 import React from 'react';
-import Navbar from './components/common/Navbar';
-import Languages from './components/common/Languages';
-import Footer from './components/common/Footer';
+import Languages from '../../common/Languages';
 
 function AdminDashboard() {
   return (
     <div className="Dashboard">
-      <Navbar />
       <header className="admin-header">
-        <h1>KOMPWEB</h1>
+        <h1>ADMIN</h1>
         <a
           className="App-link-client"
           href="/projects"
@@ -20,7 +17,6 @@ function AdminDashboard() {
         {/* <Login /> */}
       </header>
       <Languages />
-      <Footer />
     </div>
   );
 }

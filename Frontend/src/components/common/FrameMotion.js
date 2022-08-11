@@ -8,7 +8,7 @@ function Framer() {
 
   return (
     <div className="framer">
-      <h2>Framer Motion</h2>
+      <h4>Framer Motion</h4>
       <p>
         Framer Motion is a production-ready motion library for React from
         Framer.

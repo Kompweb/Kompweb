@@ -7,6 +7,7 @@ import AboutUs from '../components/pages/About';
 import Contact from '../components/pages/Contact';
 import Blog from '../components/pages/Blog';
 import Blockchain from '../components/pages/Blockchain';
+import Admin from '../components/pages/Admin/Dashboard';
 function NavRoutes() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function NavRoutes() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blockchain" element={<Blockchain />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </div>
   );
