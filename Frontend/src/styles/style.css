@@ -9,9 +9,6 @@
   /* font-size: calc(14px + 0.5vmin); */
   margin: 0;
 }
-/* .App .anticon {
-  color: rgb(159, 156, 156);
-} */
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
     height: calc(3vmin + 12vmin);
@@ -42,7 +39,6 @@
   margin-left: 6px;
 }
 .link-client {
-  /* font-size: calc(10px + 0.5vmin); */
   color: #ffffff;
   margin: 20px 0 10px 0;
   letter-spacing: 0.1em;
