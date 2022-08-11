@@ -5,8 +5,8 @@ import Crypto from './AllProjects/Crypto';
 export default function Blockchain() {
   return (
     <div className="blockchain">
-      <h1>CoinGeico API using Axios</h1>
-      <p>A simple API to display blockchain currencies.</p>
+      <h1>Axios API</h1>
+      <p>to display blockchain currencies.</p>
       <Crypto />
     </div>
   );
