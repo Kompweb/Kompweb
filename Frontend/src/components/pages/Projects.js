@@ -7,7 +7,6 @@ import CryptoApp from './AllProjects/CryptoApp';
 import Framer from '../common/FrameMotion';
 import { DashboardOutlined } from '@ant-design/icons';
 import { Counter } from '../../features/counter/Counter';
-// import Crypto from './AllProjects/Crypto';
 
 function Projects() {
   return (
@@ -31,7 +30,6 @@ function Projects() {
         <Counter />
       </div>
       <Languages />
-      {/* <Crypto /> */}
     </div>
   );
 }
