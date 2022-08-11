@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 60px 0;
+  margin: 20px 0 60px 0;
 }
 .value {
   font-size: 28px;
@@ -15,21 +15,17 @@
   border-radius: 50px;
   box-shadow: 0 0 100px 2px #61dafb;
 }
-
+/* .redux-counter h4 {
+  background-color: red;
+  margin-top: 40px;
+} */
 .button {
   width: 4rem;
-  height: 100%;
   /* appearance: none; */
   border: none;
-  /* background: none; */
-  /* justify-content: center; */
-  /* align-items: center; */
   font-size: 24px;
-  /* padding: 0 18px; */
   /* outline: none; */
-  /* border: 2px solid rgb(4, 206, 228); */
   color: rgb(255, 255, 255);
-  padding-bottom: 4px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.208);
   border-radius: 25px;

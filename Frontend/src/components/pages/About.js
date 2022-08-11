@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/about.css';
 import { DownCircleOutlined } from '@ant-design/icons';
+import Langs from '../common/Languages';
 
 export default function AboutUs() {
   return (
@@ -19,6 +20,7 @@ export default function AboutUs() {
       <div className="b-content">
         <h3>Partner with Kompweb</h3>
         <p>We guarantee the success of your React project</p>
+        <Langs />
       </div>
     </div>
   );

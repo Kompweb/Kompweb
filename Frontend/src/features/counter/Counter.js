@@ -2,12 +2,13 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { decrement, increment } from './counterSlice';
 import styles from '../../styles/counter.module.css';
+
 export function Counter() {
   const count = useSelector(state => state.counter.value);
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="redux-counter">
       <h4>Redux Toolkit with React</h4>
       <div className={styles.row}>
         <button
