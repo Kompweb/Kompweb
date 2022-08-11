@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styles/projects.css';
-import Languages from '../common/Languages';
 import PotShop from './AllProjects/PotShop';
 import ScribleStadium from './AllProjects/ScribleStadium';
 import CryptoApp from './AllProjects/CryptoApp';
@@ -8,6 +7,7 @@ import Framer from '../common/FrameMotion';
 import { DashboardOutlined } from '@ant-design/icons';
 import { Counter } from '../../features/counter/Counter';
 import { Link } from 'react-router-dom';
+import Languages from '../common/Languages';
 
 function Projects() {
   return (

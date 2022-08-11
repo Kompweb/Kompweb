@@ -1,5 +1,6 @@
 import React from 'react';
 import Languages from '../../common/Languages';
+import Login from '../../common/Login';
 
 function AdminDashboard() {
   return (
@@ -14,7 +15,7 @@ function AdminDashboard() {
         >
           Client Log-in
         </a>
-        {/* <Login /> */}
+        <Login />
       </header>
       <Languages />
     </div>

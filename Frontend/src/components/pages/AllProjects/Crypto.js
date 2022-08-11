@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import '../../../styles/crypto.css';
 import axios from 'axios';
 import Coin from './Coin';
-import '../../../styles/crypto.css';
 
 function Coins() {
   const [coins, setCoins] = useState([]);

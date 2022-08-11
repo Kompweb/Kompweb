@@ -9,3 +9,6 @@
 .ant-input-affix-wrapper > input.ant-input {
   padding: 6px 16px;
 }
+.ant-form-item-control:first-child:not([class^='ant-col-']):not([class*=' ant-col-']) {
+  padding: 10px;
+}
