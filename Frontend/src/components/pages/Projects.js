@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/projects.css';
+import '../../styles/projects.list.css';
 import Framer from '../common/FrameMotion';
 import { Counter } from '../../features/counter/Counter';
 import Dashboard from '../../features/Dashboards';
