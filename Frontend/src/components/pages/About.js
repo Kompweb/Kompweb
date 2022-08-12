@@ -19,6 +19,9 @@ export default function AboutUs() {
       <a href="/projects/"> Explore Projects</a>
       <div className="b-content">
         <h3>Partner with Kompweb</h3>
+        <button className="about-button" styles="vertical-align:middle">
+          <span>Contact </span>
+        </button>
         <p>We guarantee the success of your React project</p>
         <Langs />
       </div>

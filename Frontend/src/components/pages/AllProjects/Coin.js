@@ -19,7 +19,7 @@ const Coin = ({
           <p className="coin-symbol">{symbol}</p>
         </div>
         <div className="coin-data">
-          <p className="coin-price">${price}</p>
+          <p className="coin-price">${price.toLocaleString()}</p>
           <p className="coin-volume">Vol: {volume?.toLocaleString()}</p>
 
           {priceChange < 0 ? (

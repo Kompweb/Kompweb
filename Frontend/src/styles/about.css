@@ -8,11 +8,6 @@
 }
 .about-us a {
   font-size: 24px;
-  /* border: 1px solid rgb(115, 115, 115); */
-  /* border-radius: 25px; */
-  /* padding: 10px 20px; */
-  /* margin-bottom: 20px; */
-  /* background: rgb(0, 0, 0); */
 }
 .about-us a:hover {
   text-decoration: underline;
@@ -20,10 +15,37 @@
 .b-content {
   padding-top: 20px;
 }
-
-.card button {
-  margin-bottom: 20px;
+.about-button {
+  /* color: #000000; */
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
 }
+
+.about-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.about-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  /* color: #000000; */
+}
+.about-button:hover span {
+  padding-right: 25px;
+}
+.about-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 @media screen and (max-width: 760px) {
   .about-us p {
     /* border: 2px solid rgb(71, 71, 71); */
