@@ -15,8 +15,8 @@ function ProjectList() {
       </div>
       <div className="projects-l">
         <div className="bottom-container">
-          <Framer />
           <Counter />
+          <Framer />
           <Dashboard />
         </div>
       </div>
