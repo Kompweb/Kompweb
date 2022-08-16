@@ -15,7 +15,9 @@
 .ant-card-meta {
   margin: 0 20px;
   border-radius: 25px;
-  border: 2px solid rgb(204, 208, 212);
+  box-shadow: 2px 2px 1px 1px #ababab, rgb(255, 255, 255) 4px 4px 4px 2px inset;
+
+  border: 1px solid rgb(238, 239, 241);
 }
 .ant-card-meta:hover {
   background-color: #61dafb;
@@ -28,12 +30,12 @@
 }
 .shop-container .ant-card {
   border-radius: 25px;
-  border: 2px solid #8e9e9d;
+  border: 1px solid #8e9e9d;
   box-shadow: #02dbfd 0px 0px 2px 2px, rgb(0, 0, 0) 0px 10px 32px 8px;
 }
 .shop-container .ant-card:hover {
-  border: 2px solid #000000;
-  box-shadow: 0 0 20px 10px #61dafb;
+  border: 1px solid #000000;
+  box-shadow: 0 0 6px 4px #61dafb;
 }
 .bottom-container {
   border-bottom: 1px solid rgb(200, 200, 200);

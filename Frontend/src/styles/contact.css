@@ -21,7 +21,47 @@
   border: 2px solid rgb(0, 0, 0);
   padding-top: 10px;
 }
+.contact-btn {
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px;
+  font-size: calc(16px + 0.2vmin);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  width: 200px;
+  height: 2.5rem;
+  background: #282c34;
+  color: #61dafb;
+  box-shadow: 0 0 8px 1px #61dafb, rgb(149, 149, 149) 1px 1px 4px 0 inset;
+}
+.contact-btn:hover {
+  color: #ffffff;
+  border: 1px solid rgb(139, 139, 139);
+  box-shadow: 0 0 24px 2px #61dafb, rgb(0, 0, 0) 0 2px 2px 0 inset;
+}
+.contact-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
+.contact-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  /* color: #000000; */
+}
+.contact-btn:hover span {
+  padding-right: 25px;
+}
+.contact-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 @media screen and (max-width: 760px) {
   .form-container .ant-row {
     padding: 0;

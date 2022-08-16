@@ -12,7 +12,7 @@ function NavRoutes() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/home" element={<Home />} />
