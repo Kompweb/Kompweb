@@ -1,5 +1,5 @@
 .login-form svg {
-  color: black;
+  color: rgb(69, 71, 72);
 }
 .ant-input-affix-wrapper > input.ant-input {
   padding: 8px 16px;
@@ -14,13 +14,13 @@
   width: 200px;
   height: 2.3rem;
   background-color: #282c34;
-  color: #ffffff;
+  /* color: #ffffff; */
   box-shadow: 0 0 2px 1px #61dafb, rgb(87, 87, 87) 2px 3px 4px 0 inset;
 }
 
 .login-btn:hover {
   background-color: #282c34;
-  /* color: #61dafb; */
+  /* color: #f80606; */
   border: 1px solid rgb(139, 139, 139);
   box-shadow: 0 0 16px 1px #61dafb, rgb(0, 0, 0) 0 2px 2px 0 inset;
 }

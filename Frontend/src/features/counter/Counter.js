@@ -12,7 +12,7 @@ export function Counter() {
       <h4>Redux Toolkit with React</h4>
       <div className={styles.row}>
         <button
-          className={styles.button}
+          className={styles.btn}
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
@@ -20,7 +20,7 @@ export function Counter() {
         </button>
         <span className={styles.value}>{count}</span>
         <button
-          className={styles.button}
+          className={styles.btn}
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >

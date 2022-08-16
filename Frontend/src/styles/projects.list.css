@@ -3,20 +3,17 @@
   flex-wrap: wrap;
 }
 .shop-container {
-  padding-bottom: 100px;
+  margin-bottom: 60px;
 }
 .ant-card-cover img {
   padding: 50px;
-  height: 280px;
+  height: 260px;
 }
-.ant-card-meta-detail div {
-  color: rgb(0, 0, 0);
-}
+
 .ant-card-meta {
   margin: 0 20px;
   border-radius: 25px;
   box-shadow: 2px 2px 1px 1px #ababab, rgb(255, 255, 255) 4px 4px 4px 2px inset;
-
   border: 1px solid rgb(238, 239, 241);
 }
 .ant-card-meta:hover {
@@ -31,7 +28,7 @@
 .shop-container .ant-card {
   border-radius: 25px;
   border: 1px solid #8e9e9d;
-  box-shadow: #02dbfd 0px 0px 2px 2px, rgb(0, 0, 0) 0px 10px 32px 8px;
+  box-shadow: #61dafb 0px 0px 2px 2px, rgb(0, 0, 0) 8px 8px 40px 4px;
 }
 .shop-container .ant-card:hover {
   border: 1px solid #000000;
@@ -40,28 +37,26 @@
 .bottom-container {
   border-bottom: 1px solid rgb(200, 200, 200);
 }
+.framer {
+  margin-bottom: 20px;
+}
 .admin-dashboards {
-  margin: 40px 20px;
-  padding: 10px 20px;
+  margin-bottom: 20px;
+  /* padding: 10px 20px; */
 }
-.redux-counter {
-  margin: 80px 0 40px 0;
-}
+/* .redux-counter { */
+/* margin: 80px 0 40px 0; */
+/* } */
+
 @media screen and (max-width: 760px) {
-  .shop-container {
-    padding-bottom: 40px;
-  }
-  .shop-container .ant-card:hover {
-    box-shadow: 0 0 20px 6px #61dafb;
-  }
   .bottom-container {
-    margin: 60px 40px 0 40px;
-  }
-  .admin-dashboards {
-    margin-bottom: 20px;
+    /* padding-bottom: 20px; */
     padding: 0 20px;
   }
-  .projects {
-    margin-bottom: 20px;
+  /* .shop-container .ant-card:hover {
+    box-shadow: 0 0 20px 6px #61dafb;
+  } */
+  .admin-dashboards {
+    margin-bottom: 60px;
   }
 }

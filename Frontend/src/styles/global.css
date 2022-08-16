@@ -47,6 +47,7 @@ a {
 button {
   font-size: calc(16px + 0.2vmin);
   cursor: pointer;
+  background: #61dafb;
 }
 .icons {
   font-size: 46px;
