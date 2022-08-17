@@ -3,7 +3,7 @@
   max-width: 960px;
   margin: auto;
   letter-spacing: 0.1em;
-  height: auto;
+  /* height: auto; */
 }
 body {
   background-color: #282c34;

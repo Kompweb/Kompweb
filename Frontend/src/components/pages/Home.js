@@ -4,6 +4,7 @@ import React from 'react';
 // import Login from '../../components/common/Login';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Checkbox, Form, Input, Button } from 'antd';
+// import Languages from '../common/Languages';
 
 function Home() {
   const onFinish = values => {
@@ -69,6 +70,7 @@ function Home() {
         </Form.Item>
       </Form>
       {/* <Login /> */}
+      {/* <Languages /> */}
     </div>
   );
 }

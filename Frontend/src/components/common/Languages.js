@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Langs() {
+function Languages() {
   return (
     <div className="languages">
       <img
@@ -49,4 +49,4 @@ function Langs() {
   );
 }
 
-export default Langs;
+export default Languages;

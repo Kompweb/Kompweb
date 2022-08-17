@@ -8,11 +8,6 @@ function Framer() {
 
   return (
     <div className="framer">
-      <h4>Framer Motion</h4>
-      <p>
-        Framer Motion is a production-ready motion library for React from
-        Framer.
-      </p>
       <motion.div onClick={() => setIsOpen(!isOpen)} className="card">
         <PoweroffOutlined className="icons" />
         {isOpen && (
@@ -27,7 +22,12 @@ function Framer() {
             <p>click again to close framer</p>
           </motion.div>
         )}
+        <h4 onClick={() => setIsOpen(!isOpen)}>Framer Motion</h4>
       </motion.div>
+      <p>
+        Framer Motion is a production-ready motion library for React from
+        Framer.
+      </p>
     </div>
   );
 }
