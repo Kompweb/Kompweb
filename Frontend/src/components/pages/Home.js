@@ -1,4 +1,5 @@
 import logo from '../../../src/assets/logo.svg';
+import '../../styles/Login.css';
 import React from 'react';
 // import Login from '../../components/common/Login';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
@@ -61,7 +62,7 @@ function Home() {
             Log in
           </Button>
           <br />
-          <span>Or</span>
+          <span>Or</span>{' '}
           <a className="Register" href="/contact">
             register now!
           </a>

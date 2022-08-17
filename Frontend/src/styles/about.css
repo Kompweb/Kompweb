@@ -12,9 +12,29 @@
 .about-us a:hover {
   text-decoration: underline;
 }
+
 .b-content {
   padding-top: 20px;
+  overflow-x: hidden;
 }
+.b-content p {
+  font-weight: bold;
+  color: #fbfbfb;
+  animation-name: rightToLeft;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  /* animation: rightToLeft 4.5s linear infinite; */
+}
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(400px);
+  }
+  /* 100% {
+    transform: translateX(0);
+  } */
+}
+
 .about-button {
   transition: all 0.5s;
   cursor: pointer;

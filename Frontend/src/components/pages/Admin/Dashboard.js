@@ -9,7 +9,7 @@ function AdminDashboard() {
       <header className="admin-header">
         {/* <h1>ADMIN</h1> */}
         <a
-          className="App-link-client"
+          className="sign-up-client"
           href="/admin"
           target="_blank"
           rel="noopener noreferrer"

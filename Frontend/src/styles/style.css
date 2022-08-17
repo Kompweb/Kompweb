@@ -41,6 +41,10 @@
 .link-client:hover {
   color: #61dafb;
 }
+.sign-up-client {
+  letter-spacing: 0.2em;
+  font-size: calc(14px + 0.5vmin);
+}
 .languages img {
   margin: 30px 1vmin;
   width: calc(30px + 1.5vmin);

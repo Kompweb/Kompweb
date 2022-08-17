@@ -71,7 +71,7 @@ export default function App() {
         <form>
           <label>
             <input
-              className="user-name"
+              className="placeholders"
               onChange={change}
               value={form.name}
               name="name"
@@ -81,7 +81,7 @@ export default function App() {
           </label>
           <div className="movies-checkbox">
             <label>
-              Basic:
+              Basic
               <input
                 onChange={change}
                 checked={form.star === 'trek'}
@@ -104,7 +104,7 @@ export default function App() {
 
           <label htmlFor="emailInput">
             <input
-              className="user-name"
+              className="placeholders"
               id="emailInput"
               type="email"
               name="email"
@@ -114,20 +114,21 @@ export default function App() {
 
           <label htmlFor="passwordInput">
             <input
-              className="user-name"
+              className="placeholders"
               id="passwordInput"
               type="password"
               name="password"
               placeholder="Password"
             />
           </label>
+
           <div className="conditions">
             <label htmlFor="termsInput">
-              Terms and conditions:
+              Terms and conditions
               <input id="termsInput" type="checkbox" name="terms" />
             </label>
             <label>
-              Newsletter subscribe:
+              Newsletter subscribe
               <input
                 onChange={change}
                 checked={form.agree}
@@ -151,83 +152,3 @@ export default function App() {
     </div>
   );
 }
-
-// export default function App() {
-//   // const [user, setUser] = useState({ username: '', password: '' });
-//   const [form, setForm] = useState({
-//     user: '',
-//     star: '',
-//     agree: false,
-//     language: '',
-//   });
-
-//   const change = event => {
-//     const { checked, value, name, type } = event.target;
-//     const valueToUse = type === 'checkbox' ? checked : value;
-//     setForm({ ...form, [name]: valueToUse });
-//   };
-
-//   // const [form, setForm] = useState({
-//   //   user: '',
-//   //   ageRange: '',
-//   //   state: '',
-//   //   isGoing: false,
-//   // });
-
-//   // const handleChange = event => {
-//   //   if (/^[a-zA-Z]+$/.test(event.target.value)) {
-//   //     setUser({ ...user, [event.target.name]: event.target.value });
-//   //   }
-//   // };
-
-//   // const handleSubmit = event => {
-//   //   event.preventDefault();
-//   //   setUser({ username: '', password: '' });
-//   // };
-
-//   return (
-//     <div className="react-form">
-//       {console.log(user)}
-//       <form onSubmit={event => handleSubmit(event)}>
-//         <label>
-//           <input
-//             type="text"
-//             placeholder="Username"
-//             value={user.username}
-//             onChange={event => handleChange(event)}
-//           />
-//           <br />
-//         </label>
-//         <label>
-//           <input
-//             type="password"
-//             placeholder="Password"
-//             value={user.password}
-//             onChange={event => handleChange(event)}
-//           />
-//         </label>
-//         <br />
-
-//         <label className="b-form">
-//           <input type="checkbox" name="anotherOne" checked={false} />
-//           <input
-//             value={form.user}
-//             name="user"
-//             type="text"
-//             onChange={handleChange}
-//           />
-//           Remember me
-//           {' | '}
-//           <a href="/contact">Forgat password</a>
-//         </label>
-//         <label className="c-form">
-//           <button type="primary" htmltype="submit" className="login-btn">
-//             Log in
-//           </button>
-//           <span>Or</span>
-//           <a href="/contact">register now!</a>
-//         </label>
-//       </form>
-//     </div>
-//   );
-// }
