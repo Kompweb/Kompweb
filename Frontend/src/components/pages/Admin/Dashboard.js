@@ -1,23 +1,24 @@
 import React from 'react';
-import Languages from '../../common/Languages';
+import '../../../styles/style.css';
+// import Languages from '../../common/Languages';
 import Login from '../../common/Login';
 
 function AdminDashboard() {
   return (
-    <div className="Dashboard">
+    <div className="admin-dashboard">
       <header className="admin-header">
-        <h1>ADMIN</h1>
+        {/* <h1>ADMIN</h1> */}
         <a
           className="App-link-client"
-          href="/projects"
+          href="/admin"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Client Log-in
+          Sign Up
         </a>
         <Login />
       </header>
-      <Languages />
+      {/* <Languages /> */}
     </div>
   );
 }

@@ -1,8 +1,6 @@
 .App {
   text-align: center;
   margin-top: 100px;
-  /* border: 1px solid red; */
-  /* position: relative; */
 }
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
@@ -33,9 +31,6 @@
 .home-header span {
   color: white;
   margin: 0;
-}
-.Register {
-  margin-left: 6px;
 }
 .link-client {
   color: #ffffff;
