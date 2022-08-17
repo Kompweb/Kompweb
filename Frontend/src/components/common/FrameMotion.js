@@ -16,7 +16,7 @@ function Framer() {
               Its simple yet powerful, allowing you to express complex user
               interactions with robust, semantic markup. The core of the library
               is the motion component. Think of it as a plain HTML or SVG
-              element, supercharged with animation capabilities.
+              element, supercharged with animation capabilities
             </p>
             <br />
             <p>click again to close framer</p>
@@ -25,8 +25,7 @@ function Framer() {
         <h4 onClick={() => setIsOpen(!isOpen)}>Framer Motion</h4>
       </motion.div>
       <p>
-        Framer Motion is a production-ready motion library for React from
-        Framer.
+        Framer Motion is a production-ready motion library for React from Framer
       </p>
     </div>
   );

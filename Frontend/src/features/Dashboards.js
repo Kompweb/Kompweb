@@ -12,7 +12,7 @@ function AdminDashboard() {
       </Link>
       <p>
         Anytime and anywhere, our customers can track their progress to see when
-        theyll reach their next milestone.
+        theyll reach their next milestone
       </p>
     </div>
   );

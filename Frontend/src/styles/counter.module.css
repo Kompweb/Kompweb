@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0 20px 0;
 }
 .value {
   font-size: 22px;
@@ -10,24 +9,20 @@
   /* color: #ffffff; */
   padding: 6px 0;
   margin: 0 26px;
-  background-color: rgb(235, 235, 235);
-  border: 1px solid rgb(77, 71, 71);
-  border-radius: 14px;
-  box-shadow: 0 0 16px 0 #61dafb;
-
-  /* box-shadow: rgb(255, 255, 255) 1px 4px 4 2px inset; */
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 18px 0 #000000, 0 0 4px 0 #3e3c3c inset;
 }
 .btn {
-  width: 2.4rem;
-  padding: 0;
-  margin: 0;
-  height: auto;
-  font-size: 30px;
+  width: 2.6rem;
+  padding: 8px;
+  font-size: 22px;
   color: #ffffff;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #413d3d;
-  box-shadow: 0 0 6px 0 #61dafb, rgb(74, 74, 74) 2px 2px 6px 0 inset;
+  background-color: #282c34;
+  border: 1px solid #282c34;
+  box-shadow: 0 0 6px 0 #61dafb, rgb(74, 74, 74) 0 0 4px 1px inset;
   border-radius: 50px;
 }
 
@@ -44,10 +39,11 @@
 }
 
 .resetBtn {
-  width: 14rem;
+  font-size: 22px;
+  width: 10rem;
   padding: 0;
-  margin-top: 20px;
-  height: 40px;
+  margin-top: 40px;
+  height: 46px;
   border: none;
   /* outline: none; */
   color: #ffffff;
@@ -56,10 +52,8 @@
   border: 1px solid #413d3d;
   box-shadow: 0 0 6px 0 #61dafb, rgb(74, 74, 74) 2px 2px 6px 0 inset;
   border-radius: 25px;
-  margin-bottom: 40px;
 }
 .resetBtn:focus {
-  /* border: none; */
   border: 1px solid #61dafb;
   box-shadow: 0 0 100px 4px #000000;
   background-color: rgba(225, 225, 225, 0.2);
