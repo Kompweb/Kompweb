@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  margin-top: 100px;
-  /* height: 100vw; */
+  margin-top: 60px;
+  min-height: 100vw;
 }
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
@@ -53,7 +53,7 @@
 
 /* // footer needs a height of min 250px and links - stick it in the bottom */
 footer {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 20px;
   text-align: center;
   color: #fff;
@@ -62,8 +62,7 @@ footer {
   /* position: relative; */
   /* position: absolute; */
   bottom: 0;
-  /* width: 1200px; */
-  min-height: 200px;
+  /* min-height: 200px; */
   /* background-color: rgb(30, 28, 28); */
   /* height: auto; */
 }
@@ -78,7 +77,7 @@ footer {
 }
 @media screen and (max-width: 760px) {
   .App {
-    margin-top: 60px;
+    margin-top: 80px;
     /* border: 1px solid red; */
   }
   .react-logo {

@@ -2,15 +2,12 @@ import logo from '../../../src/assets/logo.svg';
 import '../../styles/Login.css';
 import React from 'react';
 // import Login from '../../components/common/Login';
-import { LockOutlined, UserOutlined } from '@ant-design/icons';
-import { Checkbox, Form, Input, Button } from 'antd';
+// import { LockOutlined, UserOutlined } from '@ant-design/icons';
+// import { Checkbox, Form, Input, Button } from 'antd';
+import LoginForm from '../common/Login';
 // import Languages from '../common/Languages';
 
 function Home() {
-  const onFinish = values => {
-    console.log('Received values of form: ', values);
-  };
-
   return (
     <div className="home-header">
       <img src={logo} className="react-logo" alt="logo" />
@@ -22,7 +19,7 @@ function Home() {
       >
         Client Log-in
       </a>
-      <Form
+      {/* <Form
         name="normal_login"
         className="login-form"
         initialValues={{
@@ -68,9 +65,10 @@ function Home() {
             register now!
           </a>
         </Form.Item>
-      </Form>
+      </Form> */}
       {/* <Login /> */}
       {/* <Languages /> */}
+      <LoginForm />
     </div>
   );
 }

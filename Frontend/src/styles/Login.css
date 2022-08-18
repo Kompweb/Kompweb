@@ -1,3 +1,11 @@
+.new-login form {
+  display: flex;
+  flex-direction: column;
+}
+.new-login input {
+  width: 300px;
+  padding: 10px;
+}
 .login-form svg {
   color: rgb(69, 71, 72);
 }
