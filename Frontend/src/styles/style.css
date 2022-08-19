@@ -66,6 +66,9 @@ footer {
   /* background-color: rgb(30, 28, 28); */
   /* height: auto; */
 }
+footer a {
+  color: white;
+}
 
 @keyframes App-logo-spin {
   from {

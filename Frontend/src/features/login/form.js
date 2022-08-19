@@ -11,17 +11,11 @@ const Form = props => {
 
   const onSubmit = e => {
     e.preventDefault();
-    console.log('Received values of form: ', values);
-
     submit();
   };
-  //   const onFinish = values => {
-  //     console.log('Received values of form: ', values);
-  //   };
 
   return (
     <>
-      {/* <h2>Form</h2> */}
       <form onSubmit={onSubmit}>
         <label>
           {/* First Name<br></br> */}
@@ -68,7 +62,7 @@ const Form = props => {
         </label>
         <br></br>
         <label style={{ color: 'white' }}>
-          Do you agree to the <em>Terms of Service</em>
+          Agree to the <em>Terms of Service</em>
           <br></br>
           <input
             type="checkbox"
@@ -79,6 +73,7 @@ const Form = props => {
         </label>
         <br></br>
         <button disabled={disabled}>Submit</button>
+        <br />
         <div style={{ color: 'red' }}>
           <div>{errors.first_name}</div>
           <div>{errors.last_name}</div>

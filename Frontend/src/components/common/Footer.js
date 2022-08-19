@@ -6,7 +6,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <Languages />
-      <div className="last-item">©{curYear} Kompweb HQ</div>
+      <div className="last-item">
+        ©{curYear} <a href="/">Kompweb HQ</a>
+      </div>
     </footer>
   );
 }

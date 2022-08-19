@@ -5,6 +5,7 @@ import React from 'react';
 // import { LockOutlined, UserOutlined } from '@ant-design/icons';
 // import { Checkbox, Form, Input, Button } from 'antd';
 import LoginForm from '../common/Login';
+// import Signup from '../../features/login/signup';
 // import Languages from '../common/Languages';
 
 function Home() {
@@ -17,7 +18,7 @@ function Home() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Client Log-in
+        Sign up
       </a>
       {/* <Form
         name="normal_login"
@@ -69,6 +70,7 @@ function Home() {
       {/* <Login /> */}
       {/* <Languages /> */}
       <LoginForm />
+      {/* <Signup /> */}
     </div>
   );
 }

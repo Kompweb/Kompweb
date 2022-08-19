@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 
-const schema = yup.object().shape({
+const Schema = yup.object().shape({
   first_name: yup
     .string()
     .required('Lirst name is reqired mate')
@@ -19,7 +19,7 @@ const schema = yup.object().shape({
   password: yup
     .string()
     .required('Password is Required')
-    .min(8, 'must contain 8 characters sucka'),
+    .min(8, 'must contain 8 characters'),
 
   tos: yup
     .boolean()
@@ -27,4 +27,4 @@ const schema = yup.object().shape({
     .oneOf([true], 'The terms and conditions must be accepted'),
 });
 
-export default schema;
+export default Schema;

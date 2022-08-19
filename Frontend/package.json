@@ -25,6 +25,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "cypress": "^10.6.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
@@ -32,6 +33,7 @@
     "prettier-eslint-cli": "^6.0.1"
   },
   "scripts": {
+    "cypress:open": "cypress-open",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
