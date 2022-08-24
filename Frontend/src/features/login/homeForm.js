@@ -1,5 +1,4 @@
 import React from 'react';
-// import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import useInput from './useInput';
 
 const Form = props => {
@@ -13,23 +12,20 @@ const Form = props => {
 
   const [username, setUsername, handleUsername] = useInput('');
   const [password, setPassword, handlePassword] = useInput('');
-  const [email, setEmail, handleEmail] = useInput('');
 
   const resetValues = e => {
     e.preventDefault();
     setUsername('');
     setPassword('');
-    setEmail('');
   };
 
   return (
     <>
-      {/* <h1> uSER fORMZ</h1> */}
+      {/* <h1> homeForm </h1> */}
       <form onSubmit={resetValues}>
         <label>
           {/* First Name<br></br> */}
           <input
-            // prefix={<UserOutlined className="site-form-item-icon" />}
             className="username-text"
             id="username"
             type="text"
@@ -37,20 +33,6 @@ const Form = props => {
             value={username}
             placeholder="Username"
             onChange={e => handleUsername(e.target.value)}
-          />
-        </label>
-        <br></br>
-        <label>
-          {/* Email<br></br> */}
-          <input
-            // prefix={<LockOutlined style={{ color: 'red' }} />}
-            className="email-text"
-            id="email"
-            name="email"
-            onChange={e => handleEmail(e.target.value)}
-            placeholder="Email"
-            type="text"
-            value={email}
           />
         </label>
         <br></br>
@@ -67,10 +49,11 @@ const Form = props => {
           />
         </label>
         <br></br>
-        <label style={{ color: 'white' }}>
-          Agree to the <em>Terms of Service</em>
-          <br></br>
+        <label style={{ color: 'white', width: 300 }}>
+          Remember <em>me</em>
+          {/* <br></br> */}
           <input
+            style={{ height: 16 }}
             type="checkbox"
             name="tos"
             checked={values.tos}
@@ -81,11 +64,8 @@ const Form = props => {
         <button disabled={disabled}>Submit</button>
         <br />
         <div style={{ color: 'red' }}>
-          <div>{errors.first_name}</div>
-          <div>{errors.last_name}</div>
-          <div>{errors.email}</div>
+          <div>{errors.user_name}</div>
           <div>{errors.password}</div>
-          <div>{errors.tos}</div>
         </div>
       </form>
     </>

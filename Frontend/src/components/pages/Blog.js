@@ -3,16 +3,16 @@ import { BugOutlined } from '@ant-design/icons';
 import LightOn from '../../features/LightOn';
 
 function Blog() {
+  const [data, setData] = React.useState(null);
+  React.useEffect(() => {
+    fetch('/api')
+      .then(res => res.json())
+      .then(data => setData(data.message));
+  }, []);
+
   return (
     <>
-      <div
-        style={{
-          // backgroundColor: '#61dafb',
-          borderRadius: '8px',
-          // paddingBottom: '100px',
-          // marginBottom: '100px',
-        }}
-      >
+      <div>
         <h1>BOG</h1>
         <BugOutlined
           style={{
@@ -22,6 +22,9 @@ function Blog() {
             marginBottom: '200px',
           }}
         />
+        <p className="express-content">
+          {!data ? 'Loading... dont wait' : data}
+        </p>
         <LightOn />
       </div>
     </>

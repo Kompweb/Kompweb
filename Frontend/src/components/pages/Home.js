@@ -13,7 +13,7 @@ function Home() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Sign up
+        Client Login
       </a>
       <LoginForm />
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../../styles/admin.css';
+// import '../../styles/admin.css';
 import * as yup from 'yup';
 
 const schema = yup.object().shape({
