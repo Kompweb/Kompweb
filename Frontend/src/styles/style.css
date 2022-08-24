@@ -2,6 +2,7 @@
   text-align: center;
   margin-top: 60px;
   min-height: 100vw;
+  /* min-height: 100%; */
 }
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
@@ -78,6 +79,13 @@ footer a {
     transform: rotate(360deg);
   }
 }
+
+.express-content {
+  text-align: center;
+  /* align-items: center; */
+  /* border: 1px red solid; */
+}
+
 @media screen and (max-width: 760px) {
   .App {
     margin-top: 80px;
