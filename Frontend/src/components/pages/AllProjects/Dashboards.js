@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/projects.list.css';
+import '../../../styles/projects.list.css';
 import { DashboardOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 

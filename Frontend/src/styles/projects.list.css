@@ -27,22 +27,21 @@
 }
 .shop-container .ant-card {
   border-radius: 25px;
-  border: 1px solid #8e9e9d;
-  box-shadow: #61dafb 0px 0px 2px 2px, rgb(0, 0, 0) 8px 8px 40px 4px;
+  border: 1px solid #9d8787;
+  /* box-shadow: #61dafb 0px 0px 2px 2px, rgb(0, 0, 0) 8px 8px 40px 4px; */
+  box-shadow: #61dafb 1px 2px 2px 2px, rgb(0, 0, 0) 8px 8px 40px 4px;
 }
 .shop-container .ant-card:hover {
-  border: 1px solid #000000;
-  box-shadow: 0 0 6px 4px #61dafb;
+  border: 1px solid #726565;
+  box-shadow: 0 0 18px 2px #61dafb, rgb(127, 127, 127) 0 0 4px 1px inset;
+
+  /* box-shadow: 0 0 6px 4px #61dafb; */
+  /* box-shadow: 0 0 8px 4px #61dafb, rgb(74, 74, 74) 0 0 4px 1px inset; */
 }
 /* .bottom-container {
   border-bottom: 1px solid rgb(200, 200, 200);
 } */
-.framer {
-  padding: 40px 20px 20px 20px;
-  /* width: 360px; */
-  cursor: pointer;
-  border-bottom: 1px solid rgb(200, 200, 200);
-}
+
 .admin-dashboards {
   padding: 40px 20px 20px 20px;
   /* width: 360px; */

@@ -12,13 +12,7 @@ const schema = yup.object().shape({
   agree: yup.boolean().oneOf([true], 'you must give away your data'),
 });
 
-// // Basic submit event handler and console.log to confirm form submitted
-// const formSubmit = e => {
-//   e.preventDefault();
-//   console.log('submitted');
-// };
-
-export default function App() {
+export default function ClientSignUp() {
   const [form, setForm] = useState({
     name: '',
     password: '',
@@ -48,11 +42,17 @@ export default function App() {
       .then(() => setErrors({ ...errors, [name]: '' }))
       .catch(err => setErrors({ ...errors, [name]: err.errors[0] }));
   };
+
   const change = event => {
     const { checked, value, name, type } = event.target;
     const valueToUse = type === 'checkbox' ? checked : value;
     setFormErrors(name, valueToUse);
     setForm({ ...form, [name]: valueToUse });
+  };
+  // // Basic submit event handler and console.log to confirm form submitted
+  const formSubmit = e => {
+    e.preventDefault();
+    console.log('submitted');
   };
 
   useEffect(() => {
@@ -61,14 +61,9 @@ export default function App() {
 
   return (
     <div className="admin-form">
-      <div style={{ color: 'red' }}>
-        <div>{errors.name}</div>
-        <div>{errors.star}</div>
-        <div>{errors.agree}</div>
-        <div>{errors.language}</div>
-      </div>
+      <h1> User Sign Up</h1>
       <div className="react-form">
-        <form>
+        <form formSubmit={formSubmit}>
           <label>
             <input
               className="placeholders"
@@ -148,6 +143,12 @@ export default function App() {
           <br />
           <button disabled={disabled}>submit</button>
         </form>
+        <div style={{ color: 'red' }}>
+          <div>{errors.name}</div>
+          <div>{errors.star}</div>
+          <div>{errors.agree}</div>
+          <div>{errors.language}</div>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import * as Yup from 'yup';
 import axios from 'axios';
-import Form from '../../features/login/form';
+import Form from '../../features/login/homeForm';
 // import User from '../../features/login/user';
 import Schema from '../../features/login/schema';
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../styles/projects.list.css';
+// import '../../styles/';
 import Framer from '../common/FrameMotion';
 import { Counter } from '../../features/counter/Counter';
-import Dashboard from '../../features/Dashboards';
+import Dashboard from './AllProjects/Dashboards';
 import Shop from './AllProjects/Shop';
 
 function ProjectList() {

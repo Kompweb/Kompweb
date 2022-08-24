@@ -1,7 +1,9 @@
 import React from 'react';
+// import { LockOutlined, UserOutlined } from '@ant-design/icons';
+import useInput from './useInput';
 
 const Form = props => {
-  const { values, submit, change, disabled, errors } = props;
+  const { values, change, disabled, errors } = props;
 
   const onChange = e => {
     const { name, value, checked, type } = e.target;
@@ -9,55 +11,59 @@ const Form = props => {
     change(name, valueToUse);
   };
 
-  const onSubmit = e => {
+  const [username, setUsername, handleUsername] = useInput('');
+  const [password, setPassword, handlePassword] = useInput('');
+  const [email, setEmail, handleEmail] = useInput('');
+
+  const resetValues = e => {
     e.preventDefault();
-    submit();
+    setUsername('');
+    setPassword('');
+    setEmail('');
   };
 
   return (
     <>
-      <form onSubmit={onSubmit}>
+      {/* <h1> uSER fORMZ</h1> */}
+      <form onSubmit={resetValues}>
         <label>
           {/* First Name<br></br> */}
           <input
+            // prefix={<UserOutlined className="site-form-item-icon" />}
+            className="username-text"
+            id="username"
             type="text"
-            name="first_name"
-            value={values.first_name}
-            placeholder="First Name"
-            onChange={onChange}
-          />
-        </label>
-        <br></br>
-        <label>
-          {/* Last Name<br></br> */}
-          <input
-            type="text"
-            name="last_name"
-            value={values.last_name}
-            placeholder="Last Name"
-            onChange={onChange}
+            name="username"
+            value={username}
+            placeholder="Username"
+            onChange={e => handleUsername(e.target.value)}
           />
         </label>
         <br></br>
         <label>
           {/* Email<br></br> */}
           <input
-            type="email"
+            // prefix={<LockOutlined style={{ color: 'red' }} />}
+            className="email-text"
+            id="email"
             name="email"
-            value={values.email}
-            placeholder="Email Address"
-            onChange={onChange}
+            onChange={e => handleEmail(e.target.value)}
+            placeholder="Email"
+            type="text"
+            value={email}
           />
         </label>
         <br></br>
         <label>
           {/* Password<br></br> */}
           <input
-            type="password"
+            className="password-test"
+            id="password"
             name="password"
-            value={values.password}
+            onChange={e => handlePassword(e.target.value)}
             placeholder="Password"
-            onChange={onChange}
+            type="password"
+            value={password}
           />
         </label>
         <br></br>
