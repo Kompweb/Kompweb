@@ -60,8 +60,8 @@ export default function ClientSignUp() {
   }, [form]);
 
   return (
-    <div className="admin-form">
-      <h1> User Sign Up </h1>
+    <div>
+      <h1> User NOT Sign In </h1>
       <div className="react-form">
         <form formSubmit={formSubmit}>
           <label>

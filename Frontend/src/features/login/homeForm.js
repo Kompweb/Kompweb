@@ -1,75 +1,85 @@
+import '../../styles/Login.css';
+// import '../../styles/forms.css';
+
+import { Button, Checkbox, Form, Input } from 'antd';
 import React from 'react';
-import useInput from './useInput';
 
-const Form = props => {
-  const { values, change, disabled, errors } = props;
-
-  const onChange = e => {
-    const { name, value, checked, type } = e.target;
-    const valueToUse = type === 'checkbox' ? checked : value;
-    change(name, valueToUse);
+const LoginForm = () => {
+  const onFinish = values => {
+    console.log('Success:', values);
   };
 
-  const [username, setUsername, handleUsername] = useInput('');
-  const [password, setPassword, handlePassword] = useInput('');
-
-  const resetValues = e => {
-    e.preventDefault();
-    setUsername('');
-    setPassword('');
+  const onFinishFailed = errorInfo => {
+    console.log('Failed:', errorInfo);
   };
 
   return (
-    <>
-      {/* <h1> homeForm </h1> */}
-      <form onSubmit={resetValues}>
-        <label>
-          {/* First Name<br></br> */}
-          <input
-            className="username-text"
-            id="username"
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Username"
-            onChange={e => handleUsername(e.target.value)}
-          />
-        </label>
-        <br></br>
-        <label>
-          {/* Password<br></br> */}
-          <input
-            className="password-test"
-            id="password"
-            name="password"
-            onChange={e => handlePassword(e.target.value)}
-            placeholder="Password"
-            type="password"
-            value={password}
-          />
-        </label>
-        <br></br>
-        <label style={{ color: 'white', width: 300 }}>
-          Remember <em>me</em>
-          {/* <br></br> */}
-          <input
-            style={{ height: 16 }}
-            type="checkbox"
-            name="tos"
-            checked={values.tos}
-            onChange={onChange}
-          />
-        </label>
-        <br></br>
-        <button disabled={disabled}>Submit</button>
-        <br />
-        <div style={{ color: 'red' }}>
-          <div>{errors.user_name}</div>
-          <div>{errors.password}</div>
+    <div className="login-form">
+      <Form
+        name="basic"
+        labelCol={{
+          span: 8,
+        }}
+        wrapperCol={{
+          span: 16,
+        }}
+        initialValues={{
+          remember: true,
+        }}
+        onFinish={onFinish}
+        onFinishFailed={onFinishFailed}
+        autoComplete="off"
+      >
+        <Form.Item
+          name="username"
+          rules={[
+            {
+              required: true,
+              message: 'Please input your username!',
+            },
+          ]}
+        >
+          <Input placeholder="Email" />
+        </Form.Item>
+
+        <Form.Item
+          name="password"
+          type="text"
+          rules={[
+            {
+              required: true,
+              message: 'Please input your password!',
+            },
+          ]}
+        >
+          <Input.Password placeholder="Password" />
+        </Form.Item>
+        <div className="last-block">
+          <Form.Item
+            name="remember"
+            valuePropName="checked"
+            wrapperCol={{
+              offset: 8,
+              span: 16,
+            }}
+          >
+            <Checkbox>Remember me</Checkbox>
+          </Form.Item>
+
+          <Form.Item
+            wrapperCol={{
+              offset: 8,
+              span: 16,
+            }}
+          >
+            <Button type="primary" htmlType="submit">
+              Submit
+            </Button>
+          </Form.Item>
         </div>
-      </form>
-    </>
+      </Form>
+    </div>
   );
 };
 
-export default Form;
+export default LoginForm;

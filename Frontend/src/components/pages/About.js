@@ -19,7 +19,7 @@ export default function AboutUs() {
       <div className="b-content">
         <h3>Partner with Kompweb</h3>
         <a href="/contact/">
-          <button className="about-button" styles="vertical-align:middle">
+          <button className="login-btn" styles="vertical-align:middle">
             <span>Contact Us</span>
           </button>
         </a>

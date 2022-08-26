@@ -2,7 +2,6 @@
   text-align: center;
   margin-top: 60px;
   min-height: 100vw;
-  /* min-height: 100%; */
 }
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
@@ -29,19 +28,6 @@
 .home-header {
   display: flex;
   flex-direction: column;
-}
-.home-header span {
-  color: white;
-  margin: 0;
-}
-.link-client {
-  color: #ffffff;
-  margin: 20px 0 10px 0;
-  letter-spacing: 0.1em;
-  text-align: center;
-}
-.link-client:hover {
-  color: #61dafb;
 }
 
 .languages img {
