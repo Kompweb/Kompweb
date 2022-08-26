@@ -3,6 +3,7 @@ import '../../styles/about.css';
 import { Button } from 'antd';
 
 import { DownCircleOutlined } from '@ant-design/icons';
+import Slider from './AllProjects/Slider';
 
 export default function AboutUs() {
   return (
@@ -13,6 +14,7 @@ export default function AboutUs() {
         organizations consistently deliver mission-critical applications at the
         speed required.
       </p>
+      <Slider />
       <a href="/projects/">
         <DownCircleOutlined className="icons" />
       </a>

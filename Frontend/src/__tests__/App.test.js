@@ -1,5 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import App from '../App';
+import * as rtl from 'react-testing-library';
+import 'jest-dom/extend-expect';
 
 test('renders learn react link', () => {
   render(<App />);

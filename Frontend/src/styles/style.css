@@ -1,8 +1,12 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 60px;
   min-height: 100vw;
 }
+/* .container {
+  text-align: center;
+} */
+
 @media (prefers-reduced-motion: no-preference) {
   .react-logo {
     height: calc(3vmin + 12vmin);
@@ -26,6 +30,7 @@
   }
 }
 .home-header {
+  text-align: center;
   display: flex;
   flex-direction: column;
 }
@@ -63,6 +68,7 @@ footer {
     transform: rotate(360deg);
   }
 }
+
 .express-content {
   text-align: center;
 }

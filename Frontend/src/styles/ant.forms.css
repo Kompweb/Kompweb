@@ -6,7 +6,7 @@
   color: white;
 }
 .ant-input-affix-wrapper > input.ant-input {
-  padding: 10px;
+  padding: 6px;
 }
 .ant-col-16 {
   max-width: 100%;
@@ -16,7 +16,7 @@
 }
 .ant-input {
   border: 1px solid rgb(4, 200, 244);
-  padding: 14px;
+  padding: 10px;
   /* color: rgb(215, 12, 12); */
 }
 .link-client {

@@ -2,6 +2,7 @@ import logo from '../../../src/assets/logo.svg';
 import '../../styles/Login.css';
 import React from 'react';
 import LoginForm from '../common/Login';
+// import ClientLogin from '../../features/login/form';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
         Client Login
       </a>
       <LoginForm />
+      {/* <ClientLogin /> */}
     </div>
   );
 }

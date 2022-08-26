@@ -21,6 +21,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "redux": "^4.2.0",
+    "rerousel": "^0.1.9",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
@@ -29,8 +30,10 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
+    "jest-dom": "^4.0.0",
     "prettier": "2.7.1",
-    "prettier-eslint-cli": "^6.0.1"
+    "prettier-eslint-cli": "^6.0.1",
+    "react-testing-library": "^8.0.1"
   },
   "scripts": {
     "cypress:open": "cypress-open",

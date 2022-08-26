@@ -1,16 +1,23 @@
 import '../../styles/Login.css';
-// import '../../styles/forms.css';
-
 import { Button, Checkbox, Form, Input } from 'antd';
 import React from 'react';
+import UseInput from './useInput';
 
 const LoginForm = () => {
+  const [email, setEmail, handleEmail] = UseInput('');
+  const [password, setPassword, handlePassword] = UseInput('');
+
   const onFinish = values => {
     console.log('Success:', values);
   };
 
   const onFinishFailed = errorInfo => {
     console.log('Failed:', errorInfo);
+  };
+  const resetValues = e => {
+    e.preventDefault();
+    setEmail('');
+    setPassword('');
   };
 
   return (
@@ -26,6 +33,7 @@ const LoginForm = () => {
         initialValues={{
           remember: true,
         }}
+        onSubmit={resetValues}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
@@ -39,7 +47,11 @@ const LoginForm = () => {
             },
           ]}
         >
-          <Input placeholder="Email" />
+          <Input
+            placeholder="Email"
+            value={email}
+            onChange={e => handleEmail(e.target.value)}
+          />
         </Form.Item>
 
         <Form.Item
@@ -52,7 +64,11 @@ const LoginForm = () => {
             },
           ]}
         >
-          <Input.Password placeholder="Password" />
+          <Input.Password
+            placeholder="Password"
+            value={password}
+            onChange={e => handlePassword(e.target.value)}
+          />
         </Form.Item>
         <div className="last-block">
           <Form.Item
