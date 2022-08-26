@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: column;
 }
-
 .languages img {
   margin: 30px 1vmin;
   width: calc(30px + 1.5vmin);
@@ -52,9 +51,8 @@ footer {
   /* min-height: 200px; */
   /* background-color: rgb(30, 28, 28); */
   /* height: auto; */
-}
-footer a {
-  color: white;
+  /* align-items: center; */
+  /* border: 1px red solid; */
 }
 
 @keyframes App-logo-spin {
@@ -65,17 +63,13 @@ footer a {
     transform: rotate(360deg);
   }
 }
-
 .express-content {
   text-align: center;
-  /* align-items: center; */
-  /* border: 1px red solid; */
 }
 
 @media screen and (max-width: 760px) {
   .App {
-    margin-top: 80px;
-    /* border: 1px solid red; */
+    margin-top: 60px;
   }
   .react-logo {
     display: none;

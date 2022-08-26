@@ -1,3 +1,9 @@
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  /* width: 60%; */
+  /* border: 1px solid rgb(238, 239, 241); */
+}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -35,9 +41,6 @@
   box-shadow: 0 0 18px 2px #61dafb, rgb(127, 127, 127) 0 0 4px 1px inset;
   /* box-shadow: 0 0 8px 4px #61dafb, rgb(74, 74, 74) 0 0 4px 1px inset; */
 }
-.bottom-container {
-  width: 60%;
-}
 .admin-dashboards {
   padding-top: 40px;
   /* width: 360px; */
@@ -47,6 +50,10 @@
   font-size: 26px;
   padding: 10px 0;
   color: #61dafb;
+}
+.redux-counter {
+  margin-top: 40px;
+  /* border: 1px solid #ffffff; */
 }
 
 /*  *  *  MEDIA QUERIES  *  *  */

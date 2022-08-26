@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../styles/about.css';
+import { Button } from 'antd';
+
 import { DownCircleOutlined } from '@ant-design/icons';
 
 export default function AboutUs() {
@@ -19,9 +21,9 @@ export default function AboutUs() {
       <div className="b-content">
         <h3>Partner with Kompweb</h3>
         <a href="/contact/">
-          <button className="login-btn" styles="vertical-align:middle">
-            <span>Contact Us</span>
-          </button>
+          <Button type="primary" htmlType="submit">
+            Contact Us
+          </Button>
         </a>
         <p>We guarantee the success of your React project</p>
       </div>
