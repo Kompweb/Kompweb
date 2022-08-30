@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+import React from 'react';
+
 import '../../../styles/slider.css';
 
 import { Rerousel } from 'rerousel';
 
 export default function Slider() {
-  const adminname = useState(null);
-
+  // const adminname = useState(null);
+  const onChange = currentAdmin => {
+    console.log(currentAdmin);
+  };
   return (
-    <Rerousel adminName={adminname}>
+    // <Rerousel adminName={adminname}>
+    <Rerousel onChange={onChange}>
       <div
-        adminname={adminname}
+        // adminname={adminname}
         className="header-23__right"
         style={{ height: 'auto' }}
       >
@@ -45,8 +50,8 @@ export default function Slider() {
 
               <div className="content">
                 <br />
-                <h3> RAVISH ARYA </h3>
-                <h5> Senior ReactJS Engineer</h5>
+                <h3> STAN TUDOR </h3>
+                <h5> ReactJS Developer</h5>
                 <br />
                 <p> WORKED AT Mobiquity</p>
               </div>
@@ -78,7 +83,7 @@ export default function Slider() {
 
               <div className="content">
                 <br />
-                <h3> ABHINAV GAUR </h3>
+                <h3> BONEA GABRIEL </h3>
                 <h5> ReactJS Developer</h5>
                 <br />
                 <p> WORKED AT Atlassian</p>

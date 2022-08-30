@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/about.css';
 import { Button } from 'antd';
+import Carousel from '../pages/AllProjects/sliderTwo';
 
 import { DownCircleOutlined } from '@ant-design/icons';
 import Slider from './AllProjects/Slider';
@@ -29,6 +30,7 @@ export default function AboutUs() {
         </a>
         <p>We guarantee the success of your React project</p>
       </div>
+      <Carousel />
     </div>
   );
 }
