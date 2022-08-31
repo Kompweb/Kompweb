@@ -1,20 +1,18 @@
 // import React, { useState } from 'react';
 import React from 'react';
-
 import '../../../styles/slider.css';
-
 import { Rerousel } from 'rerousel';
 
 export default function Slider() {
-  // const adminname = useState(null);
-  const onChange = currentAdmin => {
-    console.log(currentAdmin);
-  };
+  // const adminName = useState(null);
+  // const onChange = currentAdmin => {
+  //   console.log(currentAdmin);
+  // };
   return (
-    // <Rerousel adminName={adminname}>
-    <Rerousel onChange={onChange}>
+    <Rerousel>
       <div
-        // adminname={adminname}
+        // adminName={adminName}
+        // onChange={onChange}
         className="header-23__right"
         style={{ height: 'auto' }}
       >

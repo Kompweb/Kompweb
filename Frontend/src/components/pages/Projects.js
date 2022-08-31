@@ -4,6 +4,7 @@ import Framer from '../common/FrameMotion';
 import { Counter } from '../../features/counter/Counter';
 import Dashboard from './AllProjects/Dashboards';
 import Shop from './AllProjects/Shop';
+// import AvengersApp from './AllProjects/AvengersApp';
 
 function ProjectList() {
   return (
@@ -17,6 +18,7 @@ function ProjectList() {
           <Framer />
           <Dashboard />
           <Counter />
+          {/* <AvengersApp /> */}
         </div>
       </div>
     </div>

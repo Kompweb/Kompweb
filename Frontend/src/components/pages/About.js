@@ -3,8 +3,8 @@ import '../../styles/about.css';
 import { Button } from 'antd';
 import Carousel from '../pages/AllProjects/sliderTwo';
 
-import { DownCircleOutlined } from '@ant-design/icons';
 import Slider from './AllProjects/Slider';
+import LightOn from '../../features/LightOn';
 
 export default function AboutUs() {
   return (
@@ -17,18 +17,34 @@ export default function AboutUs() {
       </p>
       <Slider />
       <a href="/projects/">
-        <DownCircleOutlined className="icons" />
+        <LightOn />
       </a>
-      <br />
+      {/* <br /> */}
       <a href="/projects/"> Explore Projects</a>
       <div className="b-content">
         <h3>Partner with Kompweb</h3>
-        <a href="/contact/">
-          <Button type="primary" htmlType="submit">
-            Contact Us
-          </Button>
-        </a>
-        <p>We guarantee the success of your React project</p>
+
+        <div className="text-slides">
+          <p>
+            Over a call, the developers ability to communicate in an articulate
+            manner is tested. A deeper understanding of the candidates technical
+            experience and also motivation to freelance is achieved.
+          </p>
+          <p style={{ color: '#61dafb', fontSize: 21, fontWeight: 'bold' }}>
+            We guarantee the success of your React project
+            <a href="/contact/">
+              <Button type="primary" htmlType="submit">
+                Contact Us
+              </Button>
+            </a>
+          </p>
+
+          <p>
+            Performance during each engagement is continually assessed. Our
+            developers are expected to maintain standards across all engagements
+            with our customers.
+          </p>
+        </div>
       </div>
       <Carousel />
     </div>

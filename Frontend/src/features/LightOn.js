@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 // import reactDom from 'react-dom';
+import { UndoOutlined, RedoOutlined } from '@ant-design/icons';
+
+// const white = <UndoOutlined />;
+// const yellow = <RedoOutlined />;
 
 function LightOn() {
   const [isOn, setIsOn] = useState(false);
@@ -9,15 +13,10 @@ function LightOn() {
   }, 1000);
 
   return (
-    <div
-      style={{
-        borderRadius: '8px',
-        fontSize: 24,
-        color: '#61dafb',
-        marginBottom: '10px',
-      }}
-    >
-      {isOn ? 'coming' : 'soon...'}
+    <div className="icons">
+      {/* {isOn ? 'coming' : 'soon...'} */}
+      {/* setIsOn === false ? <img src={white} /> : <img src={yellow} /> */}
+      {isOn === false ? <UndoOutlined /> : <RedoOutlined />}
     </div>
   );
 }
@@ -27,13 +26,6 @@ export default LightOn;
 //   'https://tk-assets.lambdaschool.com/0a42bf4e-9454-49a1-b70d-325ba6368fe5_dark-bulb.png';
 // const yellow =
 //   'https://i.pinimg.com/originals/92/94/ba/9294badee7b8f3d93fa9bc6c874641b2.png';
-
-// function App() {
-//   const [lightOn, setLightOn] = useState(true);
-
-//   setTimeout(() => {
-//     setLightOn(!lightOn);
-//   }, 1000);
 
 //   return (
 //     <div
