@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import '../../styles/navbar.css';
 import logo from '../../../src/assets/logo.svg';
 import SearchForm from './SearchForm';
 
-export default function Navbar() {
+export default function Navbar({ children }) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  let history = useNavigate();
 
   return (
     <nav className="navigation">
@@ -15,6 +18,15 @@ export default function Navbar() {
             <p>React Solutions </p>
           </div>
           <SearchForm />
+          <span
+            className="breadcrubs"
+            type="button"
+            style={{ color: '#fff', fontSize: 16, marginLeft: 30 }}
+            onClick={() => history.goBack()}
+          >
+            {children}
+            {'back...'}
+          </span>
         </div>
 
         <button

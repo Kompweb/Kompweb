@@ -31,8 +31,28 @@
   letter-spacing: 0.2em;
   font-size: calc(14px + 0.5vmin);
 }
+.search-button {
+  /* font-size: 64px; */
+  height: 68px;
+}
+
+/* .search-form svg {
+  font-size: 64px;
+  height: 68px;
+  width: 68px;
+} */
+
+.breadcrubs {
+  /* margin: 20px 0 0 20px; */
+  margin-top: 20px;
+  font-style: italic;
+  border-right-color: #61dafb;
+  border-right: 2px;
+  /* padding: 0; */
+  /* border: 1px solid red; */
+}
 .navigation-menu ul {
-  margin-top: -140px;
+  margin-top: -180px;
   /* display: flex; */
   /* margin: 2rem 20rem 0 0; */
 }

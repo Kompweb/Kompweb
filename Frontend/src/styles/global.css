@@ -19,7 +19,6 @@ code {
 }
 h1,
 h2,
-h3,
 h4,
 h5,
 h6,
@@ -34,6 +33,7 @@ h2 {
 }
 h3 {
   font-size: calc(16px + 1vmin);
+  color: #61dafb;
 }
 h4 {
   font-size: calc(16px + 0.5vmin);
@@ -50,7 +50,7 @@ button {
   background: #61dafb;
 }
 .icons {
-  font-size: 46px;
+  font-size: 48px;
   color: #61dafb;
 }
 .icons:hover {

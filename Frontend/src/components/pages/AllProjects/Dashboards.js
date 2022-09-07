@@ -8,7 +8,7 @@ function AdminDashboard() {
     <div className="admin-dashboards">
       <Link to={'/admin'}>
         <DashboardOutlined className="icons" />
-        <h4>Online Dashboards</h4>
+        <h3>Online Dashboards</h3>
       </Link>
       <p>
         Anytime and anywhere, our customers can track their progress to see when

@@ -22,7 +22,7 @@ function Framer() {
             <p>click again to close framer</p>
           </motion.div>
         )}
-        <h4 onClick={() => setIsOpen(!isOpen)}>Framer Motion</h4>
+        <h3 onClick={() => setIsOpen(!isOpen)}>Framer Motion</h3>
       </motion.div>
       <p>
         Framer Motion is a production-ready motion library for React from Framer
