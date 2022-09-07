@@ -32,7 +32,6 @@
   font-size: calc(14px + 0.5vmin);
 }
 .search-button {
-  /* font-size: 64px; */
   height: 68px;
 }
 
@@ -52,7 +51,7 @@
   /* border: 1px solid red; */
 }
 .navigation-menu ul {
-  margin-top: -180px;
+  margin-top: -140px;
   /* display: flex; */
   /* margin: 2rem 20rem 0 0; */
 }
