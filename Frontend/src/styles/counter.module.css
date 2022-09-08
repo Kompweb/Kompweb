@@ -1,39 +1,28 @@
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* align-items: center; */
-  /* text-align: center; */
-  /* color: #ffffff; */
-}
-.value {
-  font-size: 26px;
-  color: #ffffff;
-  /* width: 6rem; */
-  width: 100%;
-  /* width: 200px; */
-  height: auto;
-  /* justify-content: center; */
-  /* align-items: center; */
-  padding: 10px 0;
-  margin: 10px 20px;
+/* .row { */
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: center; */
+/* align-items: center; */
+/* text-align: center; */
+/* color: #ffffff; */
+/* } */
+/* .form-control {
+  border: 1px solid rgb(0, 38, 255);
   background-color: #000000;
-  /* background-color: #282c34; */
-  /* border: 1px solid #ffffff; */
-  /* border-radius: 2px; */
-  /* box-shadow: 0 0 6px 2px #61dafb, rgb(74, 74, 74) 0 0 2px 1px inset; */
-  box-shadow: 0 0 2px 0 #ffffff;
-}
+} */
 
+/* .row .ce_button { */
+/* width: 100px; */
+/* } */
 /* .row { */
 /* border: 1px solid #ed0808; */
 /* margin: 0; */
 /* padding: 0; */
 /* } */
-.btn {
+/* .btn {
   width: 48px;
   height: 48px;
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
   font-size: 26px;
   letter-spacing: 0;
@@ -55,16 +44,16 @@
 
 .btn:active {
   background-color: rgba(225, 225, 225, 0.2);
-}
+} */
 
-.resetBtn {
+/* .resetBtn {
   font-size: 22px;
   width: 10rem;
   padding: 0;
   margin-top: 40px;
   height: 46px;
   border: none;
-  /* outline: none; */
+  outline: none;
   color: #ffffff;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
@@ -81,4 +70,4 @@
   box-shadow: 0 0 4px 2px #61dafb, rgb(0, 0, 0) 0 0 2px 1px inset;
   background-color: rgba(0, 0, 0, 0.2);
   color: #61dafb;
-}
+} */
