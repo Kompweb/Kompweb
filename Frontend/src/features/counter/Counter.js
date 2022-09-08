@@ -1,20 +1,28 @@
-import React from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import React, { useReducer } from 'react';
+import styles from '../../styles/counter.module.css';
 
+// import { useSelector, useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 // import { decrement, increment, reset } from './counterSlice';
-import { addOne } from './actions';
 import CalcButton from './calcBtn';
 import TotalDisplay from './totalDisplay';
 
-import styles from '../../styles/counter.module.css';
+import reducer, { initialState } from './reducer';
+import { applyNumber, changeOp } from './actions';
 
 export function Counter() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  // console.log(state);
   // const count = useSelector(state => state.counter.value);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const handleNumberClick = number => {
-    dispatch(addOne(number));
+    // console.log('here');
+    dispatch(applyNumber(number));
+  };
+
+  const handleOpClick = operator => {
+    dispatch(changeOp(operator));
   };
   return (
     <>
@@ -40,13 +48,13 @@ export function Counter() {
         <div className="container row mt-5">
           <div className="col-md-12 d-flex justify-content-center">
             <form className="cal">
-              <TotalDisplay value={0} />
+              <TotalDisplay value={state.total} />
               <div className="row details">
                 <span id="operation">
-                  <b>Operation:</b> X
+                  <b>Operation:</b> {state.operation}
                 </span>
                 <span id="memory">
-                  <b>Memory:</b> 0
+                  <b>Memory:</b> {state.memory}
                 </span>
               </div>
 
@@ -57,64 +65,31 @@ export function Counter() {
               </div>
 
               <div className="row">
-                <CalcButton
-                  value={1}
-                  onClick={() => dispatch(handleNumberClick(1))}
-                />
-                <CalcButton
-                  value={2}
-                  onClick={() => dispatch(handleNumberClick(2))}
-                />
-                <CalcButton
-                  value={3}
-                  onClick={() => dispatch(handleNumberClick(3))}
-                />
+                <CalcButton value={1} onClick={() => handleNumberClick(1)} />
+                <CalcButton value={2} onClick={() => handleNumberClick(2)} />
+                <CalcButton value={3} onClick={() => handleNumberClick(3)} />
               </div>
 
               <div className="row">
-                <CalcButton
-                  value={4}
-                  onClick={() => dispatch(handleNumberClick(4))}
-                />
-                <CalcButton
-                  value={5}
-                  onClick={() => dispatch(handleNumberClick(5))}
-                />
-                <CalcButton
-                  value={6}
-                  onClick={() => dispatch(handleNumberClick(6))}
-                />
+                <CalcButton value={4} onClick={() => handleNumberClick(4)} />
+                <CalcButton value={5} onClick={() => handleNumberClick(5)} />
+                <CalcButton value={6} onClick={() => handleNumberClick(6)} />
               </div>
 
               <div className="row">
-                <CalcButton value={7} />
-                <CalcButton value={8} />
-                <CalcButton value={9} />
+                <CalcButton value={7} onClick={() => handleNumberClick(7)} />
+                <CalcButton value={8} onClick={() => handleNumberClick(8)} />
+                <CalcButton value={9} onClick={() => handleNumberClick(9)} />
               </div>
 
               <div className="row">
-                <CalcButton
-                  // className={styles.btn}
-                  aria-label="Increment value"
-                  // onClick={() => dispatch(increment())}
-                  value={'+'}
-                />
-                <CalcButton value={'*'} />
-                <CalcButton
-                  // className={styles.btn}
-                  aria-label="Decrement value"
-                  // onClick={() => dispatch(decrement())}
-                  value={'-'}
-                />
+                <CalcButton value={'+'} onClick={() => handleOpClick('+')} />
+                <CalcButton value={'*'} onClick={() => handleOpClick('*')} />
+                <CalcButton value={'-'} onClick={() => handleOpClick('-')} />
               </div>
 
               <div className="row ce_button">
-                <CalcButton
-                  // className={styles.resetBtn}
-                  aria-label="Reset"
-                  // onClick={() => dispatch(reset())}
-                  value={'CE'}
-                />
+                <CalcButton value={'CE'} onClick={() => handleOpClick} />
               </div>
             </form>
           </div>
