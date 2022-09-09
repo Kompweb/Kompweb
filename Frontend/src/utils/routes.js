@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Projects from '../Projects';
+import Home from '../Home';
+import AboutUs from '../About';
+import Contact from '../Contact';
+import Blog from '../Blog';
+import Blockchain from '../Blockchain';
+import Admin from '../Admin/Dashboard';
 
-import Projects from '../components/pages/Projects';
-import Home from '../components/pages/Home';
-import AboutUs from '../components/pages/About';
-import Contact from '../components/pages/Contact';
-import Blog from '../components/pages/Blog';
-import Blockchain from '../components/pages/Blockchain';
-import Admin from '../components/pages/Admin/Dashboard';
 function NavRoutes() {
   return (
     <div className="App">
