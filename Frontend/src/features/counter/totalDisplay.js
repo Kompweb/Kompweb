@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../../styles/counter.module.css';
+import '../../styles/counter.css';
 
 const TotalDisplay = props => {
   const { value } = props;

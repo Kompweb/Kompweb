@@ -52,6 +52,7 @@ button {
 .icons {
   font-size: 48px;
   color: #61dafb;
+  margin-bottom: 20px;
 }
 .icons:hover {
   border-radius: 25px;

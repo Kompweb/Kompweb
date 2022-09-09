@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/counter.css';
 
 const CalcButton = props => {
   const { value, onClick = () => {}, size = 4 } = props;

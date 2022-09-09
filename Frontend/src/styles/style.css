@@ -73,20 +73,6 @@ footer {
   text-align: center;
 }
 
-button,
-textarea {
-  /* padding: 8px 10px; */
-  width: 72px;
-}
-
-.ce_button .col-xs-4 {
-  width: 98%;
-  margin: 0;
-}
-.ce_button .col-xs-4 .btn {
-  width: 100%;
-}
-
 @media screen and (max-width: 760px) {
   .App {
     margin-top: 60px;
