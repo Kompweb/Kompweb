@@ -1,11 +1,11 @@
-import Head from "next/head";
+// import Head from "next/head";
 
 function BlogPost({ blog }) {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>{blog.title} | My Site</title>
-      </Head>
+      </Head> */}
       <div>
         <h1>{blog.title}</h1>
         <p>{blog.text}</p>

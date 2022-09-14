@@ -1,9 +1,8 @@
 // import '../../styles/Login.css';
 import React, { useState, useEffect } from 'react';
 import * as Yup from 'yup';
-import axios from 'axios';
+import axios from '../api/axiosAuth';
 import Form from '../features/login/homeForm';
-// import User from '../../features/login/user';
 import Schema from '../features/login/schema';
 
 const initialFormValues = {
@@ -59,10 +58,12 @@ function LoginForm() {
     );
   });
 
-  const addUsersToApi = () => {
+  const addUsersToApi = props => {
     axios
-      .post('https://reqres.in/api/users', values)
+      .post('http://localhost:3000/api/login', values)
       .then(res => {
+        localStorage.setItem('token', res.data.token);
+        props.history.push('/login');
         setUsers([res.data, ...users]);
         setValues(initialFormValues);
       })
@@ -78,9 +79,6 @@ function LoginForm() {
         disabled={disabled}
         errors={errors}
       />
-      {/* {users.map(user => {
-        return <User key={user.id} details={user} />;
-      })} */}
     </div>
   );
 }

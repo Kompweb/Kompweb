@@ -1,68 +1,9 @@
-import Head from 'next/head';
-// import Link from 'next/link';
-// import Layout, { siteTitle } from "../components/layout";
-// import utilStyles from '../styles/utils.module.css';
-// import Date from '../components/date';
-// import Navbar from '../src/common/Navbar';
-// import Header from './Home';
+import Link from 'next/link';
+import Date from '../src/components/date';
 // import Names from './Names';
-// import Alert from '../components/Alert';
-
-import { getSortedPostsData } from '../src/lib/posts.js';
-// import Footer from '../src/common/Footer';
-// import { Projects } from "./Projects";
-
+import { getSortedPostsData } from '../src/lib/posts';
 // import Button from "./LikeButton";
 
-// import { getSortedPostsData } from "../lib/posts";
-
-// export async function getStaticProps() {
-//   const allPostsData = getSortedPostsData();
-//   return {
-//     props: {
-//       allPostsData,
-//     },
-//   };
-// }
-
-export default function HomePage({ allPostsData }) {
-  return (
-    <>
-      {/* <Navbar /> */}
-      {/* <Layout home> */}
-      <div>
-        {/* <Head> */}
-        {/* <title>{siteTitle}</title> */}
-        {/* </Head> */}
-        {/* <section className={utilStyles.headingMd}> */}
-        <Head />
-        {/* </section> */}
-        {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}> */}
-        {/* <h2 className={utilStyles.headingLg}>My Blog</h2> */}
-        {/* <ul className={utilStyles.list}> */}
-        {/* {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))} */}
-        {/* </ul> */}
-        {/* </section> */}
-        {/* <Names /> */}
-        {/* <Alert /> */}
-        {/* <Projects /> */}
-        {/* <Button /> */}
-      </div>
-      {/* <Footer /> */}
-      {/* </Layout> */}
-    </>
-  );
-}
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
@@ -70,4 +11,28 @@ export async function getStaticProps() {
       allPostsData,
     },
   };
+}
+export default function BlogPage({ allPostsData }) {
+  return (
+    <>
+      <div>
+        <h2>My Blog</h2>
+        <ul>
+          {allPostsData.map(({ id, date, title }) => (
+            <li key={id}>
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
+              <br />
+              <small>
+                <Date dateString={date} />
+              </small>
+            </li>
+          ))}
+        </ul>
+        {/* <Names /> */}
+        {/* <Button /> */}
+      </div>
+    </>
+  );
 }

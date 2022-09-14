@@ -1,14 +1,14 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Projects from '../Projects';
 import Home from '../Home';
 import AboutUs from '../About';
 import Contact from '../Contact';
 import Blog from '../Blog';
-import Blockchain from '../Blockchain';
+import Blockchain from '../features/Blockchain';
 import Admin from '../Admin/Dashboard';
 
-function NavRoutes() {
+function NavRoutes({ component: Component, ...rest }) {
   return (
     <div className="App">
       <Routes>
@@ -19,7 +19,17 @@ function NavRoutes() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blockchain" element={<Blockchain />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/login" element={<Admin />} />
+        <Route
+          {...rest}
+          render={props =>
+            localStorage.getItem('token') ? (
+              <Component {...props} />
+            ) : (
+              <Navigate to="/login" />
+            )
+          }
+        />
       </Routes>
     </div>
   );

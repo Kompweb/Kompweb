@@ -23,6 +23,7 @@ textarea {
   /* background: #f6f6f6; */
   border-radius: 25px;
   box-shadow: #b1b6b66e 0 0 2px 2px, rgb(0, 0, 0) 0 0 40px 2px;
+  border: 1px solid rgba(0, 225, 255, 0.36);
 }
 .row {
   display: flex;
@@ -127,11 +128,9 @@ textarea {
 @media screen and (max-width: 760px) {
   .redux-counter {
     border: none;
-    /* width: 260px; */
     /* margin: 0; */
-    /* padding: 40px 0; */
-    /* background: #f6f6f6; */
-    /* border-radius: 25px; */
+    padding: 0;
+    width: 100%;
     box-shadow: none;
   }
 }

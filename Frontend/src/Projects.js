@@ -1,16 +1,10 @@
 import React from 'react';
 // import '../../styles/';
-// import Framer from '../common/FrameMotion';
-import Framer from '../src/FrameMotion';
-
-// import { Counter } from '../../features/counter/Counter';
+import Framer from './FrameMotion';
 import { Counter } from '../src/features/counter/Counter';
-
-// import Dashboard from './AllProjects/Dashboards';
 import Dashboard from './Dashboards';
-
 import Shop from './Shop';
-// import AvengersApp from './AllProjects/AvengersApp';
+import MovieQuotes from '../src/features/movieQuotes/MovieQuotes';
 
 function ProjectList() {
   return (
@@ -25,6 +19,7 @@ function ProjectList() {
           <Dashboard />
           <Counter />
           {/* <AvengersApp /> */}
+          <MovieQuotes />
         </div>
       </div>
     </div>

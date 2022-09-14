@@ -2,10 +2,24 @@ import '../../styles/Login.css';
 import { Button, Checkbox, Form, Input } from 'antd';
 import React from 'react';
 import UseInput from './useInput';
+// import AxiosWithAuth from '../../api/axiosAuth';
 
 const LoginForm = () => {
   const [email, setEmail, handleEmail] = UseInput('');
   const [password, setPassword, handlePassword] = UseInput('');
+  // const token = localStorage.getItem('token');
+
+  // AxiosWithAuth.post('/mocks/data', UseInput.newFriend, {
+  //   headers: {
+  //     authorization: token,
+  //   },
+  // })
+  //   .then(res => {
+  //     console.log(res);
+  //   })
+  //   .catch(err => {
+  //     console.log(err);
+  //   });
 
   const onFinish = values => {
     console.log('Success:', values);
@@ -14,6 +28,7 @@ const LoginForm = () => {
   const onFinishFailed = errorInfo => {
     console.log('Failed:', errorInfo);
   };
+
   const resetValues = e => {
     e.preventDefault();
     setEmail('');
@@ -36,7 +51,7 @@ const LoginForm = () => {
         onSubmit={resetValues}
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
-        autoComplete="off"
+        autoComplete="on"
       >
         <Form.Item
           name="username"

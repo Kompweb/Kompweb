@@ -1,5 +1,5 @@
 // import ContactForm from '../pages/Contact';
-import Languages from './Languages';
+import Languages from '../components/languages';
 export default function Footer() {
   const curYear = new Date().getFullYear();
 
