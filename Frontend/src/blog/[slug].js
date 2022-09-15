@@ -15,7 +15,7 @@ function BlogPost({ blog }) {
 }
 
 export async function getServerSideProps({ query }) {
-  const res = await fetch(`https://www.example.com/api/blog/${query.slug}`);
+  const res = await fetch(`https://www.kompweb.com/api/blog/${query.slug}`);
   const data = await res.json();
 
   return {

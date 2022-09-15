@@ -13,8 +13,20 @@ server.get("/", (req, res) => {
 });
 
 server.get("/api/users", (req, res) => {
-  User.find().then().catch();
-  res.json({ message: "All users here" });
+  User.find()
+    .then((users) => {
+      // throw new Error("Arghhhhh!!!!!");
+      // console.log(users);
+      res.json(users);
+    })
+    .catch((err) => {
+      res.status(500).json({
+        message: "error getting users",
+        err: err.message,
+        stack: err.stack,
+      });
+    });
+  // res.json({ message: "All users here" });
 });
 
 server.use("*", (req, res) => {

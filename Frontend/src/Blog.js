@@ -20,7 +20,7 @@ export default function Blog() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch('/api')
+    fetch('http://localhost:5000/api/users')
       .then(res => res.json())
       .then(data => setData(data.message));
   }, []);
