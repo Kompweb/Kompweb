@@ -1,7 +1,4 @@
-// restart the server after every change in this file
-
-// const http = require("http");
-// built in node.js module to handle http traffic
+// restart the server after every change in this file or install nodemon
 const express = require("express");
 const server = express();
 
@@ -17,7 +14,10 @@ server.get("/api/users", (req, res) => {
     .then((users) => {
       // throw new Error("Arghhhhh!!!!!");
       // console.log(users);
-      res.json(users);
+      res.status(200).json({
+        message: "All users here",
+        users,
+      });
     })
     .catch((err) => {
       res.status(500).json({
@@ -26,7 +26,26 @@ server.get("/api/users", (req, res) => {
         stack: err.stack,
       });
     });
-  // res.json({ message: "All users here" });
+});
+
+server.get("/api/users/:id", (req, res) => {
+  User.findById(req.params.id)
+    .then((user) => {
+      if (!user) {
+        res
+          .status(404)
+          .json({ message: "The User with the specified ID oesn not exist" });
+      }
+      // console.log(user);
+      res.json(user);
+    })
+    .catch((err) => {
+      res.status(500).json({
+        message: "error getting user id",
+        err: err.message,
+        stack: err.stack,
+      });
+    });
 });
 
 server.use("*", (req, res) => {

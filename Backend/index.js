@@ -1,9 +1,11 @@
 const server = require("./api/server");
+// const http = require("http");
+// built in node.js module to handle http traffic
 
 const PORT = 5000;
 // const PORT = process.env.PORT || 5000;
-const hostname = "127.0.0.1";
-// the local computer where the server is running
+
+const hostname = "127.0.0.1"; // the local computer where the server is running
 
 server.listen(PORT, hostname, () => {
   // start watching for connections on the port specified
