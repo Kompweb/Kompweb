@@ -26,6 +26,7 @@ class DeleteMovieQuoteForm extends React.Component {
   deleteMessage = e => {
     e.preventDefault();
     // invoke this.props.deleteMessage here once it is written and passed in
+    this.props.deleteMessage(this.state.movieQuote);
   };
 
   render() {

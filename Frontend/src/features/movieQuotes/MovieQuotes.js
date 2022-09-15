@@ -25,7 +25,7 @@ class MovieQuotes extends React.Component {
   postMessage = quote => {
     // https://lambda-school-test-apis.herokuapp.com/ is the base url here
     axios
-      .post('https://lambda-school-test-apis.herokuapp.com/quote', quote)
+      .post('http://localhost:5000/api/quote', quote)
       .then(response => {
         this.setState({
           postSuccessMessage: response.data.successMessage,
@@ -43,10 +43,7 @@ class MovieQuotes extends React.Component {
 
   putMessage = (id, updatedQuote) => {
     axios
-      .put(
-        `https://lambda-school-test-apis.herokuapp.com/quote/${id}`,
-        updatedQuote
-      )
+      .put(`http://localhost:5000/api/${id}`, updatedQuote)
       .then(res => {
         this.setState({
           putSuccessMessage: res.data.successMessage,
@@ -67,6 +64,23 @@ class MovieQuotes extends React.Component {
     //     movie - in order to be a successful call. But, go ahead and try to
     //     make a request without one of the fields just to see how the server
     //     is going to handle errors.
+  };
+
+  deleteMessage = id => {
+    axios
+      .delete(`http://localhost:5000/api/${id}`)
+      .then(response => {
+        this.setState({
+          deleteSuccessMessage: response.data.successMessage,
+          deleteError: '',
+        });
+      })
+      .catch(err => {
+        this.setState({
+          deleteSuccessMessage: '',
+          deleteError: err.response.data.Error,
+        });
+      });
   };
 
   changeTabs = tab => {
@@ -121,7 +135,13 @@ class MovieQuotes extends React.Component {
             putError={this.state.putError}
           />
         )}
-        {this.state.showForm === 'delete' && <DeleteMovieQuoteForm />}
+        {this.state.showForm === 'delete' && (
+          <DeleteMovieQuoteForm
+            deleteMessage={this.deleteMessage}
+            deleteSuccessMessage={this.state.deleteSuccessMessage}
+            deleteError={this.state.deleteError}
+          />
+        )}
       </div>
     );
   }
