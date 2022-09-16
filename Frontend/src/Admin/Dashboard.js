@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import React from 'react';
 import '../../src/styles/style.css';
 import Login from '../common/userSignUp';
 import TeamMember from './TeamMember';
@@ -68,7 +67,6 @@ function AdminDashboard() {
   return (
     <div className="admin-dashboard">
       <header className="admin-header">
-        {/* <h1>ADMIN</h1> */}
         <a
           className="sign-up-client"
           href="/login"
@@ -79,7 +77,7 @@ function AdminDashboard() {
         </a>
         <Login />
       </header>
-      <div className="App">
+      <div className="sign-up-client">
         <TeamMember
           values={formValues}
           update={updateForm}
@@ -89,18 +87,6 @@ function AdminDashboard() {
           return <Member key={teamMembers.id} details={teamMembers} />;
         })}
       </div>
-      {/* <div> */}
-      {/* <Navigate> */}
-      {/* <SavedMovies list={[]} /> */}
-      {/* <Route path={'/movies/:id'}> */}
-      {/* <Movie /> */}
-      {/* </Route> */}
-
-      {/* <Route exact path="/"> */}
-      {/* <MovieList movies={movieList} /> */}
-      {/* </Route> */}
-      {/* </Navigate> */}
-      {/* </div> */}
     </div>
   );
 }

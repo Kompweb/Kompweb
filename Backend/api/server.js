@@ -3,7 +3,6 @@ const express = require("express");
 const server = express();
 var cors = require("cors");
 var bodyParser = require("body-parser");
-
 server.use(express.json());
 server.use(cors());
 // parse application/x-www-form-urlencoded
@@ -15,7 +14,6 @@ const User = require("./users/model");
 server.get("/", (req, res) => {
   res.send("Hello from Express Home page");
 });
-
 // server.get("/api/users/:id", cors(corsOptions), function (req, res, next) {
 //   res.json({ msg: "This is CORS-enabled for a whitelisted domain." });
 // });
@@ -39,7 +37,6 @@ server.get("/api/users", (req, res) => {
       });
     });
 });
-
 // FIND USER BY ID -- findById --
 server.get("/api/users/:id", (req, res) => {
   User.findById(req.params.id)
@@ -60,12 +57,10 @@ server.get("/api/users/:id", (req, res) => {
       });
     });
 });
-
 server.get("/api/users/:id", (req, res) => {
   const user = User.find((user) => user.id.toString() === req.params.id);
   res.status(200).json(user);
 });
-
 // CREATE USER -- insert --
 server.post("/api/users", (req, res) => {
   const user = req.body;
@@ -87,7 +82,6 @@ server.post("/api/users", (req, res) => {
       });
   }
 });
-
 //  UPDATE USER -- update --
 server.put("/api/users/:id", async (req, res) => {
   try {
@@ -114,7 +108,6 @@ server.put("/api/users/:id", async (req, res) => {
     });
   }
 });
-
 // DELETE USER -- remove --
 server.delete("/api/users/:id", async (req, res) => {
   try {
@@ -134,34 +127,11 @@ server.delete("/api/users/:id", async (req, res) => {
     });
   }
 });
-
 server.use("*", (req, res) => {
   // res.setHeader("Content-Type", "text/plain");
   // res.write("you posted:\n");
   // res.end(JSON.stringify(req.body, null, 2));
   res.status(404).json({ message: "page not found" });
 });
-
-// DELETE USER
-// server.delete("/api/users/:id", (req, res) => {
-//   let user;
-//   User.findById(req.params.id)
-//     .then((data) => {
-//       if (!data) {
-//         res.status(404).json({
-//           message: "The user with the specified ID does not exist",
-//         });
-//       } else {
-//         user = data;
-//         return User.remove(req.params.id);
-//       }
-//     })
-//     .then(() => {
-//       res.status(200).json(user);
-//     })
-//     .catch(() => {
-//       res.status(500).json({ message: "The user could not be removed" });
-//     });
-// });
 
 module.exports = server;
