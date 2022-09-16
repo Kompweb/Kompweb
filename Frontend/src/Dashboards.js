@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function AdminDashboard() {
   return (
     <div className="admin-dashboards">
-      <Link to={'/admin'}>
+      <Link to={'/login'}>
         <DashboardOutlined className="icons" />
         <h3>Online Dashboards</h3>
       </Link>
