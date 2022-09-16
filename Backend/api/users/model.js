@@ -6,9 +6,17 @@
 
 const initializeUsers = () => [
   //   { id: getId(), name: "Ed Carter", bio: "hero" },
-  { name: "Konflict", bio: "hero" },
-  { name: "Bonea Gabriel", bio: "super hero" },
-  { name: "Stan Tudor", bio: "Admin" },
+  {
+    id: 0,
+    name: "Konflict",
+    bio: "hero",
+  },
+  { id: 1, name: "Bonea Gabriel", bio: "super hero" },
+  {
+    id: 2,
+    name: "Stan Tudor",
+    bio: "Admin",
+  },
 
   //   { id: getId(), name: "Mary Edwards", bio: "super hero" },
 ];

@@ -1,12 +1,15 @@
 import '../../styles/Login.css';
 import { Button, Checkbox, Form, Input } from 'antd';
 import React from 'react';
+// import React, { useState } from 'react';
 import UseInput from './useInput';
 // import AxiosWithAuth from '../../api/axiosAuth';
 
 const LoginForm = () => {
-  const [email, setEmail, handleEmail] = UseInput('');
+  // const [email, setEmail, handleEmail] = UseInput('');
+  const [username, setUsername, handleUsername] = UseInput('');
   const [password, setPassword, handlePassword] = UseInput('');
+
   // const token = localStorage.getItem('token');
 
   // AxiosWithAuth.post('/mocks/data', UseInput.newFriend, {
@@ -29,10 +32,13 @@ const LoginForm = () => {
     console.log('Failed:', errorInfo);
   };
 
-  const resetValues = e => {
-    e.preventDefault();
-    setEmail('');
+  const resetValues = event => {
+    event.preventDefault();
+    // setEmail('');
+    setUsername('');
     setPassword('');
+    console.log(username);
+    console.log(password);
   };
 
   return (
@@ -55,6 +61,7 @@ const LoginForm = () => {
       >
         <Form.Item
           name="username"
+          onSubmit={resetValues}
           rules={[
             {
               required: true,
@@ -63,15 +70,16 @@ const LoginForm = () => {
           ]}
         >
           <Input
-            placeholder="Email"
-            value={email}
-            onChange={e => handleEmail(e.target.value)}
+            placeholder="Username"
+            value={username}
+            onChange={e => handleUsername(e.target.value)}
           />
         </Form.Item>
 
         <Form.Item
           name="password"
           type="text"
+          onSubmit={resetValues}
           rules={[
             {
               required: true,

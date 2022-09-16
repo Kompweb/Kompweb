@@ -1,5 +1,7 @@
 // import '../../styles/Login.css';
 import React, { useState, useEffect } from 'react';
+// import React from 'react';
+
 import * as Yup from 'yup';
 import axios from '../api/axiosAuth';
 import Form from '../features/login/homeForm';
@@ -12,12 +14,14 @@ const initialFormValues = {
   password: '',
   tos: false,
 };
+
 const initialFormErrors = {
   first_name: '',
   last_name: '',
   email: '',
   password: '',
 };
+
 const initialUsers = [];
 
 function LoginForm() {
@@ -34,6 +38,7 @@ function LoginForm() {
       password: values.password,
       tos: false,
     };
+    console.log(newUser);
     addUsersToApi(newUser);
   };
 
