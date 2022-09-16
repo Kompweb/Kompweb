@@ -1,20 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 // import React from 'react';
-
-import axios from 'axios';
 import '../../src/styles/style.css';
-
-// import { Route, Navigate } from 'react-router-dom';
-
 import Login from '../common/userSignUp';
+import TeamMember from './TeamMember';
+import Member from './Member';
 
-import MovieList from './MovieList';
-import Movie from './Movie';
-// import SavedUsers from '../../src/movies/SavedList';
+const initialFormValues = {
+  username: '',
+  email: '',
+  role: '',
+};
 
 function AdminDashboard() {
-  // const [saved, setSaved] = useState([]); // Stretch: the ids of "saved" movies
-  const [movieList, setMovieList] = useState([]);
+  const [teamMembers, setTeamMembers] = useState([]);
+  const [formValues, setFormValues] = useState(initialFormValues);
+
+  const updateForm = (inputName, inputValue) => {
+    setFormValues({ ...formValues, [inputName]: inputValue });
+  };
+
+  const submitForm = () => {
+    const newTeamMember = {
+      username: formValues.username.trim(),
+      email: formValues.email.trim(),
+      role: formValues.role,
+    };
+    setTeamMembers(teamMembers.concat(newTeamMember));
+    setFormValues(initialFormValues);
+  };
 
   // useEffect(() => {
   //   const getUsers = () => {
@@ -34,23 +47,23 @@ function AdminDashboard() {
   //   getUsers();
   // }, []);
 
-  useEffect(() => {
-    const getMovies = () => {
-      axios
-        .get('http://localhost:3000/movies') // Study this endpoint with Postman
-        .then(response => {
-          // Study this response with a breakpoint or log statements
-          console.log(' THIS IS MY RESPONZ', response.data);
-          // and set the response data as the 'movieList' slice of state
-          setMovieList(response.data);
-          console.log(movieList);
-        })
-        .catch(error => {
-          console.error('Server Error', error);
-        });
-    };
-    getMovies();
-  }, []);
+  // useEffect(() => {
+  //   const getMovies = () => {
+  //     axios
+  //       .get('http://localhost:3000/login') // Study this endpoint with Postman
+  //       .then(response => {
+  //         // Study this response with a breakpoint or log statements
+  //         console.log(' THIS IS MY RESPONZ', response.data);
+  //         // and set the response data as the 'movieList' slice of state
+  //         // setMovieList(response.data);
+  //         // console.log(movieList);
+  //       })
+  //       .catch(error => {
+  //         console.error('Server Error', error);
+  //       });
+  //   };
+  //   getMovies();
+  // }, []);
 
   return (
     <div className="admin-dashboard">
@@ -66,18 +79,28 @@ function AdminDashboard() {
         </a>
         <Login />
       </header>
-      <div>
-        {/* <Navigate> */}
-        {/* <SavedMovies list={[]} /> */}
-        {/* <Route path={'/movies/:id'}> */}
-        <Movie />
-        {/* </Route> */}
-
-        {/* <Route exact path="/"> */}
-        <MovieList movies={movieList} />
-        {/* </Route> */}
-        {/* </Navigate> */}
+      <div className="App">
+        <TeamMember
+          values={formValues}
+          update={updateForm}
+          submit={submitForm}
+        />
+        {teamMembers.map(teamMembers => {
+          return <Member key={teamMembers.id} details={teamMembers} />;
+        })}
       </div>
+      {/* <div> */}
+      {/* <Navigate> */}
+      {/* <SavedMovies list={[]} /> */}
+      {/* <Route path={'/movies/:id'}> */}
+      {/* <Movie /> */}
+      {/* </Route> */}
+
+      {/* <Route exact path="/"> */}
+      {/* <MovieList movies={movieList} /> */}
+      {/* </Route> */}
+      {/* </Navigate> */}
+      {/* </div> */}
     </div>
   );
 }

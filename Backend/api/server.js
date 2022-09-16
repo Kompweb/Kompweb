@@ -121,14 +121,14 @@ server.delete("/api/users/:id", async (req, res) => {
     const posibleUser = await User.findById(req.params.id);
 
     if (!posibleUser) {
-      res.status(404).json({ message: "not found" });
+      res.status(404).json({ message: "user not found" });
     } else {
       const deletedUser = await User.remove(posibleUser.id);
       res.status(200).json(deletedUser);
     }
   } catch (err) {
     res.status(500).json({
-      message: "error creating new user",
+      message: "error deleting user",
       err: err.message,
       stack: err.stack,
     });
@@ -141,51 +141,6 @@ server.use("*", (req, res) => {
   // res.end(JSON.stringify(req.body, null, 2));
   res.status(404).json({ message: "page not found" });
 });
-
-// server.get("/hobbits", (req, res) => {
-//   res.send({ message: "Hello to Hobitton" });
-// });
-
-// server.get("/hobbits/:id", (req, res) => {
-//   res.send({ message: "Hellozzz to Hobitton" });
-// });
-
-// server.post("/hobbits", (req, res) => {
-//   res.status(201).json({ url: "/hobbits", operation: "POST" });
-// });
-
-// server.put("/hobbits", (req, res) => {
-//   res.status(200).json({ url: "/hobbits", operation: "PUT" });
-// });
-
-// server.delete("/hobbits", (req, res) => {
-//   res.status(204);
-// });
-
-// server.get("/hobbits", (req, res) => {
-//   const hobbits = [
-//     {
-//       id: 1,
-//       name: "Samwise Gamgee",
-//     },
-//     {
-//       id: 2,
-//       name: "Frodo Baggins",
-//     },
-//   ];
-
-//   res.status(200).json(hobbits);
-// });
-
-// GET ALL USERS
-// server.get("/api/users", async (req, res) => {
-//   try {
-//     const users = await User.find();
-//     res.status(200).json(users);
-//   } catch (error) {
-//     res.status(500).json({ message: error.message });
-//   }
-// });
 
 // DELETE USER
 // server.delete("/api/users/:id", (req, res) => {
