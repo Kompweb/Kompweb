@@ -1,32 +1,33 @@
-import React, { useState } from 'react';
-import '../../src/styles/style.css';
-import Login from '../common/userSignUp';
-import TeamMember from './TeamMember';
-import Member from './Member';
+import React from 'react';
+import '../styles/admin.css';
 
-const initialFormValues = {
-  username: '',
-  email: '',
-  role: '',
-};
+import Login from '../common/userSignUp';
+// import TeamMember from './TeamMember';
+// import Member from './Member';
+
+// const initialFormValues = {
+//   username: '',
+//   email: '',
+//   role: '',
+// };
 
 function AdminDashboard() {
-  const [teamMembers, setTeamMembers] = useState([]);
-  const [formValues, setFormValues] = useState(initialFormValues);
+  // const [teamMembers, setTeamMembers] = useState([]);
+  // const [formValues, setFormValues] = useState(initialFormValues);
 
-  const updateForm = (inputName, inputValue) => {
-    setFormValues({ ...formValues, [inputName]: inputValue });
-  };
+  // const updateForm = (inputName, inputValue) => {
+  //   setFormValues({ ...formValues, [inputName]: inputValue });
+  // };
 
-  const submitForm = () => {
-    const newTeamMember = {
-      username: formValues.username.trim(),
-      email: formValues.email.trim(),
-      role: formValues.role,
-    };
-    setTeamMembers(teamMembers.concat(newTeamMember));
-    setFormValues(initialFormValues);
-  };
+  // const submitForm = () => {
+  //   const newTeamMember = {
+  //     username: formValues.username.trim(),
+  //     email: formValues.email.trim(),
+  //     role: formValues.role,
+  //   };
+  //   setTeamMembers(teamMembers.concat(newTeamMember));
+  //   setFormValues(initialFormValues);
+  // };
 
   // useEffect(() => {
   //   const getUsers = () => {
@@ -73,11 +74,11 @@ function AdminDashboard() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Sign Up
+          Admin Login
         </a>
         <Login />
       </header>
-      <div className="sign-up-client">
+      {/* <div className="sign-up-client">
         <TeamMember
           values={formValues}
           update={updateForm}
@@ -86,7 +87,7 @@ function AdminDashboard() {
         {teamMembers.map(teamMembers => {
           return <Member key={teamMembers.id} details={teamMembers} />;
         })}
-      </div>
+      </div> */}
     </div>
   );
 }

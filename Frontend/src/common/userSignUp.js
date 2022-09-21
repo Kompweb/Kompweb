@@ -1,36 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/admin.css';
 import * as yup from 'yup';
+import axios from 'axios';
 
 const schema = yup.object().shape({
-  name: yup
+  user: yup
     .string()
     .required('user is required')
     .min(6, 'user needs to be 6 chars min'),
-  star: yup.string().oneOf(['wars', 'trek'], 'you must select a star'),
-  language: yup.string().oneOf(['1', '2', '3'], 'you must choose a language'),
+  plan: yup.string().oneOf(['premium', 'basic'], 'you must select a star'),
+  email: yup.string().required('must be a valid email address'),
+  role: yup.string().oneOf(['1', '2', '3'], 'you must choose a role'),
   agree: yup.boolean().oneOf([true], 'you must give away your data'),
 });
 
 export default function ClientSignUp() {
   const [form, setForm] = useState({
     name: '',
-    password: '',
+    plan: '',
     email: '',
-    star: '',
+    password: '',
     agree: false,
-    website: '',
-    language: '',
+    role: '',
   });
 
   const [errors, setErrors] = useState({
-    name: '',
-    password: '',
+    name: ' ',
+    plan: '',
     email: '',
-    star: '',
+    password: '',
     agree: '',
-    website: '',
-    language: '',
+    role: '',
   });
 
   const [disabled, setDisabled] = useState(true);
@@ -46,14 +46,33 @@ export default function ClientSignUp() {
   const change = event => {
     const { checked, value, name, type } = event.target;
     const valueToUse = type === 'checkbox' ? checked : value;
+    event.preventDefault();
     setFormErrors(name, valueToUse);
     setForm({ ...form, [name]: valueToUse });
   };
   // // Basic submit event handler and console.log to confirm form submitted
-  // const formSubmit = e => {
-  //   e.preventDefault();
-  //   console.log('submitted');
-  // };
+  const submit = e => {
+    e.preventDefault();
+    const newUser = {
+      user: form.user.trim(),
+      plan: form.plan,
+      email: form.email,
+      agree: form.agree,
+      role: form.role,
+    };
+
+    axios
+      .post('https://reqres.in/api/users', newUser)
+      .then(res => {
+        console.log(res);
+        setForm({ user: '', plan: '', email: '', agree: false, bio: '' });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+
+    console.log('form has been submitted');
+  };
 
   useEffect(() => {
     schema.isValid(form).then(valid => setDisabled(!valid));
@@ -61,93 +80,93 @@ export default function ClientSignUp() {
 
   return (
     <div className="admin-form">
-      <h1> User Sign Up </h1>
+      {/* <h1> User Sign Up </h1> */}
       <div className="react-form">
-        {/* <form formSubmit={formSubmit}> */}
-        <label>
-          <input
-            className="placeholders"
-            onChange={change}
-            value={form.name}
-            name="name"
-            type="text"
-            placeholder="Username"
-          />
-        </label>
-        <div className="movies-checkbox">
+        <form onSubmit={submit}>
           <label>
-            Basic
             <input
+              className="placeholders"
               onChange={change}
-              checked={form.star === 'trek'}
-              value="trek"
-              name="star"
-              type="radio"
+              value={form.user}
+              name="name"
+              type="text"
+              placeholder="Username"
             />
           </label>
-          <label>
-            Premium
+          <div className="admin-checkbox">
+            <label>
+              Basic
+              <input
+                onChange={change}
+                checked={form.plan === 'basic'}
+                value="basic"
+                name="plan"
+                type="radio"
+              />
+            </label>
+            <label>
+              Premium
+              <input
+                onChange={change}
+                checked={form.plan === 'premium'}
+                value="premium"
+                name="plan"
+                type="radio"
+              />
+            </label>
+          </div>
+
+          <label htmlFor="emailInput">
             <input
-              onChange={change}
-              checked={form.star === 'wars'}
-              value="wars"
-              name="star"
-              type="radio"
+              className="placeholders"
+              id="emailInput"
+              type="email"
+              name="email"
+              placeholder="Email"
             />
           </label>
-        </div>
 
-        <label htmlFor="emailInput">
-          <input
-            className="placeholders"
-            id="emailInput"
-            type="email"
-            name="email"
-            placeholder="Email"
-          />
-        </label>
-
-        <label htmlFor="passwordInput">
-          <input
-            className="placeholders"
-            id="passwordInput"
-            type="password"
-            name="password"
-            placeholder="Password"
-          />
-        </label>
-
-        <div className="conditions">
-          <label htmlFor="termsInput">
-            Terms and conditions
-            <input id="termsInput" type="checkbox" name="terms" />
-          </label>
-          <label>
-            Newsletter subscribe
+          <label htmlFor="passwordInput">
             <input
-              onChange={change}
-              checked={form.agree}
-              name="agree"
-              type="checkbox"
+              className="placeholders"
+              id="passwordInput"
+              type="password"
+              name="password"
+              placeholder="Password"
             />
           </label>
-        </div>
-        <label>
-          <select onChange={change} value={form.language} name="language">
-            <option value="">--Languages--</option>
-            <option value="1">JavaScript</option>
-            <option value="2">Python</option>
-            <option value="3">Java</option>
-          </select>
-        </label>
-        <br />
-        <button disabled={disabled}>submit</button>
-        {/* </form> */}
+
+          <div className="conditions">
+            <label htmlFor="termsInput">
+              Terms and conditions
+              <input id="termsInput" type="checkbox" name="terms" />
+            </label>
+            <label>
+              Newsletter subscribe
+              <input
+                onChange={change}
+                checked={form.agree}
+                name="agree"
+                type="checkbox"
+              />
+            </label>
+          </div>
+          <label>
+            <select onChange={change} value={form.role} name="role">
+              <option value="">---Select Your Role</option>
+              <option value="1">Instructor</option>
+              <option value="2">Admin</option>
+              <option value="3">User</option>
+            </select>
+          </label>
+          <br />
+          <button disabled={disabled}>submit</button>
+        </form>
         <div style={{ color: 'red' }}>
           <div>{errors.name}</div>
-          <div>{errors.star}</div>
-          <div>{errors.agree}</div>
-          <div>{errors.language}</div>
+          <div>{errors.email}</div>
+          <div>{errors.password}</div>
+          <div>{errors.role}</div>
         </div>
       </div>
     </div>

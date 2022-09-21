@@ -10,11 +10,14 @@
 
 .admin-form {
   margin-top: 10px;
-  color: rgb(242, 6, 6);
+  /* color: rgb(242, 6, 6); */
+  /* border: 2px solid rgb(255, 0, 47); */
 }
-.user-name {
+/* .user-name {
   color: rgb(0, 0, 0);
-}
+  border: 2px solid rgb(255, 0, 47);
+} */
+
 .admin-form label {
   color: white;
   display: flex;
@@ -43,11 +46,11 @@
   /* margin: 0; */
   /* border: 2px solid rgb(255, 0, 47); */
 }
-.movies-checkbox {
+.admin-checkbox {
   width: 260px;
   display: flex;
 }
-.movies-checkbox input {
+.admin-checkbox input {
   margin: 0 6px;
   font-size: 19px;
 }
