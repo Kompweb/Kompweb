@@ -5,7 +5,7 @@ import Home from '../Home';
 import AboutUs from '../About';
 import Contact from '../Contact';
 import Blog from '../Blog';
-import Blockchain from '../features/Blockchain';
+import Blockchain from '../Projects/Blockchain';
 import Admin from '../Admin/Dashboard';
 
 function NavRoutes({ component: Component, ...rest }) {
@@ -13,7 +13,7 @@ function NavRoutes({ component: Component, ...rest }) {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects//*" element={<Projects />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />

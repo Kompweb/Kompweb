@@ -1,15 +1,18 @@
 import React from 'react';
 // import '../../styles/';
 import Framer from './FrameMotion';
-import { Counter } from '../src/features/counter/Counter';
+import { Counter } from './Projects/counter/Counter';
 import Dashboard from './Dashboards';
 import Shop from './Shop';
-import MovieQuotes from '../src/features/movieQuotes/MovieQuotes';
+import MovieQuotes from './Projects/movieQuotes/MovieQuotes';
+// import AppUsers from './CRUDfeatures/CRUD/users/indexez';
+import AppClients from './Projects/clients/Clients';
+// import Users from './CRUD/CRUDops/users';
+// import MovieList from './CRUD/Movies/index';
 
 function ProjectList() {
   return (
     <div className="projects">
-      {/* <h1>Projects</h1> */}
       <div className="projects-list">
         <Shop />
       </div>
@@ -17,9 +20,13 @@ function ProjectList() {
         <div className="bottom-container">
           <Framer />
           <Dashboard />
-          <Counter />
+          {/* <Users /> */}
+          <AppClients />
           {/* <AvengersApp /> */}
           <MovieQuotes />
+          <Counter />
+          {/* <AppUsers /> */}
+          {/* <MovieList /> */}
         </div>
       </div>
     </div>

@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 
 import * as Yup from 'yup';
 import axios from '../api/axiosAuth';
-import Form from '../features/login/homeForm';
-import Schema from '../features/login/schema';
+import Form from '../utils/login/homeForm';
+import Schema from '../utils/login/schema';
 
 const initialFormValues = {
   first_name: '',

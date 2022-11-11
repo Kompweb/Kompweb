@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import axios from 'axios';
 
 const schema = yup.object().shape({
-  user: yup
+  name: yup
     .string()
     .required('user is required')
     .min(6, 'user needs to be 6 chars min'),
@@ -34,6 +34,10 @@ export default function ClientSignUp() {
   });
 
   const [disabled, setDisabled] = useState(true);
+
+  // const updateForm = (inputName, inputValue) => {
+  //   setForm({ ...form, [inputName]: inputValue });
+  // };
 
   const setFormErrors = (name, value) => {
     yup

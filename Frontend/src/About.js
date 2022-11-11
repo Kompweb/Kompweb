@@ -4,7 +4,7 @@ import { Button } from 'antd';
 import Carousel from './sliderTwo';
 
 import Slider from './Slider';
-import LightOn from './features/LightOn';
+import LightOn from './Projects/LightOn';
 
 export default function AboutUs() {
   return (

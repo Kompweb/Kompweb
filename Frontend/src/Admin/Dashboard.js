@@ -1,34 +1,8 @@
 import React from 'react';
 import '../styles/admin.css';
-
 import Login from '../common/userSignUp';
-// import TeamMember from './TeamMember';
-// import Member from './Member';
-
-// const initialFormValues = {
-//   username: '',
-//   email: '',
-//   role: '',
-// };
 
 function AdminDashboard() {
-  // const [teamMembers, setTeamMembers] = useState([]);
-  // const [formValues, setFormValues] = useState(initialFormValues);
-
-  // const updateForm = (inputName, inputValue) => {
-  //   setFormValues({ ...formValues, [inputName]: inputValue });
-  // };
-
-  // const submitForm = () => {
-  //   const newTeamMember = {
-  //     username: formValues.username.trim(),
-  //     email: formValues.email.trim(),
-  //     role: formValues.role,
-  //   };
-  //   setTeamMembers(teamMembers.concat(newTeamMember));
-  //   setFormValues(initialFormValues);
-  // };
-
   // useEffect(() => {
   //   const getUsers = () => {
   //     axios
@@ -78,18 +52,7 @@ function AdminDashboard() {
         </a>
         <Login />
       </header>
-      {/* <div className="sign-up-client">
-        <TeamMember
-          values={formValues}
-          update={updateForm}
-          submit={submitForm}
-        />
-        {teamMembers.map(teamMembers => {
-          return <Member key={teamMembers.id} details={teamMembers} />;
-        })}
-      </div> */}
     </div>
   );
 }
-
 export default AdminDashboard;

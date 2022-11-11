@@ -14,25 +14,25 @@ let data;
 const resetData = () => {
   data = [
     {
-      id: nanoid(5),
+      id: nanoid(1),
       name: 'Rachel Green',
       age: 30,
       email: 'rachel@friends.com',
     },
     {
-      id: nanoid(5),
+      id: nanoid(2),
       name: 'Joey Tribbiani',
       age: 34,
       email: 'joey@friends.com',
     },
     {
-      id: nanoid(5),
+      id: nanoid(3),
       name: 'Chandler Bing',
       age: 32,
       email: 'chandler@friends.com',
     },
     {
-      id: nanoid(5),
+      id: nanoid(4),
       name: 'Ross Geller',
       age: 32,
       email: 'ross@friends.com',
@@ -44,7 +44,7 @@ const resetData = () => {
       email: 'monica@friends.com',
     },
     {
-      id: nanoid(5),
+      id: nanoid(6),
       name: 'Phoebe Buffay-Hannigan',
       age: 30,
       email: 'phoebe@friends.com',

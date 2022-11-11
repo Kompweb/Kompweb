@@ -98,7 +98,7 @@ class MovieQuotes extends React.Component {
   render() {
     return (
       <div className="quotes">
-        <h3 className="quotes-header">Movie Quotes with Axios!</h3>
+        <h3 className="quotes-header"> R.E.S.T. </h3>
         <nav>
           <ul>
             <li

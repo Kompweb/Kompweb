@@ -32,7 +32,7 @@ class DeleteMovieQuoteForm extends React.Component {
   render() {
     return (
       <div className="quotes-form">
-        <h2>DELETE (delete) a quote</h2>
+        <h2>(delete) a quote</h2>
         <form onSubmit={this.deleteMessage}>
           <input
             type="text"

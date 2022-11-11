@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from './layout';
 import { BugOutlined } from '@ant-design/icons';
-import LightOn from '../src/features/LightOn';
+import LightOn from './Projects/LightOn';
 // import Link from 'next/link';
 // import Date from '../src/components/date';
 // import BlogPage from '../pages/index';
