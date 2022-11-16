@@ -72,10 +72,10 @@ class App extends Component {
   //   console.log(newUser);
   // };
 
-  // addRow = user => {
-  //   const { users } = this.state;
-  //   this.setState({ users: [...users, user] });
-  // };
+  addRow = user => {
+    const { users } = this.state;
+    this.setState({ users: [...users, user] });
+  };
 
   updateRow = (id, updatedUser) => {
     const { users } = this.state;
