@@ -45,7 +45,7 @@ function authenticator(req, resp) {
   const { authorization } = req.headers._headers;
   return authorization === credentials.token
     ? resp()
-    : res(
+    : resp(
         ctx.status(403),
         ctx.json({ error: 'User not currently logged in.' })
       );

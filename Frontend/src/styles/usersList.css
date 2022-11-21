@@ -65,11 +65,9 @@
   cursor: pointer;
 }
 
-/* .userList span { */
-/* color: white; */
-/* display: flex; */
-/* flex-direction: column; */
-/* } */
+.userList input {
+  color: rgb(255, 255, 255);
+}
 
 /* .usersColumns {
   margin: 40px;

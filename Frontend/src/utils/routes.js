@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import Projects from '../Projects';
-import Home from '../Home';
-import AboutUs from '../About';
-import Contact from '../Contact';
-import Blog from '../Blog';
-import Blockchain from '../Projects/Blockchain';
+import Projects from '../pages/Projects';
+import Home from '../pages/Home';
+import AboutUs from '../pages/About';
+import Contact from '../pages/Contact';
+import Blog from '../pages/Blog';
+import Blockchain from '../Projects/crypto/Blockchain';
 import Admin from '../Admin/Dashboard';
 
 function NavRoutes({ component: Component, ...rest }) {

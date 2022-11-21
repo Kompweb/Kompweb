@@ -76,12 +76,12 @@ const ClientLogin = () => {
             placeholder="Email"
             // onChange={event => handleChange(event)}
             onChange={e => handleEmail(e.target.value)}
-            rules={[
-              {
-                required: true,
-                message: 'Please input your email!',
-              },
-            ]}
+            // rules={[
+            //   {
+            //     required: true,
+            //     message: 'Please input your email!',
+            //   },
+            // ]}
           />
         </label>
         <label>
@@ -93,12 +93,12 @@ const ClientLogin = () => {
             placeholder="Password"
             // onChange={event => handleChange(event)}
             onChange={e => handlePassword(e.target.value)}
-            rules={[
-              {
-                required: true,
-                message: 'Please input your password!',
-              },
-            ]}
+            // rules={[
+            //   {
+            //     required: true,
+            //     message: 'Please input your password!',
+            //   },
+            // ]}
           />
         </label>
         <div className="last-block">

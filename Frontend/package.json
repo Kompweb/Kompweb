@@ -51,6 +51,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "lint": "npx eslint 'src/**/*.{js,jsx}'",
+    "lint:fix": "npx eslint 'src/**/*.{js,jsx}' --fix",
     "format": "npx prettier --write 'src/**/*.{js,jsx,css,scss,md,json,yml,yaml}'"
   },
   "browserslist": {

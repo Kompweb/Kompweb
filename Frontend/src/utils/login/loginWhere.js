@@ -63,7 +63,7 @@ export default function ClientSignUp() {
     <div>
       <h1> User NOT Sign In </h1>
       <div className="react-form">
-        <form formSubmit={formSubmit}>
+        <form onSubmit={formSubmit}>
           <label>
             <input
               className="placeholders"
