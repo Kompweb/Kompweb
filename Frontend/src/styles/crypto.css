@@ -1,15 +1,5 @@
-.coin-l {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-}
 .coin-search {
-  margin-bottom: 64px;
-}
-
-.coin-text {
-  margin-bottom: 32px;
-  text-align: center;
+  margin-bottom: 60px;
 }
 
 .coin-input {
@@ -24,7 +14,6 @@
     #7918f2 48%,
     #4801ff 100%
   );
-
   color: #e2e2e2;
 }
 

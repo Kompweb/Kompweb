@@ -1,108 +1,102 @@
-.coin-container {
-  width: 960px;
+.coin-data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  width: 100%;
 }
 .coin-row {
   display: flex;
-  height: 80px;
-  border-bottom: 1px solid #d7d7d7;
+  border-bottom: 1px solid #3e3e3e;
+  height: 48px;
 }
-.coin {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.coin-l p {
+  font-size: 14px;
 }
-.coin img {
-  height: 36px;
-  width: 36px;
-  margin-right: 14px;
+.coin-row img {
+  width: 32px;
+  height: 32px;
 }
-.coin h1 {
-  font-size: 16px;
-  width: 120px;
+.coin-data h5 {
   text-align: left;
-  margin-bottom: 0;
-}
-.coin-container p {
-  margin-bottom: 0;
+  font-weight: 600;
+  margin-left: 10px;
+  width: 200px;
 }
 .coin-symbol {
   text-transform: uppercase;
-}
-
-.coin-data {
-  display: flex;
-  flex-direction: row;
+  width: 100px;
+  text-align: left;
 }
 .coin-price {
   width: 100px;
   text-align: left;
-  margin-left: 14px;
 }
 .coin-volume {
-  width: 240px;
+  width: 200px;
   text-align: right;
-  margin-right: 14px;
 }
 .coin-percent {
-  text-align: left;
-  margin-left: 14px;
-  /* width: 120px; */
+  width: 80px;
+  margin-left: 10px;
 }
 .red {
-  color: #f00606;
+  color: tomato;
 }
 .green {
   color: #11d811;
 }
 .coin-marketcap {
-  width: 280px;
+  width: 200px;
   text-align: right;
 }
+
+/* * * * -- MEDIA QUERIES HERE: -- * * * */
 @media screen and (max-width: 760px) {
-  .coin-l {
-    flex-flow: wrap;
-  }
   .coin-container {
-    margin-top: 40px;
-    padding: 10px;
-    /* border-bottom: 2px solid #ffffff; */
-    width: 300px;
     height: 220px;
-    border-radius: 15px;
-    box-shadow: 0 4px 0 0 #61dafb;
-  }
-  .coin-row {
-    flex-flow: wrap;
-    border: none;
-  }
-  .coin {
-    flex-direction: column;
-    width: 280px;
-  }
-  .coin img {
-    margin: 4px 0;
-  }
-  .coin-price {
-    width: auto;
-    margin: 0;
-  }
-  .coin-volume {
-    margin: 0;
-    width: auto;
-  }
-  .coin-percent {
-    margin: 0;
-    width: auto;
-  }
-  .coin-marketcap {
-    margin: 0;
-    width: auto;
   }
   .coin-data {
     flex-direction: column;
-    align-items: center;
+    border-bottom: 1px dashed grey;
   }
-  .coin h1 {
+  .coin-row img {
+    width: 42px;
+    height: auto;
+  }
+  .coin-data h5 {
     width: auto;
+    margin: 0;
+    font-size: 18px;
+  }
+  .coin-row {
+    margin: 0;
+    flex-direction: column;
+    height: 200px;
+    margin: 20px 0;
+    width: auto;
+    text-align: center;
+    border: none;
+  }
+  .coin-name {
+    text-align: center;
+  }
+  .coin-symbol {
+    margin: 0;
+    text-align: center;
+  }
+  .coin-price {
+    text-align: center;
+  }
+  .coin-volume {
+    text-align: center;
+    margin: 0;
+  }
+  .coin-percent {
+    margin: 0;
+  }
+  .coin-marketcap {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }

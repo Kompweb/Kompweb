@@ -43,6 +43,7 @@ class Edit extends Component {
     // });
     const { name, username } = this.state.form;
     const { addRow } = this.props;
+
     const newUser = {
       name,
       username,

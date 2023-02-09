@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import TeamMember from './TeamMemberForm';
+import TeamMember from '../utils/login/form';
 import Member from './Member';
 
 const initialFormValues = {
@@ -22,6 +22,7 @@ export default function App() {
       email: formValues.email.trim(),
       role: formValues.role,
     };
+
     setTeamMembers(teamMembers.concat(newTeamMember));
     setFormValues(initialFormValues);
   };

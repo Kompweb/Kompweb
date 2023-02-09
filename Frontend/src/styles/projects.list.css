@@ -80,19 +80,19 @@
   }
 }
 .value textarea {
-  font-size: 21px;
+  font-size: 26px;
   /* text-align: center; */
-  /* color: #ffffff; */
-  width: 96%;
+  color: #ffffff;
+  width: 228px;
   height: 56px;
   padding-left: 10px;
-  padding-top: 10px;
-  margin-bottom: 20px;
+  /* margin: 0; */
+  margin-bottom: 10px;
   /* background-color: #000000; */
-  /* background-color: #282c34; */
-  border: none;
-  /* border: 1px solid #d90909; */
-  /* border-radius: 2px; */
+  background-color: #000000;
+  /* border: none; */
+  /* border: 1px solid #61dafb; */
+  border-radius: 4px;
   /* box-shadow: 0 0 50px 1px #61dafb, rgb(106, 102, 102) 0 0 0 1px inset; */
   /* box-shadow: 0 0 2px 0 #000000 inset; */
 }

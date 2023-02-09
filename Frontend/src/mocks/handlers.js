@@ -3,13 +3,13 @@ import Data from './data';
 import credentials from './credentials';
 
 export const handlers = [
-  rest.post('http://localhost:9000/api/login', login),
-  rest.post('http://localhost:9000/api/logout', logout),
-  rest.get('http://localhost:9000/api/friends', getAll),
-  rest.get('http://localhost:9000/api/friends', edit),
-  rest.get('http://localhost:9000/api/friends', remove),
-  rest.get('http://localhost:9000/api/friends/:id', getById),
-  rest.post('http://localhost:9000/api/articles', create),
+  rest.post('http://localhost:3000/api/login', login),
+  rest.post('http://localhost:3000/api/logout', logout),
+  rest.get('http://localhost:3000/api/friends', getAll),
+  rest.get('http://localhost:3000/api/friends', edit),
+  rest.get('http://localhost:3000/api/friends', remove),
+  rest.get('http://localhost:3000/api/friends/:id', getById),
+  rest.post('http://localhost:3000/api/articles', create),
   rest.post('/login', (req, res, ctx) => {
     // Persist user's authentication in the session
     sessionStorage.setItem('is-authenticated', 'true');
@@ -41,7 +41,7 @@ export const handlers = [
   }),
 ];
 
-function authenticator(req, resp) {
+function authenticator(req, resp, ctx) {
   const { authorization } = req.headers._headers;
   return authorization === credentials.token
     ? resp()

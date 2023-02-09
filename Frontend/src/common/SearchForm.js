@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import '../styles/searchForm.css';
+
 const SearchForm = ({ handleSubmit, history }) => {
   const [searchEntry, setSearchEntry] = useState('');
-  // update search text state
+
   const updateSearchInput = e => {
     setSearchEntry(e.target.value);
   };
+
   return (
     <form
       className="search-form"

@@ -37,8 +37,8 @@ const LoginForm = () => {
     // setEmail('');
     setUsername('');
     setPassword('');
-    console.log(username);
-    console.log(password);
+    // console.log(username);
+    // console.log(password);
   };
 
   return (

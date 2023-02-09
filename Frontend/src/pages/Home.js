@@ -1,5 +1,5 @@
 import logo from '../../src/assets/logo.svg';
-import React from 'react';
+// import React from 'react';
 import LoginForm from '../common/Login';
 
 function Home() {

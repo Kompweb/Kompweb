@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Date from '../src/components/date';
 // import Names from './Names';
-import { getSortedPostsData } from '../src/lib/posts';
+import { getSortedPostsData } from '../lib/posts';
 // import Button from "./LikeButton";
 
 export async function getStaticProps() {
@@ -16,7 +16,7 @@ export default function BlogPage({ allPostsData }) {
   return (
     <>
       <div>
-        <h2>My Blog</h2>
+        <h2>My Blogz index</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>

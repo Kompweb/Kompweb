@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../styles/crypto.css';
 import axios from 'axios';
-import Coin from './Coin';
+import CoinDetail from './CoinDetail';
 
 function Coins() {
   const [coins, setCoins] = useState([]);
@@ -14,7 +14,7 @@ function Coins() {
       )
       .then(res => {
         setCoins(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch(error => console.log(error));
   }, []);
@@ -28,35 +28,36 @@ function Coins() {
   );
 
   return (
-    <div className="coin-app">
-      <div className="coin-search">
-        <h2 className="coin-text">Search a currency</h2>
-        <form>
-          <input
-            className="coin-input"
-            type="text"
-            onChange={handleChange}
-            placeholder="Search"
-          />
-        </form>
-      </div>
-      <div className="coin-l">
-        {filteredCoins.map(coin => {
-          return (
-            <Coin
-              key={coin.id}
-              name={coin.name}
-              price={coin.current_price}
-              symbol={coin.symbol}
-              marketcap={coin.total_volume}
-              volume={coin.market_cap}
-              image={coin.image}
-              priceChange={coin.price_change_percentage_24h}
+    <>
+      <div className="coin-app">
+        <div className="coin-search">
+          <form>
+            <input
+              className="coin-input"
+              type="text"
+              onChange={handleChange}
+              placeholder="Search"
             />
-          );
-        })}
+          </form>
+        </div>
+        <div className="coin-l">
+          {filteredCoins.map(coin => {
+            return (
+              <CoinDetail
+                key={coin.id}
+                name={coin.name}
+                price={coin.current_price}
+                symbol={coin.symbol}
+                marketcap={coin.total_volume}
+                volume={coin.market_cap}
+                image={coin.image}
+                priceChange={coin.price_change_percentage_24h}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

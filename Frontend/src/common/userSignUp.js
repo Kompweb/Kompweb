@@ -7,7 +7,7 @@ const schema = yup.object().shape({
   name: yup
     .string()
     .required('user is required')
-    .min(6, 'user needs to be 6 chars min'),
+    .min(6, 'user needZ to be 6 chars min'),
   plan: yup.string().oneOf(['premium', 'basic'], 'you must select a star'),
   email: yup.string().required('must be a valid email address'),
   role: yup.string().oneOf(['1', '2', '3'], 'you must choose a role'),

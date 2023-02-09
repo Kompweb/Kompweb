@@ -1,18 +1,18 @@
 // import styles from "../styles/layout.module.css";
-import Link from 'next/link';
+// import Link from 'next/link';
 
-const name = 'Next.js';
-export const siteTitle = 'Next.js Project Website';
+// const name = 'Next.js';
+// export const siteTitle = 'Next.js Project Website';
 
 export default function Layout({ children, home }) {
   return (
     <div className="container">
-      <link rel="icon" href="/favicon.ico" />
+      {/* <link rel="icon" href="/favicon.ico" /> */}
       <meta
         name="description"
         content="A personal website using React with Next.js"
       />
-      <header className="header">
+      {/* <header className="header">
         {home ? (
           <></>
         ) : (
@@ -22,13 +22,13 @@ export default function Layout({ children, home }) {
             </Link>
           </h2>
         )}
-      </header>
+      </header> */}
       <main>{children}</main>
       {!home && (
         <div className="backToHome">
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+          {/* <Link href="/"> */}
+          <a href="/">← Back to home</a>
+          {/* </Link> */}
         </div>
       )}
     </div>

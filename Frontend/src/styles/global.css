@@ -18,7 +18,6 @@ code {
 h1,
 h2,
 h4,
-h5,
 h6,
 p {
   color: rgb(255, 255, 255);
@@ -35,6 +34,10 @@ h3 {
 }
 h4 {
   font-size: calc(16px + 0.5vmin);
+}
+h5 {
+  font-size: 14px;
+  color: #61dafb;
 }
 p {
   font-size: calc(16px + 0.1vmin);
