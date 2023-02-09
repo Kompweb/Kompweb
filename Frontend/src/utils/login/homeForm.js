@@ -1,12 +1,10 @@
+import React from 'react';
 import '../../styles/Login.css';
 import { Button, Checkbox, Form, Input } from 'antd';
-import React from 'react';
-// import React, { useState } from 'react';
 import UseInput from './useInput';
 // import AxiosWithAuth from '../../api/axiosAuth';
 
 const LoginForm = () => {
-  // const [email, setEmail, handleEmail] = UseInput('');
   const [username, setUsername, handleUsername] = UseInput('');
   const [password, setPassword, handlePassword] = UseInput('');
 
@@ -34,7 +32,6 @@ const LoginForm = () => {
 
   const resetValues = event => {
     event.preventDefault();
-    // setEmail('');
     setUsername('');
     setPassword('');
     // console.log(username);
@@ -79,7 +76,6 @@ const LoginForm = () => {
         <Form.Item
           name="password"
           type="text"
-          onSubmit={resetValues}
           rules={[
             {
               required: true,
