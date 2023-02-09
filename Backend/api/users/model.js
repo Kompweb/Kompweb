@@ -1,24 +1,27 @@
-// import { nanoid } from "nanoid";
+import { nanoid } from "https://cdn.jsdelivr.net/npm/nanoid/nanoid.js";
 
-// function getId() {
-//   return nanoid().slice(0, 5);
-// }
+function getId() {
+  return nanoid().slice(0, 5);
+}
 
 const initializeUsers = () => [
-  //   { id: getId(), name: "Ed Carter", bio: "hero" },
+  { id: getId(), name: "Ed Carter", bio: "hero" },
   {
-    id: 0,
+    id: getId(),
     name: "Konflict",
     bio: "hero",
   },
-  { id: 1, name: "Bonea Gabriel", bio: "super hero" },
   {
-    id: 2,
+    id: getId(),
+    name: "Bonea Gabriel",
+    bio: "super hero",
+  },
+  {
+    id: getId(),
     name: "Stan Tudor",
     bio: "Admin",
   },
-
-  //   { id: getId(), name: "Mary Edwards", bio: "super hero" },
+  { id: getId(), name: "Mary Edwards", bio: "super hero" },
 ];
 
 // FAKE IN-MEMORY USERS "TABLE"
@@ -64,10 +67,10 @@ const remove = (id) => {
   return Promise.resolve(user);
 };
 
-// const resetDB = () => {
-//   // ONLY TESTS USE THIS ONE
-//   users = initializeUsers();
-// };
+const resetDB = () => {
+  //   // ONLY TESTS USE THIS ONE
+  users = initializeUsers();
+};
 
 module.exports = {
   find,
@@ -75,6 +78,6 @@ module.exports = {
   insert,
   update,
   remove,
-  //   resetDB,
+  resetDB,
   // ONLY TESTS USE THIS ONE
 };
